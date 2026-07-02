@@ -1,0 +1,173 @@
+site_name: Machine Learning
+site_description: "Machine Learning course at Insper"
+site_author: Sandmann, H.
+site_url: https://insper.github.io/ML
+repo_url: https://github.com/insper/ML
+repo_name: insper/ML
+
+theme:
+  name: material
+  palette:
+    # Light mode
+    - scheme: default
+      primary: grey
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: grey
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: grey
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: grey
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to system preference
+  features:
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+    - content.tooltips
+    - navigation.top
+    - navigation.path
+    - navigation.tracking
+  icon:
+    logo: material/brain
+    admonition:
+      note: fontawesome/solid/note-sticky
+      abstract: fontawesome/solid/book
+      info: fontawesome/solid/circle-info
+      tip: fontawesome/solid/bullhorn
+      success: fontawesome/solid/check
+      question: fontawesome/solid/circle-question
+      warning: fontawesome/solid/triangle-exclamation
+      failure: fontawesome/solid/bomb
+      danger: fontawesome/solid/skull
+      bug: fontawesome/solid/robot
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/quote-left
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - markdown_grid_tables:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.blocks.caption
+  - pymdownx.snippets:
+      url_download: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - footnotes
+  - neoteroi.timeline
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - tables
+
+plugins:
+  - i18n:
+      docs_structure: suffix
+      languages:
+        - locale: en
+          default: true
+          name: 🇺🇸 English
+          build: true
+        - locale: pt
+          name: 🇧🇷 Português
+          build: true
+      fallback_to_default: true
+  - glightbox
+  - search: {}
+  - minify:
+      minify_html: true
+  - markdown-exec
+  - termynal:
+      prompt_literal_start:
+        - "$"
+        - ">"
+
+extra_javascript:
+  - assets/javascripts/mathjax.js
+  - assets/javascripts/quiz.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - assets/stylesheets/neoteroi-mkdocs.min.css
+  - assets/stylesheets/neoteroi-timeline.css
+  - assets/stylesheets/extra.css
+
+nav:
+  - Machine Learning: index.md
+  - 2026.2:
+    - Overview: ./2026.2/index.md
+    - Classes:
+      # Part 0 — Foundations & History
+      - 1. Introduction & History: ./2026.2/classes/introduction/index.md
+      - 2. The ML Landscape: ./2026.2/classes/ml-landscape/index.md
+      # Part I — Working with Data
+      - 3. Exploratory Data Analysis: ./2026.2/classes/eda/index.md
+      - 4. Data Preprocessing: ./2026.2/classes/preprocessing/index.md
+      - 5. Pipelines: ./2026.2/classes/pipelines/index.md
+      # Part II — Unsupervised Learning & Text
+      - 6. Dimensionality Reduction: ./2026.2/classes/dimensionality-reduction/index.md
+      - 7. Clustering: ./2026.2/classes/clustering/index.md
+      - 8. Text Representation: ./2026.2/classes/text-representation/index.md
+      - 9. Topic Modeling & BERTopic: ./2026.2/classes/topic-modeling-bertopic/index.md
+      # Part III — Regression & Model Evaluation
+      - 10. Linear Regression: ./2026.2/classes/linear-regression/index.md
+      - 11. Gradient Descent & Regularization: ./2026.2/classes/gradient-descent-regularization/index.md
+      - 12. Validation & Data Leakage: ./2026.2/classes/validation/index.md
+      - 13. Model Selection: ./2026.2/classes/model-selection/index.md
+      # Part IV — Classification
+      - 14. Classification & Metrics: ./2026.2/classes/classification-metrics/index.md
+      - 15. k-Nearest Neighbors: ./2026.2/classes/knn/index.md
+      - 16. ROC-AUC & Imbalanced Data: ./2026.2/classes/roc-imbalanced/index.md
+      - 17. Logistic Regression: ./2026.2/classes/logistic-regression/index.md
+      - 18. Naive Bayes: ./2026.2/classes/naive-bayes/index.md
+      - 19. Support Vector Machines: ./2026.2/classes/svm/index.md
+      # Part V — Trees & Ensembles
+      - 20. Decision Trees: ./2026.2/classes/decision-trees/index.md
+      - 21. Random Forest: ./2026.2/classes/random-forest/index.md
+      - 22. Gradient Boosting: ./2026.2/classes/gradient-boosting/index.md
+      # Part VI — Edge Approaches
+      - 23. Neural Networks: ./2026.2/classes/neural-networks/index.md
+      - 24. Explainability: ./2026.2/classes/explainability/index.md
+      - 25. AutoML: ./2026.2/classes/automl/index.md
+      - 26. MLOps: ./2026.2/classes/mlops/index.md
+      - 27. The Frontier: ./2026.2/classes/frontier/index.md
+
+  - References: references/index.md
