@@ -1,19 +1,36 @@
 # 2026.2 — Overview
 
-Welcome to the 2026.2 offering of **Machine Learning**.
+Welcome to the 2026.2 offering of **Machine Learning**. The course is organized as a journey **from the historical basis of the field to the edge approaches** used in research and industry today.
 
-The course is organized as a journey **from the historical basis of the field to the edge approaches** used in research and industry today. Every subject ends with an **interactive quiz** so you can verify your understanding immediately.
+## Meetings
+
+| :octicons-location-24: | :fontawesome-regular-calendar: | :fontawesome-regular-clock: |
+|-|:-:|:-:|
+| Class | Tue. | 12h00 :fontawesome-solid-arrow-right-long: 14h00 |
+| Class | Thu. | 09h45 :fontawesome-solid-arrow-right-long: 11h45 |
+| Office Hours | Mon. | 14h45 :fontawesome-solid-arrow-right-long: 16h15 |
+
+
+## Instructors
+
+| [:material-web:](https://hsandmann.github.io/){:target="_blank"} [:simple-github:](https://github.com/hsandmann){:target="_blank"} [:material-linkedin:](https://www.linkedin.com/in/hsandmann/){:target="_blank"} Instructor | Humberto Sandmann |
+
+<!-- | [:simple-github:](https://github.com/luabatepietro){:target="_blank"} [:material-linkedin:](https://www.linkedin.com/in/lucas-abatepietro-286a03270/){:target="_blank"} Student Assistant | Lucas Abatepietro | -->
+
+
+## Students
+
 
 ## Syllabus
 
-### Part 0 — Foundations & History
+### A — Foundations & History
 
 | # | Subject | Topics |
 |---|---------|--------|
 | 1 | [Introduction & History](classes/introduction/index.md) | What is ML, a timeline from least squares (1805) to foundation models |
 | 2 | [The ML Landscape](classes/ml-landscape/index.md) | Learning paradigms, the ML workflow, generalization, ethics |
 
-### Part I — Working with Data
+### B — Working with Data
 
 | # | Subject | Topics |
 |---|---------|--------|
@@ -21,7 +38,7 @@ The course is organized as a journey **from the historical basis of the field to
 | 4 | [Data Preprocessing](classes/preprocessing/index.md) | Scaling, normalization, encoding, missing values, outliers |
 | 5 | [Pipelines](classes/pipelines/index.md) | scikit-learn `Pipeline`, `ColumnTransformer`, reproducibility |
 
-### Part II — Unsupervised Learning & Text
+### C — Unsupervised Learning & Text
 
 | # | Subject | Topics |
 |---|---------|--------|
@@ -30,7 +47,7 @@ The course is organized as a journey **from the historical basis of the field to
 | 8 | [Text Representation](classes/text-representation/index.md) | Bag-of-words, TF-IDF, n-grams, embeddings |
 | 9 | [Topic Modeling & BERTopic](classes/topic-modeling-bertopic/index.md) | LDA, BERTopic: embeddings + UMAP + HDBSCAN + c-TF-IDF |
 
-### Part III — Regression & Model Evaluation
+### D — Regression & Model Evaluation
 
 | # | Subject | Topics |
 |---|---------|--------|
@@ -39,7 +56,7 @@ The course is organized as a journey **from the historical basis of the field to
 | 12 | [Validation & Data Leakage](classes/validation/index.md) | Train/test split, cross-validation, leakage patterns |
 | 13 | [Model Selection](classes/model-selection/index.md) | Bias–variance, regression to the mean, `GridSearchCV` |
 
-### Part IV — Classification
+### E — Classification
 
 | # | Subject | Topics |
 |---|---------|--------|
@@ -50,7 +67,7 @@ The course is organized as a journey **from the historical basis of the field to
 | 18 | [Naive Bayes](classes/naive-bayes/index.md) | Bayes' theorem, conditional independence, spam filtering |
 | 19 | [Support Vector Machines](classes/svm/index.md) | Margins, soft margin, kernel trick, implementation sketch |
 
-### Part V — Trees & Ensembles
+### F — Trees & Ensembles
 
 | # | Subject | Topics |
 |---|---------|--------|
@@ -58,7 +75,7 @@ The course is organized as a journey **from the historical basis of the field to
 | 21 | [Random Forest](classes/random-forest/index.md) | Bootstrap, bagging, feature importance, out-of-bag error |
 | 22 | [Gradient Boosting](classes/gradient-boosting/index.md) | Boosting, GBM, XGBoost, LightGBM |
 
-### Part VI — Edge Approaches
+### G — Edge Approaches
 
 | # | Subject | Topics |
 |---|---------|--------|
@@ -73,6 +90,3 @@ The course is organized as a journey **from the historical basis of the field to
 !!! warning "Placeholder"
     Grading criteria, exam dates, and project descriptions will be published here at the start of the semester.
 
-## Instructors
-
-- Humberto Sandmann — [hsandmann@insper.edu.br](mailto:hsandmann@insper.edu.br)
