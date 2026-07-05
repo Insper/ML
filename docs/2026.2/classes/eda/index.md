@@ -51,9 +51,7 @@ A large gap between mean and median is a **skewness alarm** — think of income 
 
 The four datasets below — **Anscombe's quartet** — have *identical* means, variances, correlations (\(r \approx 0.816\)), and least-squares lines. Only a plot reveals how different they are:
 
-``` python exec="on" html="on"
---8<-- "docs/2026.2/classes/eda/anscombe.py"
-```
+![Anscombe's quartet: four datasets with identical statistics](anscombe.svg)
 
 Dataset 2 is nonlinear, dataset 3 has one outlier distorting the line, dataset 4 has a single point creating the entire correlation. **Always plot.**
 
@@ -69,9 +67,7 @@ Dataset 2 is nonlinear, dataset 3 has one outlier distorting the line, dataset 4
 
 An example on the iris dataset — one distribution view and one correlation view:
 
-``` python exec="on" html="on"
---8<-- "docs/2026.2/classes/eda/iris-eda.py"
-```
+![Iris EDA: class distributions and correlation matrix](iris-eda.svg)
 
 The left panel already tells a modeling story: petal length alone almost separates the three species. The right panel warns that petal length and petal width are highly correlated (\(r = 0.96\)) — they carry nearly the same information, which will matter for [dimensionality reduction](../dimensionality-reduction/index.md) and for interpreting linear model coefficients.
 

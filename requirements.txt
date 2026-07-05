@@ -1,5 +1,4 @@
 markdown-grid-tables
-markdown-exec
 mkdocs-material
 mkdocs-material-extensions
 mkdocs-minify-plugin
@@ -7,9 +6,3 @@ mkdocs-glightbox
 mkdocs-static-i18n
 neoteroi-mkdocs
 termynal
-matplotlib
-numpy
-pandas
-scikit-learn
-seaborn
-tabulate

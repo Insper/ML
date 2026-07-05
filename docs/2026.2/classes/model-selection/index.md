@@ -19,13 +19,15 @@ Imagine retraining your model on many different samples of training data and loo
 
 Simple models: high bias, low variance → **underfitting**. Complex models: low bias, high variance → **overfitting**. Somewhere between lies the sweet spot — visible experimentally in a **validation curve**:
 
-``` python exec="on" html="on"
---8<-- "docs/2026.2/classes/model-selection/validation-curve.py"
-```
+![Validation curve: training vs validation error by polynomial degree](validation-curve.svg)
 
 Training error (orange) falls monotonically with complexity — it *cannot* see overfitting. Validation error (blue) is U-shaped: it falls while complexity reduces bias, then rises as variance takes over. **Select complexity at the bottom of the blue curve, never the orange one.**
 
 Knobs that move you along this curve: polynomial degree, [regularization α](../gradient-descent-regularization/index.md#the-knob) (inverted: larger α = simpler), tree depth ([Decision Trees](../decision-trees/index.md)), k in [k-NN](../knn/index.md) (inverted), number of features.
+
+Drive the trade-off yourself — slide from degree 0 (pure bias) to 12 (pure variance) and watch the two errors part ways:
+
+<div id="sim-bias-variance"></div>
 
 ### Learning curves: is more data worth it?
 

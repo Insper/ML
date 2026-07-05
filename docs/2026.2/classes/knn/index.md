@@ -41,15 +41,17 @@ d_p(a, b) = \Big( \sum_{j=1}^{d} \lvert a_j - b_j \rvert^p \Big)^{1/p}
 
 \(k\) is the complexity knob, and it maps perfectly onto the [bias–variance trade-off](../model-selection/index.md#the-biasvariance-trade-off) — just inverted (small \(k\) = complex model):
 
-``` python exec="on" html="on"
---8<-- "docs/2026.2/classes/knn/knn-boundaries.py"
-```
+![k-NN decision boundaries for k = 1, 15, 100](knn-boundaries.svg)
 
 - **\(k = 1\)**: every training point rules its own island — jagged boundary, noise memorized, training error zero, **high variance** (overfit);
 - **\(k = 15\)**: smooth boundary following the true structure — the sweet spot here;
 - **\(k = 100\)** (half the dataset): the vote is swamped by the global majority — **high bias** (underfit); at \(k = n\) every prediction is the majority class.
 
 Choose \(k\) by [cross-validation](../validation/index.md#cross-validation); odd values avoid ties in binary problems. Typical good values grow roughly like \(\sqrt{n}\), but validate rather than trust rules of thumb.
+
+Play with the vote yourself — drag the query point into the overlap zone and watch small k flip-flop while large k stays stable:
+
+<div id="sim-knn"></div>
 
 ## The curse of dimensionality, revisited
 

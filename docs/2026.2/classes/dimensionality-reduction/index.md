@@ -49,6 +49,10 @@ Practical notes:
 - The scree plot (explained variance per component) guides how many components to keep — look for the "elbow";
 - PCA is also a **compression/denoising** tool: reconstruct with few components to filter noise.
 
+Find PC1 by hand — rotate the axis until the projected variance peaks, then check yourself with the snap button:
+
+<div id="sim-pca"></div>
+
 ## Nonlinear methods: t-SNE and UMAP
 
 Linear projections cannot unfold curved structures (the classic "Swiss roll"). Two modern nonlinear methods dominate visualization practice:
@@ -82,9 +86,7 @@ Z = umap.UMAP(n_neighbors=15, min_dist=0.1, n_components=2).fit_transform(X_scal
 
 Handwritten digits (64 dimensions → 2), same data, two projections:
 
-``` python exec="on" html="on"
---8<-- "docs/2026.2/classes/dimensionality-reduction/pca-tsne.py"
-```
+![PCA vs t-SNE projections of the digits dataset](pca-tsne.svg)
 
 PCA — the best *linear* view — overlaps several digit classes: two directions of maximum variance are not enough. t-SNE separates the ten classes almost perfectly by preserving local neighborhoods. The price: axes, cluster sizes and inter-cluster distances in the t-SNE panel have no interpretable meaning.
 

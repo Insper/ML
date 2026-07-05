@@ -2,9 +2,7 @@
 
 A decision tree classifies by asking a sequence of simple questions — *petal length ≤ 2.45? income > 5,000?* — walking from root to leaf. Formalized in the 1980s (CART: Breiman et al., 1984; ID3/C4.5: Quinlan, 1986/1993), trees read like flowcharts a domain expert can audit, handle mixed feature types without scaling, and are the **building block of the ensembles** ([random forests](../random-forest/index.md), [gradient boosting](../gradient-boosting/index.md)) that dominate tabular ML today.
 
-``` python exec="on" html="on"
---8<-- "docs/2026.2/classes/decision-trees/tree-plot.py"
-```
+![Depth-2 decision tree on the iris dataset](tree-plot.svg)
 
 A depth-2 tree on iris: two thresholds on petal measurements already separate the species almost perfectly — and you can read *why* directly from the picture.
 
@@ -52,9 +50,7 @@ Greedy means **no lookahead**: the tree never reconsiders a split that would pay
 
 Grown without limits, a tree keeps splitting until leaves are pure — happily isolating every noisy point in its own leaf. Trees are **low-bias, high-variance** learners: tiny changes in data can produce a completely different tree.
 
-``` python exec="on" html="on"
---8<-- "docs/2026.2/classes/decision-trees/tree-overfit.py"
-```
+![Unlimited vs depth-limited decision tree boundaries](tree-overfit.svg)
 
 The unlimited tree (left) carves rectangular islands around individual noise points; `max_depth=4` (right) captures the real structure. Note the axis-aligned, "staircase" boundaries — trees split one feature at a time.
 

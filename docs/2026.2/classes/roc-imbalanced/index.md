@@ -28,9 +28,7 @@ The **Area Under the ROC Curve** compresses the curve into one threshold-free nu
 
 — the probability that a random positive is ranked above a random negative. AUC 0.5 = coin flip, 1.0 = perfect ranking. It measures **ranking quality**: how well the model orders cases, independent of any threshold choice.
 
-``` python exec="on" html="on"
---8<-- "docs/2026.2/classes/roc-imbalanced/roc-curves.py"
-```
+![ROC curve and precision-recall curve on imbalanced data](roc-curves.svg)
 
 ```python
 from sklearn.metrics import roc_auc_score, RocCurveDisplay
@@ -42,6 +40,10 @@ roc_auc_score(y_test, model.predict_proba(X_test)[:, 1])   # needs scores, not l
 FPR's denominator is the number of **negatives**. With 95% negatives, even a poor model keeps FPR small in absolute terms — the ROC curve looks great while the model's alarms are mostly false. The **precision–recall curve** (right panel) replaces FPR with precision, whose denominator is *the model's own alarms*, making it brutally honest on rare positives: its random-model baseline is the prevalence (here 0.05), not a diagonal.
 
 **Rule of thumb:** balanced classes or costs on both classes → ROC-AUC; rare positive class and you care about the positives → PR curve and average precision (AP).
+
+See the threshold trade-off live — slide it and watch every metric (and the ROC operating point) react at once:
+
+<div id="sim-threshold"></div>
 
 ## Learning from imbalanced data
 

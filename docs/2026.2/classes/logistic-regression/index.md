@@ -16,9 +16,7 @@ and squashes it through the **sigmoid** (logistic) function:
 \hat{p} = \sigma(z) = \frac{1}{1 + e^{-z}} \in (0, 1)
 \]
 
-``` python exec="on" html="on"
---8<-- "docs/2026.2/classes/logistic-regression/sigmoid.py"
-```
+![Sigmoid function and cross-entropy loss](sigmoid.svg)
 
 Predict class 1 when \(\hat{p} \geq\) threshold (0.5 by default → \(z \geq 0\)). The set \(w^\top x + b = 0\) is a hyperplane: logistic regression is a **linear classifier** — its decision boundary is a straight line/plane in feature space (curved boundaries require engineered features, e.g. [polynomial ones](../gradient-descent-regularization/index.md#from-lines-to-curves-polynomial-features), or other models).
 

@@ -45,9 +45,7 @@ For simple (one-feature) regression this reduces to the formulas worth memorizin
 
 — the slope is the [correlation](../eda/index.md#correlation-carefully) rescaled by the standard deviations, and the line always passes through \((\bar{x}, \bar{y})\).
 
-``` python exec="on" html="on"
---8<-- "docs/2026.2/classes/linear-regression/ols-fit.py"
-```
+![OLS fit with residuals and residual plot](ols-fit.svg)
 
 The **residual plot** (right) is the standard diagnostic: residuals should look like structureless noise around zero. Curvature suggests a missing nonlinear term; a funnel shape suggests non-constant variance; isolated extreme residuals point to outliers (recall [Anscombe's quartet](../eda/index.md#why-statistics-are-not-enough)).
 
@@ -58,6 +56,10 @@ model = LinearRegression().fit(X_train, y_train)
 model.coef_, model.intercept_
 y_pred = model.predict(X_test)
 ```
+
+Get a feel for the fit — drag points and watch the line chase the minimum SSE. Then drag one point far off and see how much a single outlier can pull the line (recall [Anscombe's dataset 3](../eda/index.md#why-statistics-are-not-enough)):
+
+<div id="sim-ols"></div>
 
 !!! note "When the closed form struggles"
     Inverting \(X^\top X\) costs \(O(d^3)\) and fails when features are perfectly collinear. For huge or ill-conditioned problems we switch to [gradient descent and regularization](../gradient-descent-regularization/index.md) — the next lesson.

@@ -34,9 +34,7 @@ Raw counts overweight common words. **TF-IDF** (term frequency × inverse docume
 
 where \(n\) is the number of documents and \(\text{df}(t)\) is the number of documents containing \(t\). A word appearing in *every* document (idf ≈ 1 after smoothing) is discounted; a word concentrated in few documents is amplified. scikit-learn then normalizes each document vector to unit length.
 
-``` python exec="on" html="on"
---8<-- "docs/2026.2/classes/text-representation/tfidf-demo.py"
-```
+--8<-- "docs/2026.2/classes/text-representation/tfidf-demo.html"
 
 Note how "the" — present in three of four documents — gets low weights, while distinctive words like "cheese" and "learning" score high in their documents. Documents are compared with **cosine similarity**:
 

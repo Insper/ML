@@ -26,6 +26,10 @@ a convex bowl with a single global minimum — gradient descent is guaranteed to
 - \(\eta\) too large → steps overshoot the minimum; the loss oscillates or **diverges**;
 - practical recipe: try \(\eta \in \{10^{-3}, 10^{-2}, 10^{-1}\}\), monitor the training-loss curve — it should fall smoothly.
 
+Feel it yourself — step through the descent, then set \(\eta = 1.05\) and watch it explode:
+
+<div id="sim-gd"></div>
+
 !!! warning "Scale your features"
     Unscaled features create an elongated, ravine-like loss surface: the gradient points across the ravine, not along it, and convergence crawls. [Standardization](../preprocessing/index.md#scaling-methods) makes the bowl round and gradient descent fast — the practical reason scaling matters for all gradient-trained models.
 
@@ -58,9 +62,7 @@ model = make_pipeline(PolynomialFeatures(degree=3), LinearRegression())
 
 But flexibility cuts both ways:
 
-``` python exec="on" html="on"
---8<-- "docs/2026.2/classes/gradient-descent-regularization/poly-ridge.py"
-```
+![Polynomial underfit, overfit, and Ridge regularization](poly-ridge.svg)
 
 Degree 1 **underfits** — too rigid to follow the sine. Degree 15 **overfits** — 16 parameters chase 25 noisy points, producing wild oscillations. The right panel keeps all 16 parameters but adds a Ridge penalty: the curve relaxes back to the signal. That is regularization at work.
 

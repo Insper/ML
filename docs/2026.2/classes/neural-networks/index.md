@@ -4,7 +4,11 @@ Part VI begins at the edge — and the edge is built from pieces you already own
 
 ## From one neuron to a network
 
-Rosenblatt's **perceptron** (1958) computes \(\hat{y} = \operatorname{step}(w^\top x + b)\) — a linear classifier. Minsky & Papert (1969) proved a single such unit cannot solve XOR (no line separates it), triggering the [first AI winter](../introduction/index.md#a-brief-history-of-machine-learning). The escape, made trainable by **backpropagation** (Rumelhart, Hinton & Williams, 1986): **compose** neurons in layers.
+Rosenblatt's **perceptron** (1958) computes \(\hat{y} = \operatorname{step}(w^\top x + b)\) — a linear classifier. Its learning rule is beautifully simple: visit the data point by point, and on every mistake nudge the weights toward the misclassified point: \(w \leftarrow w + \eta\, y_i x_i\). Watch it converge:
+
+<div id="sim-perceptron"></div>
+
+Minsky & Papert (1969) proved a single such unit cannot solve XOR (no line separates it), triggering the [first AI winter](../introduction/index.md#a-brief-history-of-machine-learning). The escape, made trainable by **backpropagation** (Rumelhart, Hinton & Williams, 1986): **compose** neurons in layers.
 
 A **multi-layer perceptron (MLP)** with one hidden layer:
 
@@ -21,9 +25,7 @@ Read it in course vocabulary: the output layer is *exactly* multi-class logistic
 
 Without \(\sigma\), stacking layers collapses: \(W_2(W_1 x) = (W_2 W_1)x\) — still linear. The nonlinearity between layers is what buys expressive power. Modern default: **ReLU**, \(\max(0, z)\) — cheap and gradient-friendly. The **universal approximation theorem** (Cybenko, 1989; Hornik, 1991): one hidden layer with enough neurons can approximate any continuous function — existence guaranteed; *learning* it efficiently is what depth, data, and optimization tricks are for.
 
-``` python exec="on" html="on"
---8<-- "docs/2026.2/classes/neural-networks/mlp-moons.py"
-```
+![Logistic regression vs MLP decision boundary on two moons](mlp-moons.svg)
 
 The single neuron draws its one line; sixteen hidden ReLU units learn a curved boundary — no polynomial features supplied, the hidden layer *invented* the representation.
 

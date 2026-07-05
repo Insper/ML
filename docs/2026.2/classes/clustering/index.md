@@ -34,6 +34,10 @@ Properties and pitfalls:
 - Distance-based → **scale your features** ([Preprocessing](../preprocessing/index.md));
 - Every point is assigned to a cluster — k-means has no concept of noise or outliers.
 
+Run Lloyd's algorithm yourself — the data has 3 real blobs; watch what happens with k = 2 or k = 5, and how different random starts converge to different local optima:
+
+<div id="sim-kmeans"></div>
+
 ### Choosing k
 
 - **Elbow method**: plot inertia vs \(k\); inertia always decreases, so look for the "elbow" where gains flatten. Heuristic and often ambiguous.
@@ -89,9 +93,7 @@ labels = HDBSCAN(min_cluster_size=10).fit_predict(X_scaled)
 
 ## Assumptions matter: k-means vs DBSCAN
 
-``` python exec="on" html="on"
---8<-- "docs/2026.2/classes/clustering/kmeans-dbscan.py"
-```
+![k-means vs DBSCAN on blobs and two moons](kmeans-dbscan.svg)
 
 On convex blobs both succeed. On the two moons, k-means fails *by construction* — it can only draw Voronoi boundaries between centroids — while DBSCAN follows the density and recovers the crescents, marking stray points as noise.
 

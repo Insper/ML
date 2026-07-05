@@ -15,9 +15,7 @@ Before explaining a black box, ask if you need one. [Linear/logistic regression]
 
 Already met in [Random Forest](../random-forest/index.md#feature-importance): shuffle one feature's column in **held-out data** and measure the score drop. Breaking the feature–target link destroys exactly the information the model extracted from that feature.
 
-``` python exec="on" html="on"
---8<-- "docs/2026.2/classes/explainability/permutation-importance.py"
-```
+![Permutation importance of the top 8 features](permutation-importance.svg)
 
 Repeats give a distribution (boxes), separating real signal from shuffle noise. One caveat: with **strongly correlated features**, shuffling one leaves its twin available — both look unimportant even when the pair is critical. Check the [correlation matrix](../eda/index.md#correlation-carefully) alongside.
 

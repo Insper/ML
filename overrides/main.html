@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {# quiz.js must be available BEFORE the page body is parsed: lesson pages
+     call buildQuiz() from inline scripts in the content, which execute during
+     parsing — extra_javascript (end of <body>) loads too late. #}
+  <script src="{{ 'assets/javascripts/quiz.js' | url }}"></script>
+  {# Interactive simulations: shared single copies (the i18n plugin does not
+     duplicate co-located assets into /pt/). Deferred — they run after the DOM
+     is parsed, and each one no-ops unless its mount <div> is on the page. #}
+  <script src="{{ 'assets/javascripts/sim.js' | url }}" defer></script>
+  <script src="{{ 'assets/javascripts/sims/sim-gd.js' | url }}" defer></script>
+  <script src="{{ 'assets/javascripts/sims/sim-kmeans.js' | url }}" defer></script>
+  <script src="{{ 'assets/javascripts/sims/sim-knn.js' | url }}" defer></script>
+  <script src="{{ 'assets/javascripts/sims/sim-perceptron.js' | url }}" defer></script>
+  <script src="{{ 'assets/javascripts/sims/sim-bias-variance.js' | url }}" defer></script>
+  <script src="{{ 'assets/javascripts/sims/sim-threshold.js' | url }}" defer></script>
+  <script src="{{ 'assets/javascripts/sims/sim-ols.js' | url }}" defer></script>
+  <script src="{{ 'assets/javascripts/sims/sim-pca.js' | url }}" defer></script>
+{% endblock %}

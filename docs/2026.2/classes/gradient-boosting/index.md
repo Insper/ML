@@ -28,9 +28,7 @@ for m in 1..M:
 
 Watch the ensemble assemble a sine wave from depth-2 trees, stage by stage:
 
-``` python exec="on" html="on"
---8<-- "docs/2026.2/classes/gradient-boosting/boosting-stages.py"
-```
+![Gradient boosting predictions after 1, 5, 50, 300 trees](boosting-stages.svg)
 
 One tree is a crude staircase; 5 trees sketch the shape; 50 fit it well; 300 begin chasing individual noisy points. Boosting attacks **bias** stage by stage — but keeps going into the noise if unchecked, so unlike a random forest, **more trees CAN overfit**.
 

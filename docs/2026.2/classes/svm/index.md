@@ -6,9 +6,7 @@ The SVM (Cortes & Vapnik, 1995) crowned the statistical learning era: a classifi
 
 Many hyperplanes separate two separable classes; which is best? Vapnik's answer: the one **farthest from the closest points of both classes** — the widest "street." A wide margin means small perturbations of the data don't flip predictions: better generalization, provably.
 
-``` python exec="on" html="on"
---8<-- "docs/2026.2/classes/svm/svm-margin-kernel.py"
-```
+![Linear SVM maximum margin and RBF-kernel boundary](svm-margin-kernel.svg)
 
 For hyperplane \(w^\top x + b = 0\), scale \(w, b\) so the closest points satisfy \(\lvert w^\top x + b \rvert = 1\) (the dashed lines). The street width is \(2 / \lVert w \rVert\), so maximizing margin = minimizing \(\lVert w \rVert\):
 

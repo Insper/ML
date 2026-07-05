@@ -31,9 +31,7 @@ flowchart TD
     T1 & T2 & T3 --> V[vote / average]
 ```
 
-``` python exec="on" html="on"
---8<-- "docs/2026.2/classes/random-forest/forest-vs-tree.py"
-```
+![Single decision tree vs random forest decision boundary](forest-vs-tree.svg)
 
 The single tree carves noise islands with hard 0/1 confidence; the forest's averaged vote yields a smooth, calibrated-looking boundary that ignores individual noise points — variance visibly averaged away.
 

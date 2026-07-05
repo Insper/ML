@@ -35,9 +35,7 @@ x' = \frac{x - \text{median}(x)}{\text{IQR}(x)}
 
 The choice matters when outliers are present. Min-max is fully determined by the two most extreme points; standardization is somewhat distorted by them; robust scaling ignores them:
 
-``` python exec="on" html="on"
---8<-- "docs/2026.2/classes/preprocessing/scaling.py"
-```
+![Raw data vs StandardScaler, MinMaxScaler and RobustScaler](scaling.svg)
 
 | Scaler | Formula anchors | Sensitive to outliers? | Typical use |
 |--------|----------------|------------------------|-------------|

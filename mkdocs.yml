@@ -7,6 +7,7 @@ repo_name: insper/ML
 
 theme:
   name: material
+  custom_dir: overrides
   palette:
     # Light mode
     - scheme: default
@@ -114,7 +115,6 @@ plugins:
   - search: {}
   - minify:
       minify_html: true
-  - markdown-exec
   - termynal:
       prompt_literal_start:
         - "$"
@@ -122,7 +122,9 @@ plugins:
 
 extra_javascript:
   - assets/javascripts/mathjax.js
-  - assets/javascripts/quiz.js
+  # quiz.js is loaded in <head> via overrides/main.html (see extrahead block):
+  # inline buildQuiz() calls in page content run during parsing, before
+  # extra_javascript (end of <body>) would define the function.
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 extra_css:
@@ -134,36 +136,35 @@ nav:
   - Machine Learning: index.md
   - 2026.2:
     - Overview: ./2026.2/index.md
-    - Classes:
-      # Part 0 — Foundations & History
+    - Part 0 — Foundations & History:
       - 1. Introduction & History: ./2026.2/classes/introduction/index.md
       - 2. The ML Landscape: ./2026.2/classes/ml-landscape/index.md
-      # Part I — Working with Data
+    - Part I — Working with Data:
       - 3. Exploratory Data Analysis: ./2026.2/classes/eda/index.md
       - 4. Data Preprocessing: ./2026.2/classes/preprocessing/index.md
       - 5. Pipelines: ./2026.2/classes/pipelines/index.md
-      # Part II — Unsupervised Learning & Text
+    - Part II — Unsupervised Learning & Text:
       - 6. Dimensionality Reduction: ./2026.2/classes/dimensionality-reduction/index.md
       - 7. Clustering: ./2026.2/classes/clustering/index.md
       - 8. Text Representation: ./2026.2/classes/text-representation/index.md
       - 9. Topic Modeling & BERTopic: ./2026.2/classes/topic-modeling-bertopic/index.md
-      # Part III — Regression & Model Evaluation
+    - Part III — Regression & Model Evaluation:
       - 10. Linear Regression: ./2026.2/classes/linear-regression/index.md
       - 11. Gradient Descent & Regularization: ./2026.2/classes/gradient-descent-regularization/index.md
       - 12. Validation & Data Leakage: ./2026.2/classes/validation/index.md
       - 13. Model Selection: ./2026.2/classes/model-selection/index.md
-      # Part IV — Classification
+    - Part IV — Classification:
       - 14. Classification & Metrics: ./2026.2/classes/classification-metrics/index.md
       - 15. k-Nearest Neighbors: ./2026.2/classes/knn/index.md
       - 16. ROC-AUC & Imbalanced Data: ./2026.2/classes/roc-imbalanced/index.md
       - 17. Logistic Regression: ./2026.2/classes/logistic-regression/index.md
       - 18. Naive Bayes: ./2026.2/classes/naive-bayes/index.md
       - 19. Support Vector Machines: ./2026.2/classes/svm/index.md
-      # Part V — Trees & Ensembles
+    - Part V — Trees & Ensembles:
       - 20. Decision Trees: ./2026.2/classes/decision-trees/index.md
       - 21. Random Forest: ./2026.2/classes/random-forest/index.md
       - 22. Gradient Boosting: ./2026.2/classes/gradient-boosting/index.md
-      # Part VI — Edge Approaches
+    - Part VI — Edge Approaches:
       - 23. Neural Networks: ./2026.2/classes/neural-networks/index.md
       - 24. Explainability: ./2026.2/classes/explainability/index.md
       - 25. AutoML: ./2026.2/classes/automl/index.md
@@ -171,3 +172,4 @@ nav:
       - 27. The Frontier: ./2026.2/classes/frontier/index.md
 
   - References: references/index.md
+  - Disclaimer: disclaimer/index.md
