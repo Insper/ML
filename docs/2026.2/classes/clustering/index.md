@@ -115,6 +115,12 @@ On convex blobs both succeed. On the two moons, k-means fails *by construction* 
     Hands-on notebook used in class — **Aula 07 — Clustering**:
     [:simple-googlecolab: open in Colab](https://colab.research.google.com/drive/1kB8dwyLmM8ON2YQ2QkG_UGKow8-Ju2cv){:target="_blank"}
 
+### Video
+
+[![Algoritmo k-means (k-médias)](https://img.youtube.com/vi/njRYKzRKBPY/maxresdefault.jpg){ .rounded-corners width="480" }](https://youtu.be/njRYKzRKBPY){:target="_blank"}
+
+:simple-youtube: [Algoritmo k-means (k-médias)](https://youtu.be/njRYKzRKBPY){:target="_blank"} — in Portuguese
+
 ---
 
 ## Quiz

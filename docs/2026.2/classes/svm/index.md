@@ -101,6 +101,16 @@ Complexity is roughly \(O(n^2)\)–\(O(n^3)\) in samples — the reason SVMs shi
     - **Aula 17 — Support Vector Machines**: [:simple-googlecolab: open in Colab](https://colab.research.google.com/drive/1QC7Jjl29GWTVJwkd3W1-9Uy1ujRp-L-B){:target="_blank"}
     - **Aula 18 — SVM Pseudocódigo** (implementation from scratch): [:simple-googlecolab: open in Colab](https://colab.research.google.com/drive/1CsiJHY0KbZkIr6dseWGEt1p4-LM0I2ti){:target="_blank"}
 
+### Videos
+
+- :simple-youtube: [SVM — Support Vector Machines: Fundamentos e prática](https://www.youtube.com/watch?v=b8nP9g0p8X4){:target="_blank"} — in Portuguese
+- :simple-youtube: [16. Learning: Support Vector Machines](https://www.youtube.com/watch?v=_PwhiWxHK8o){:target="_blank"} — MIT OpenCourseWare, Patrick Winston
+
+### Further reading
+
+- [Wikipedia — Quadratic programming](https://en.wikipedia.org/wiki/Quadratic_programming){:target="_blank"}
+- [Wikipedia — Sequential minimal optimization (SMO)](https://en.wikipedia.org/wiki/Sequential_minimal_optimization){:target="_blank"}
+
 ---
 
 ## Quiz

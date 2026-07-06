@@ -106,6 +106,12 @@ PCA — the best *linear* view — overlaps several digit classes: two direction
     Hands-on notebook used in class — **Aula 06 — PCA, t-SNE e UMAP**:
     [:simple-googlecolab: open in Colab](https://colab.research.google.com/drive/1fM5ZDnnuxCSIYXV8oTDbO3Dz-X-B1Qzo){:target="_blank"}
 
+### Video
+
+[![Latent Space Visualisation: PCA, t-SNE, UMAP](https://img.youtube.com/vi/o_cAOa5fMhE/maxresdefault.jpg){ .rounded-corners width="480" }](https://youtu.be/o_cAOa5fMhE){:target="_blank"}
+
+:simple-youtube: [Latent Space Visualisation: PCA, t-SNE, UMAP](https://youtu.be/o_cAOa5fMhE){:target="_blank"}
+
 ---
 
 ## Quiz
