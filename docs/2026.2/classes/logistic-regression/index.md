@@ -97,6 +97,12 @@ Cross-entropy generalizes verbatim. `LogisticRegression` handles this automatica
 | **Weaknesses** | linear boundary (needs feature engineering for curves); struggles when interactions dominate; sensitive to unscaled features under regularization |
 | **Reach for it when** | you need a solid, explainable baseline; probabilities matter (risk, triage); features are informative individually |
 
+## Class materials
+
+!!! example "Class notebook (in Portuguese)"
+    Hands-on notebook used in class — **Aula 16 — Regressão Logística com Gradiente Descendente e Regularização**:
+    [:simple-googlecolab: open in Colab](https://colab.research.google.com/drive/1swnb_wP1QlxFScuzFgfSZlCS9YsqfXe-){:target="_blank"}
+
 ---
 
 ## Quiz

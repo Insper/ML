@@ -73,6 +73,12 @@ Remedies: feature selection, [PCA/UMAP](../dimensionality-reduction/index.md) be
 
 The "find the nearest embeddings" operation is also the heart of modern **vector databases** powering retrieval-augmented LLM systems ([The Frontier](../frontier/index.md)) — 1950s ideas serving 2020s systems.
 
+## Class materials
+
+!!! example "Class notebook (in Portuguese)"
+    Hands-on notebook used in class — **Aula 14 — K-NN**:
+    [:simple-googlecolab: open in Colab](https://colab.research.google.com/drive/1Iw8CJxt2c-94hWyOCVsFOGOnL7_9mTOr){:target="_blank"}
+
 ---
 
 ## Quiz

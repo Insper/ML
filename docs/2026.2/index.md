@@ -1,13 +1,13 @@
 # 2026.2 — Overview
 
-Welcome to the 2026.2 offering of **Machine Learning**. The course is organized as a journey **from the historical basis of the field to the edge approaches** used in research and industry today.
+Welcome to the 2026.2 offering of **Machine Learning**.
 
 ## Meetings
 
 | :octicons-location-24: | :fontawesome-regular-calendar: | :fontawesome-regular-clock: |
 |-|:-:|:-:|
 | Class | Tue. | 12h00 :fontawesome-solid-arrow-right-long: 14h00 |
-| Class | Thu. | 09h45 :fontawesome-solid-arrow-right-long: 11h45 |
+| Class | Thu. | 12h00 :fontawesome-solid-arrow-right-long: 14h00 |
 | Office Hours | Mon. | 14h45 :fontawesome-solid-arrow-right-long: 16h15 |
 
 
@@ -84,6 +84,10 @@ Welcome to the 2026.2 offering of **Machine Learning**. The course is organized 
 | 25 | [AutoML](classes/automl/index.md) | Hyperparameter optimization, Optuna, successive halving |
 | 26 | [MLOps](classes/mlops/index.md) | Serving, monitoring, drift, reproducibility |
 | 27 | [The Frontier](classes/frontier/index.md) | Foundation models, transfer learning, LLMs, what's next |
+
+## Class materials
+
+Most lessons include a **hands-on Colab notebook** used in class (linked at the end of each lesson page, under *Class materials*). The complete collection — notebooks, slides, datasets, and papers — lives in the [course Drive folder](https://drive.google.com/drive/folders/1lyndgoY0AG64AYwreUjy-Xasxj3Z8Sow){:target="_blank"}.
 
 ## Assessment
 

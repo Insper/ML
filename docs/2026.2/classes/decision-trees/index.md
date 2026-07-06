@@ -78,6 +78,12 @@ tree.feature_importances_           # impurity-based importances (sum to 1)
 !!! tip "One tree, rarely; many trees, constantly"
     A single tree trades too much accuracy for its readability. Its true importance is as the **weak learner** inside random forests and gradient boosting — the next two lessons. Understand splits, impurity, and pruning here, and both ensembles become transparent.
 
+## Class materials
+
+!!! example "Class notebook (in Portuguese)"
+    Hands-on notebook used in class — **Aula 19 — Decision Tree**:
+    [:simple-googlecolab: open in Colab](https://colab.research.google.com/drive/11g3czKNFbXBQYTuF2k_ThkYteAuQLUEa){:target="_blank"}
+
 ---
 
 ## Quiz

@@ -102,8 +102,57 @@ The classic boxplot rule flags points outside \([Q_1 - 1.5\,\text{IQR},\; Q_3 + 
 - an `age = 190` is a data-entry error → fix or remove;
 - a `purchase = R$ 500,000` may be your most important customer → keep, and choose robust models/metrics.
 
+## Beyond Pearson: measuring any association
+
+Pearson's \(r\) only covers pairs of continuous variables. The full toolkit for bivariate analysis:
+
+| Pair of variables | Association measure | Visualization |
+|---|---|---|
+| continuous × continuous | Pearson / Spearman correlation | scatter plot |
+| categorical × categorical | [Cramér's V](https://en.wikipedia.org/wiki/Cram%C3%A9r%27s_V) (from the χ² statistic) | contingency table / heatmap |
+| continuous × categorical | [Kruskal–Wallis test](https://en.wikipedia.org/wiki/Kruskal%E2%80%93Wallis_test) | boxplots of the continuous variable per category |
+
+When reading feature–target associations, keep two class rules of thumb in mind:
+
+- features **strongly associated with each other** → likely redundancy (temperature in °C and °F; price in R$ and US$) — consider dropping one;
+- a feature **suspiciously strongly associated with the target** → it may be *the target in disguise* — a leaked column (see [Data Leakage](../validation/index.md#data-leakage)). If your model is suddenly perfect, distrust it first.
+
+## Don't snoop: split before you explore
+
+One subtlety the class dataset drills in: **perform the train/test split *before* the exploratory analysis**, and run EDA on the training set only. Exploring the full dataset means "peeking" at the test set — *data snooping* — and what you learn (which features look promising, where the outliers are, which transformations to apply) silently influences decisions that the test set was supposed to judge from the outside.
+
+!!! danger "The two principles"
+    - **The training set can be used freely.**
+    - **The test set is SACRED.** It exists for exactly one purpose: measuring the final model once. Don't look at it, don't get close to it, don't acknowledge its existence until the end.
+
+## Hands-on: California Housing
+
+The class notebook works through a full EDA on the **California Housing** dataset (Géron's *Hands-On ML*, chapter 2): 20,640 districts × 10 columns — 9 features (location, housing age, rooms, income, `ocean_proximity`...) and the regression target `median_house_value`.
+
+```python
+import pandas as pd
+
+df = pd.read_csv('https://raw.githubusercontent.com/hsandmann/biblio/refs/heads/main/ml/aula02/housing.csv')
+
+X = df.drop('median_house_value', axis=1).copy()   # features  (m × n)
+y = df['median_house_value'].copy()                # target    (m,)
+```
+
+Guided exercises from the notebook:
+
+1. How many examples and columns? What does each column mean — continuous or categorical?
+2. Split train/test (80/20) **first**; explain the role of `random_state`;
+3. Univariate analysis on the *training set*: descriptive statistics and plots per feature — hunt for anomalies (missing values in `total_bedrooms`, saturation at `median_house_value` = 500,001), skewed distributions, rare categories;
+4. Bivariate analysis: which feature pairs are strongly associated? Which features associate most with the target?
+
 !!! tip "EDA is iterative"
     You will return to EDA after modeling: prediction errors, surprising feature importances, and drift alerts all send you back to look at the data again.
+
+## Class materials
+
+!!! example "Class notebook (in Portuguese)"
+    Hands-on notebook used in class — **Aula 02 — Análise Exploratória de Dados**:
+    [:simple-googlecolab: open in Colab](https://colab.research.google.com/drive/1LeRg-XlFcVOBcp9UBtOI8Nn-b6QknSkC){:target="_blank"}
 
 ---
 

@@ -83,6 +83,12 @@ All handle missing values natively and need no feature scaling ([tree lineage](.
 
 On tabular data, tuned gradient boosting still routinely beats deep learning (Grinsztajn et al., 2022) — the reigning champion where features are structured. When you hear "we use ML for credit scoring / churn / pricing", the model is very often an XGBoost-family booster. For images, audio, and text, [neural networks](../neural-networks/index.md) take over — the story of Part VI.
 
+## Class materials
+
+!!! example "Class notebook (in Portuguese)"
+    Hands-on notebook used in class — **Aula 21 — Gradient Boosting**:
+    [:simple-googlecolab: open in Colab](https://colab.research.google.com/drive/1_9PwDnCZ_CzM8CyrgwgkPb_IHVgCaZT3){:target="_blank"}
+
 ---
 
 ## Quiz

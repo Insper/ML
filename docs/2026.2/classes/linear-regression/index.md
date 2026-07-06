@@ -90,6 +90,12 @@ R² can be **negative** on test data — the model is then *worse* than the cons
 !!! warning "Evaluate on held-out data"
     All metrics above are only meaningful on data the model did not see — the subject of [Validation & Data Leakage](../validation/index.md).
 
+## Class materials
+
+!!! example "Class notebook (in Portuguese)"
+    Hands-on notebook used in class — **Aula 09 — Regressão**:
+    [:simple-googlecolab: open in Colab](https://colab.research.google.com/drive/1YKeRwIls37GmghCGHwS0gI4LrmT-joWd){:target="_blank"}
+
 ---
 
 ## Quiz

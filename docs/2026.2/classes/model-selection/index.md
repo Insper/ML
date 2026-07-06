@@ -85,6 +85,12 @@ Design notes:
 
 When two configurations score within noise of each other (compare their CV standard deviations), **prefer the simpler one** — fewer features, stronger regularization, shallower trees. Simpler models are cheaper to serve, easier to [explain](../explainability/index.md), and more robust to [drift](../mlops/index.md).
 
+## Class materials
+
+!!! example "Class notebook (in Portuguese)"
+    Hands-on notebook used in class — **Aula 11 — Model Selection, Regression to the Mean e GridSearchCV**:
+    [:simple-googlecolab: open in Colab](https://colab.research.google.com/drive/1BZ8kIUgT_dVQ7IExjUUstyy59bUWYNB3){:target="_blank"}
+
 ---
 
 ## Quiz

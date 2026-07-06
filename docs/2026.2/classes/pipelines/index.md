@@ -125,6 +125,12 @@ Persisting the whole pipeline is the foundation of reliable [MLOps](../mlops/ind
 !!! tip "Design habit"
     Start every project by writing the pipeline skeleton — even before choosing the model. It forces the train/test discipline from the first line of code and makes every later experiment a one-line change.
 
+## Class materials
+
+!!! example "Class notebook (in Portuguese)"
+    Hands-on notebook used in class — **Aula 04 — Pipelines**:
+    [:simple-googlecolab: open in Colab](https://colab.research.google.com/drive/1U25v7jqB3NOIaDICjIp4nUt3eBgZo3d0){:target="_blank"}
+
 ---
 
 ## Quiz

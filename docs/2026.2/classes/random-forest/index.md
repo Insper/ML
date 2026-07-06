@@ -79,6 +79,12 @@ imp = permutation_importance(rf, X_val, y_val, n_repeats=10, random_state=0)
 !!! note "Bagging vs boosting"
     Bagging builds trees **independently, in parallel**, and averages to cut **variance**. Boosting — next lesson — builds them **sequentially**, each correcting its predecessors, attacking **bias**. Same building block, opposite philosophies.
 
+## Class materials
+
+!!! example "Class notebook (in Portuguese)"
+    Hands-on notebook used in class — **Aula 20 — Random Forest**:
+    [:simple-googlecolab: open in Colab](https://colab.research.google.com/drive/1MdeOP1LRcw94fONnlaYDpkYz-CAZ463-){:target="_blank"}
+
 ---
 
 ## Quiz

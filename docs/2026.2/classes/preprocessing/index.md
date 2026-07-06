@@ -121,6 +121,12 @@ flowchart TD
     J -->|high| L[target encoding / grouping]
 ```
 
+## Class materials
+
+!!! example "Class notebook (in Portuguese)"
+    Hands-on notebook used in class — **Aula 03 — Normalização**:
+    [:simple-googlecolab: open in Colab](https://colab.research.google.com/drive/1h1pv5pIiv2w4BZM0K8BGOA031yQeOLT0){:target="_blank"}
+
 ---
 
 ## Quiz

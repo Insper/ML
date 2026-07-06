@@ -109,6 +109,12 @@ On convex blobs both succeed. On the two moons, k-means fails *by construction* 
 !!! tip "Validate like a skeptic"
     With no labels, always inspect clusters: silhouette scores, 2D projections ([PCA/UMAP](../dimensionality-reduction/index.md)), and — most importantly — whether the clusters *mean* something in the domain. A clustering nobody can name is rarely useful.
 
+## Class materials
+
+!!! example "Class notebook (in Portuguese)"
+    Hands-on notebook used in class — **Aula 07 — Clustering**:
+    [:simple-googlecolab: open in Colab](https://colab.research.google.com/drive/1kB8dwyLmM8ON2YQ2QkG_UGKow8-Ju2cv){:target="_blank"}
+
 ---
 
 ## Quiz

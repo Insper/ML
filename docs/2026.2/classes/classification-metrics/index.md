@@ -89,6 +89,12 @@ Moving the threshold trades precision against recall — lower it to catch more 
 
 When the predicted probabilities themselves matter (risk pricing, triage ordering), check **calibration**: among cases predicted "70%", do about 70% turn out positive? (`sklearn.calibration.CalibrationDisplay`).
 
+## Class materials
+
+!!! example "Class notebook (in Portuguese)"
+    Hands-on notebook used in class — **Aula 13 — Classificação de Dados**:
+    [:simple-googlecolab: open in Colab](https://colab.research.google.com/drive/1Kw9tOXyDIrS3r9dsZr7K9drfT9zBdyGx){:target="_blank"}
+
 ---
 
 ## Quiz

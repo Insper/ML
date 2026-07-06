@@ -60,9 +60,28 @@ Three lessons from this history shape the design of this course:
 2. **Hype cycles are real.** The field went through two "AI winters" (roughly 1974–1980 and 1987–1993) when promises outran results. Honest evaluation — the subject of Part III — is the antidote.
 3. **Modern methods are compositions of classical ideas.** BERTopic (2022), which we will study in Part II, is literally a pipeline of embeddings + dimensionality reduction + clustering + TF-IDF — every ingredient is a classical technique. Gradient boosting is functional gradient descent on decision trees. Knowing the parts lets you understand — and debug — the whole.
 
+## A learning machine made of matchboxes
+
+Long before GPUs, Martin Gardner's 1962 *Scientific American* column described a machine that **learns to play a game using only matchboxes and colored beads** — no electronics at all. For the mini-game *Hexapawn* (three pawns per side on a 3×3 board), build one matchbox per possible board position, and fill it with beads for each legal move:
+
+1. to move, open the matchbox for the current position and draw a random bead — that's the move;
+2. if the machine eventually **loses** the game, remove the bead that led to the losing move (punishment);
+3. if it **wins**, the beads stay (or extra copies are added — reward).
+
+After a few dozen games the bad moves have literally been *removed from the boxes*: the machine plays perfectly. This is **reinforcement learning in its purest mechanical form** (Donald Michie built the same idea for tic-tac-toe in 1961 and called it MENACE), and it makes Mitchell's definition tangible: the task \(T\) is playing Hexapawn, the experience \(E\) is games played, the performance \(P\) is the win rate — and learning is nothing more than *adjusting parameters (beads) based on feedback*.
+
+!!! example "Read the original"
+    Gardner, M. (1962). *How to build a game-learning machine and then teach it to play and to win.* Scientific American — [PDF in the class folder](https://drive.google.com/file/d/1HDRFEUHFsCTogX_LRlvTZ2QExIEkSIVD/view){:target="_blank"}. We play this game in the first class.
+
 ## Where this course fits
 
 This course covers **classical machine learning** end to end and finishes at the frontier: neural networks, explainability, AutoML, MLOps, and foundation models. Deep learning gets one bridging lecture here; its full treatment lives in the companion course [Artificial Neural Networks and Deep Learning](https://insper.github.io/ann-dl/).
+
+## Class materials
+
+!!! example "Class slides (in Portuguese)"
+    - **Aula 01 — Apresentação**: [:simple-googleslides: open the slides](https://docs.google.com/presentation/d/1Rwn_AIJnbEz4Wy6mCiFWs9dVvPlvuN2pxZa3kAhQH-8/edit){:target="_blank"}
+    - Hexapawn worksheets: [training](https://drive.google.com/file/d/15-8gOXzlKVyyIR_ZcZkh372UegPcKcbq/view){:target="_blank"} / [test](https://drive.google.com/file/d/1LOY131bEJbEkcFVuJTgtv-7VDyRgVqst/view){:target="_blank"}
 
 ---
 

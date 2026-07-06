@@ -97,6 +97,12 @@ flowchart LR
     A[Right metrics +<br>stratified CV] --> B[class_weight<br>= balanced] --> C[Threshold tuning<br>on validation] --> D[SMOTE / resampling<br>if still needed] --> E[Collect more<br>minority data]
 ```
 
+## Class materials
+
+!!! example "Class notebook (in Portuguese)"
+    Hands-on notebook used in class — **Aula 15 — Curva ROC-AUC e Datasets Desbalanceados**:
+    [:simple-googlecolab: open in Colab](https://colab.research.google.com/drive/1Ok3LS8GtgvyGOlgfLKe4BdpYuGdiUH1f){:target="_blank"}
+
 ---
 
 ## Quiz

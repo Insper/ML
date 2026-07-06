@@ -53,9 +53,23 @@ scores = cross_val_score(pipe, X_train, y_train, cv=cv, scoring='f1')
 print(f"{scores.mean():.3f} ± {scores.std():.3f}")
 ```
 
-Every observation serves as validation exactly once; the spread of scores tells you how much to trust the mean. Variants: **stratified** k-fold (classification default), **group** k-fold (all rows of one patient/customer stay in the same fold), **TimeSeriesSplit** (train on past, validate on future — never shuffle time).
+Every observation serves as validation exactly once; the spread of scores tells you how much to trust the mean.
+
+### Choosing a CV scheme
+
+| Method | When to use | Advantages | Watch out for |
+|--------|-------------|------------|---------------|
+| **K-Fold** | general data (the default) | simple, efficient | does not preserve class ratios |
+| **Stratified K-Fold** | classification (especially imbalanced) | keeps class proportions in every fold | slightly slower |
+| **Leave-One-Out (LOO)** | very small datasets (< 100–200 samples) | uses almost all data for training | very slow (\(n\) folds), high variance |
+| **TimeSeriesSplit** | temporal data / time series | respects chronological order (no leakage) | less flexible |
+| **Group K-Fold** | grouped data (patients, users, ...) | prevents leakage between related rows | requires a group column |
 
 The test set stays outside the whole procedure: cross-validation *replaces the validation set*, not the test set.
+
+### Preprocessing must restart in every fold
+
+Scaling, encoding, imputation, and feature selection must be **re-fit from scratch inside each fold**. If you `StandardScaler().fit_transform()` or `SelectKBest().fit()` on the whole dataset *before* `cross_val_score`/`GridSearchCV`, the validation fold's statistics leak into training — an optimistically biased score. Passing a [Pipeline](../pipelines/index.md) makes this automatic: in every fold, all steps are fit only on that fold's training portion, then applied frozen to the validation portion. Each fold gets its own scaler, its own selected features, and its own model.
 
 ## Data leakage
 
@@ -86,21 +100,56 @@ Random shuffling of time-stamped data trains the model on the future to predict 
 
 ## A leak-free experiment, end to end
 
+The complete honest workflow, as practiced in class on the breast-cancer dataset — hold-out split, pipeline, stratified CV *inside* a grid search, one final fit, one final measurement:
+
 ```python
-from sklearn.model_selection import cross_val_score, train_test_split
+from sklearn.datasets import load_breast_cancer
+from sklearn.model_selection import train_test_split, StratifiedKFold, GridSearchCV
 from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import roc_auc_score
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2,
-                                                    stratify=y, random_state=42)
+# 1. Final hold-out split (very important!)
+X, y = load_breast_cancer(return_X_y=True)
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.15, random_state=42, stratify=y)
 
-pipe = Pipeline([...preprocessing..., ('model', ...)])       # all fitted steps inside
+# 2. Pipeline: every fitted step inside, so CV re-fits it per fold
+pipeline = Pipeline([
+    ('scaler', StandardScaler()),
+    ('clf', RandomForestClassifier(random_state=42)),
+])
 
-scores = cross_val_score(pipe, X_train, y_train, cv=5)       # model development
-# ... iterate on features/models/hyperparameters using CV scores only ...
+# 3. Model development: grid search with stratified CV on TRAIN only
+cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
+param_grid = {
+    'clf__n_estimators': [100, 200, 300],
+    'clf__max_depth': [5, 10, 20],
+}
+grid = GridSearchCV(pipeline, param_grid, cv=cv, scoring='roc_auc', n_jobs=-1)
+grid.fit(X_train, y_train)
 
-pipe.fit(X_train, y_train)                                   # final fit
-final_score = pipe.score(X_test, y_test)                     # test touched ONCE
+# 4. The production model: best config refit on ALL training data
+final_model = grid.best_estimator_
+final_model.fit(X_train, y_train)
+
+# 5. Honest evaluation — only now, only once
+proba = final_model.predict_proba(X_test)[:, 1]
+print("test ROC AUC:", roc_auc_score(y_test, proba))
 ```
+
+## Exercises
+
+1. On the **iris dataset**, compare K-Fold, Stratified K-Fold, and Leave-One-Out cross-validation: report mean ± std accuracy for each and explain the differences.
+2. Using the **BOVESPA index** (`Close` prices via `yfinance`, ticker `^BVSP`, 2 years): use `TimeSeriesSplit` for cross-validation and fit a [linear regression](../linear-regression/index.md) to forecast the index 20 days ahead. Why would shuffled K-Fold be dishonest here?
+3. Research `SelectKBest`: why must feature selection also live *inside* the pipeline?
+
+## Class materials
+
+!!! example "Class notebook (in Portuguese)"
+    Hands-on notebook used in class — **Aula 10 — Divisão de Dados, Data Leakage e Validação Cruzada**:
+    [:simple-googlecolab: open in Colab](https://colab.research.google.com/drive/16e0cG5qMYpCXvRLmePyApECK7Y19IEVC){:target="_blank"}
 
 ---
 

@@ -100,6 +100,12 @@ PCA — the best *linear* view — overlaps several digit classes: two direction
 | Reduce before density clustering (e.g. HDBSCAN, BERTopic) | UMAP |
 | Compress/denoise images or signals | PCA |
 
+## Class materials
+
+!!! example "Class notebook (in Portuguese)"
+    Hands-on notebook used in class — **Aula 06 — PCA, t-SNE e UMAP**:
+    [:simple-googlecolab: open in Colab](https://colab.research.google.com/drive/1fM5ZDnnuxCSIYXV8oTDbO3Dz-X-B1Qzo){:target="_blank"}
+
 ---
 
 ## Quiz

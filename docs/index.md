@@ -7,10 +7,13 @@ Welcome to the **Machine Learning** course at [Insper](https://www.insper.edu.br
 
 ## Semesters
 
+
 <div class="grid cards" markdown>
 
 -   __[![](./2026.2/2026.2.jpg){ .rounded-corners .width-full}](./2026.2/)__
 
     ---
+
+    [2026.2](./2026.2/)
 
 </div>

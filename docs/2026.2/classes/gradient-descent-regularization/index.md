@@ -111,6 +111,12 @@ ElasticNet(alpha=0.1, l1_ratio=0.5)
 !!! danger "Scale before regularizing — and don't penalize the intercept"
     The penalty \(\sum w_j^2\) compares coefficients across features, which is only fair if features share a scale: otherwise a feature measured in kilometers is penalized differently than the same one in meters. Standardize first (in a [Pipeline](../pipelines/index.md)). By convention the intercept \(w_0\) is excluded from the penalty — scikit-learn does this for you.
 
+## Class materials
+
+!!! example "Class notebook (in Portuguese)"
+    Hands-on notebook used in class — **Aula 12 — Regressão Linear**:
+    [:simple-googlecolab: open in Colab](https://colab.research.google.com/drive/1uUX77IjsxJmQTOH1It2YVtEPWoJS-SmY){:target="_blank"}
+
 ---
 
 ## Quiz
