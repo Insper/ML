@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://insper.github.io/ML/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/2026.2/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/2026.2/classes/automl/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/automl/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/automl/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/2026.2/classes/classification-metrics/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/classification-metrics/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/classification-metrics/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/2026.2/classes/clustering/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/clustering/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/clustering/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/2026.2/classes/decision-trees/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/decision-trees/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/decision-trees/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/2026.2/classes/dimensionality-reduction/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/dimensionality-reduction/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/dimensionality-reduction/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/2026.2/classes/eda/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/eda/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/eda/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/2026.2/classes/explainability/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/explainability/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/explainability/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/2026.2/classes/frontier/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/frontier/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/frontier/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/2026.2/classes/gradient-boosting/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/gradient-boosting/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/gradient-boosting/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/2026.2/classes/gradient-descent-regularization/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/gradient-descent-regularization/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/gradient-descent-regularization/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/2026.2/classes/introduction/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/introduction/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/introduction/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/2026.2/classes/knn/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/knn/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/knn/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/2026.2/classes/linear-regression/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/linear-regression/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/linear-regression/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/2026.2/classes/logistic-regression/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/logistic-regression/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/logistic-regression/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/2026.2/classes/ml-landscape/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/ml-landscape/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/ml-landscape/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/2026.2/classes/mlops/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/mlops/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/mlops/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/2026.2/classes/model-selection/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/model-selection/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/model-selection/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/2026.2/classes/naive-bayes/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/naive-bayes/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/naive-bayes/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/2026.2/classes/neural-networks/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/neural-networks/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/neural-networks/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/2026.2/classes/pipelines/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/pipelines/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/pipelines/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/2026.2/classes/preprocessing/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/preprocessing/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/preprocessing/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/2026.2/classes/random-forest/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/random-forest/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/random-forest/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/2026.2/classes/roc-imbalanced/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/roc-imbalanced/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/roc-imbalanced/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/2026.2/classes/svm/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/svm/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/svm/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/2026.2/classes/text-representation/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/text-representation/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/text-representation/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/2026.2/classes/topic-modeling-bertopic/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/topic-modeling-bertopic/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/topic-modeling-bertopic/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/2026.2/classes/validation/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/validation/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/validation/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/disclaimer/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/disclaimer/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/disclaimer/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/references/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/references/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/references/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/pt/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/pt/2026.2/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/pt/2026.2/classes/automl/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/automl/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/automl/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/pt/2026.2/classes/classification-metrics/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/classification-metrics/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/classification-metrics/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/pt/2026.2/classes/clustering/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/clustering/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/clustering/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/pt/2026.2/classes/decision-trees/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/decision-trees/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/decision-trees/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/pt/2026.2/classes/dimensionality-reduction/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/dimensionality-reduction/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/dimensionality-reduction/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/pt/2026.2/classes/eda/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/eda/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/eda/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/pt/2026.2/classes/explainability/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/explainability/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/explainability/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/pt/2026.2/classes/frontier/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/frontier/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/frontier/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/pt/2026.2/classes/gradient-boosting/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/gradient-boosting/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/gradient-boosting/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/pt/2026.2/classes/gradient-descent-regularization/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/gradient-descent-regularization/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/gradient-descent-regularization/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/pt/2026.2/classes/introduction/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/introduction/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/introduction/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/pt/2026.2/classes/knn/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/knn/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/knn/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/pt/2026.2/classes/linear-regression/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/linear-regression/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/linear-regression/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/pt/2026.2/classes/logistic-regression/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/logistic-regression/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/logistic-regression/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/pt/2026.2/classes/ml-landscape/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/ml-landscape/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/ml-landscape/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/pt/2026.2/classes/mlops/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/mlops/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/mlops/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/pt/2026.2/classes/model-selection/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/model-selection/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/model-selection/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/pt/2026.2/classes/naive-bayes/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/naive-bayes/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/naive-bayes/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/pt/2026.2/classes/neural-networks/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/neural-networks/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/neural-networks/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/pt/2026.2/classes/pipelines/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/pipelines/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/pipelines/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/pt/2026.2/classes/preprocessing/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/preprocessing/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/preprocessing/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/pt/2026.2/classes/random-forest/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/random-forest/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/random-forest/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/pt/2026.2/classes/roc-imbalanced/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/roc-imbalanced/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/roc-imbalanced/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/pt/2026.2/classes/svm/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/svm/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/svm/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/pt/2026.2/classes/text-representation/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/text-representation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/text-representation/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/pt/2026.2/classes/topic-modeling-bertopic/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/topic-modeling-bertopic/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/topic-modeling-bertopic/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/pt/2026.2/classes/validation/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/2026.2/classes/validation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/2026.2/classes/validation/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/pt/disclaimer/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/disclaimer/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/disclaimer/"/>
+    </url>
+    <url>
+        <loc>https://insper.github.io/ML/pt/references/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://insper.github.io/ML/pt/references/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://insper.github.io/ML/references/"/>
+    </url>
+</urlset>
