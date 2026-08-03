@@ -6,17 +6,35 @@ Welcome to the 2026.2 offering of **Machine Learning**.
 
 | :octicons-location-24: | :fontawesome-regular-calendar: | :fontawesome-regular-clock: |
 |-|:-:|:-:|
-| Class | Tue. | 12h00 :fontawesome-solid-arrow-right-long: 14h00 |
-| Class | Thu. | 12h00 :fontawesome-solid-arrow-right-long: 14h00 |
+| Class | Mon. | 09h45 :fontawesome-solid-arrow-right-long: 09h45 |
+| Class | Fri. | 09h45 :fontawesome-solid-arrow-right-long: 09h45 |
 | Office Hours | Mon. | 14h45 :fontawesome-solid-arrow-right-long: 16h15 |
 
 
 ## Instructors
 
-| [:material-web:](https://hsandmann.github.io/){:target="_blank"} [:simple-github:](https://github.com/hsandmann){:target="_blank"} [:material-linkedin:](https://www.linkedin.com/in/hsandmann/){:target="_blank"} Instructor | Humberto Sandmann |
+<div class="grid cards" markdown>
 
-<!-- | [:simple-github:](https://github.com/luabatepietro){:target="_blank"} [:material-linkedin:](https://www.linkedin.com/in/lucas-abatepietro-286a03270/){:target="_blank"} Student Assistant | Lucas Abatepietro | -->
+-   :material-account-tie:{ .lg .middle } **Instructor**
 
+    ---
+
+    **Humberto Sandmann**
+
+    [:material-web:](https://hsandmann.github.io/){:target="_blank"}
+    [:simple-github:](https://github.com/hsandmann){:target="_blank"}
+    [:material-linkedin:](https://www.linkedin.com/in/hsandmann/){:target="_blank"}
+
+<!-- -   :material-account-tie:{ .lg .middle } **Instructor Assistant**
+
+    ---
+
+    **Ana Beatriz da Cunha**
+
+    [:simple-github:](https://github.com/aninhaabc){:target="_blank"}
+    [:material-linkedin:](https://www.linkedin.com/in/ana-beatriz-da-cunha-755676279/){:target="_blank"} -->
+
+</div>
 
 ## Students
 
