@@ -69,6 +69,12 @@
     border-radius: .2rem;
 }
 
+/* each grade box takes half the row (wraps to stack on narrow screens) */
+.md-typeset .grade-box {
+    flex: 1 1 20rem;
+    min-width: 0;
+}
+
 .md-typeset .grade-box-title,
 .md-typeset .calendar-legend-title {
     margin: 0;
