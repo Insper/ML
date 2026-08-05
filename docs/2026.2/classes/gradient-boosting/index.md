@@ -157,7 +157,7 @@ buildQuiz('gradient-boosting', 'Gradient Boosting', [
       "deep neural networks",
       "tuned gradient boosting (XGBoost/LightGBM/CatBoost)",
       "k-nearest neighbors",
-      "naive Bayes"
+      "logistic regression"
     ],
     ans: 1,
     exp: "Benchmarks (e.g., Grinsztajn et al., 2022) repeatedly show boosted trees leading on tabular data — robust to feature scales, missing values, and irrelevant columns. Deep learning wins on perception (images, audio, text)."

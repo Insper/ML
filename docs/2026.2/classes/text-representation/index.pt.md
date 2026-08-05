@@ -100,7 +100,7 @@ As duas primeiras frases quase não compartilham vocabulário, mas recebem vetor
 | Polissemia | confundida | tratada (modelos contextuais) |
 | Interpretabilidade | alta — as dimensões são palavras | baixa — as dimensões são abstratas |
 | Custo computacional | trivial | precisa de um modelo pré-treinado |
-| Ótimo para | busca por palavra-chave, baselines lineares, [Naive Bayes](../naive-bayes/index.md) | busca semântica, agrupamento, [BERTopic](../topic-modeling-bertopic/index.md) |
+| Ótimo para | busca por palavra-chave, baselines lineares | busca semântica, agrupamento, [BERTopic](../topic-modeling-bertopic/index.md) |
 
 !!! tip "Para onde isso leva"
     Próxima aula: representar documentos densamente, reduzir com [UMAP](../dimensionality-reduction/index.md), agrupar com [HDBSCAN](../clustering/index.md) e descrever cada agrupamento com uma variante de TF-IDF. Representações esparsas *e* densas trabalhando juntas — esse pipeline é o **BERTopic**.

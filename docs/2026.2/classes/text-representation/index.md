@@ -100,7 +100,7 @@ The first two sentences share almost no vocabulary yet get highly similar vector
 | Polysemy | conflated | handled (contextual models) |
 | Interpretability | high — dimensions are words | low — dimensions are abstract |
 | Compute cost | trivial | needs a pretrained model |
-| Great for | keyword search, linear baselines, [Naive Bayes](../naive-bayes/index.md) | semantic search, clustering, [BERTopic](../topic-modeling-bertopic/index.md) |
+| Great for | keyword search, linear baselines | semantic search, clustering, [BERTopic](../topic-modeling-bertopic/index.md) |
 
 !!! tip "Where this leads"
     Next lesson: embed documents densely, reduce with [UMAP](../dimensionality-reduction/index.md), cluster with [HDBSCAN](../clustering/index.md), and describe each cluster with a TF-IDF variant. Sparse *and* dense representations, working together — that pipeline is **BERTopic**.

@@ -82,26 +82,25 @@ Bem-vindo(a) à oferta 2026.2 de **Machine Learning**.
 | 15 | [k-Vizinhos Mais Próximos](classes/knn/index.md) | Métricas de distância, escolha de k, maldição da dimensionalidade |
 | 16 | [ROC-AUC & Dados Desbalanceados](classes/roc-imbalanced/index.md) | Curvas ROC/PR, reamostragem, SMOTE, pesos de classe |
 | 17 | [Regressão Logística](classes/logistic-regression/index.md) | Sigmoide, entropia cruzada, gradiente descendente, regularização |
-| 18 | [Naive Bayes](classes/naive-bayes/index.md) | Teorema de Bayes, independência condicional, filtragem de spam |
-| 19 | [Máquinas de Vetores de Suporte](classes/svm/index.md) | Margens, margem suave, kernel trick, esboço de implementação |
+| 18 | [Máquinas de Vetores de Suporte](classes/svm/index.md) | Margens, margem suave, kernel trick, esboço de implementação |
 
 ### F — Árvores & Ensembles
 
 | # | Assunto | Tópicos |
 |---|---------|---------|
-| 20 | [Árvores de Decisão](classes/decision-trees/index.md) | Entropia, Gini, CART, poda |
-| 21 | [Random Forest](classes/random-forest/index.md) | Bootstrap, bagging, importância de atributos, erro out-of-bag |
-| 22 | [Gradient Boosting](classes/gradient-boosting/index.md) | Boosting, GBM, XGBoost, LightGBM |
+| 19 | [Árvores de Decisão](classes/decision-trees/index.md) | Entropia, Gini, CART, poda |
+| 20 | [Random Forest](classes/random-forest/index.md) | Bootstrap, bagging, importância de atributos, erro out-of-bag |
+| 21 | [Gradient Boosting](classes/gradient-boosting/index.md) | Boosting, GBM, XGBoost, LightGBM |
 
 ### G — Abordagens de Fronteira
 
 | # | Assunto | Tópicos |
 |---|---------|---------|
-| 23 | [Redes Neurais](classes/neural-networks/index.md) | Do perceptron ao MLP, retropropagação, ponte para deep learning |
-| 24 | [Explicabilidade](classes/explainability/index.md) | Importância por permutação, SHAP, LIME |
-| 25 | [AutoML](classes/automl/index.md) | Otimização de hiperparâmetros, Optuna, successive halving |
-| 26 | [MLOps](classes/mlops/index.md) | Serving, monitoramento, drift, reprodutibilidade |
-| 27 | [A Fronteira](classes/frontier/index.md) | Modelos de fundação, transfer learning, LLMs, próximos passos |
+| 22 | [Redes Neurais](classes/neural-networks/index.md) | Do perceptron ao MLP, retropropagação, ponte para deep learning |
+| 23 | [Explicabilidade](classes/explainability/index.md) | Importância por permutação, SHAP, LIME |
+| 24 | [AutoML](classes/automl/index.md) | Otimização de hiperparâmetros, Optuna, successive halving |
+| 25 | [MLOps](classes/mlops/index.md) | Serving, monitoramento, drift, reprodutibilidade |
+| 26 | [A Fronteira](classes/frontier/index.md) | Modelos de fundação, transfer learning, LLMs, próximos passos |
 
 ## Material de aula
 

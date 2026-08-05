@@ -9,7 +9,7 @@ Two complementary questions:
 
 ## Interpretable by design
 
-Before explaining a black box, ask if you need one. [Linear/logistic regression](../logistic-regression/index.md#odds-and-interpretability) (coefficients, odds ratios), small [decision trees](../decision-trees/index.md) (readable rules), Naive Bayes (per-feature evidence) are transparent natively. When their accuracy suffices — often, on tabular problems — the simplest explanation is the model itself. When the accuracy gap justifies a black box, use **post-hoc, model-agnostic** methods:
+Before explaining a black box, ask if you need one. [Linear/logistic regression](../logistic-regression/index.md#odds-and-interpretability) (coefficients, odds ratios) and small [decision trees](../decision-trees/index.md) (readable rules) are transparent natively. When their accuracy suffices — often, on tabular problems — the simplest explanation is the model itself. When the accuracy gap justifies a black box, use **post-hoc, model-agnostic** methods:
 
 ## Permutation importance (global)
 

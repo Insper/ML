@@ -25,14 +25,14 @@ Welcome to the 2026.2 offering of **Machine Learning**.
     [:simple-github:](https://github.com/hsandmann){:target="_blank"}
     [:material-linkedin:](https://www.linkedin.com/in/hsandmann/){:target="_blank"}
 
-<!-- -   :material-account-tie:{ .lg .middle } **Instructor Assistant**
+-   :material-account-tie:{ .lg .middle } **Assistant Instructor**
 
     ---
 
-    **Ana Beatriz da Cunha**
+    **Luciano Pinheiro**
 
-    [:simple-github:](https://github.com/aninhaabc){:target="_blank"}
-    [:material-linkedin:](https://www.linkedin.com/in/ana-beatriz-da-cunha-755676279/){:target="_blank"} -->
+    [:simple-github:](https://github.com/lucianopinheirob){:target="_blank"}
+    [:material-linkedin:](https://www.linkedin.com/in/lucianopinheirob/){:target="_blank"}
 
 </div>
 
@@ -82,26 +82,25 @@ Welcome to the 2026.2 offering of **Machine Learning**.
 | 15 | [k-Nearest Neighbors](classes/knn/index.md) | Distance metrics, choosing k, curse of dimensionality |
 | 16 | [ROC-AUC & Imbalanced Data](classes/roc-imbalanced/index.md) | ROC/PR curves, resampling, SMOTE, class weights |
 | 17 | [Logistic Regression](classes/logistic-regression/index.md) | Sigmoid, cross-entropy, gradient descent, regularization |
-| 18 | [Naive Bayes](classes/naive-bayes/index.md) | Bayes' theorem, conditional independence, spam filtering |
-| 19 | [Support Vector Machines](classes/svm/index.md) | Margins, soft margin, kernel trick, implementation sketch |
+| 18 | [Support Vector Machines](classes/svm/index.md) | Margins, soft margin, kernel trick, implementation sketch |
 
 ### F — Trees & Ensembles
 
 | # | Subject | Topics |
 |---|---------|--------|
-| 20 | [Decision Trees](classes/decision-trees/index.md) | Entropy, Gini, CART, pruning |
-| 21 | [Random Forest](classes/random-forest/index.md) | Bootstrap, bagging, feature importance, out-of-bag error |
-| 22 | [Gradient Boosting](classes/gradient-boosting/index.md) | Boosting, GBM, XGBoost, LightGBM |
+| 19 | [Decision Trees](classes/decision-trees/index.md) | Entropy, Gini, CART, pruning |
+| 20 | [Random Forest](classes/random-forest/index.md) | Bootstrap, bagging, feature importance, out-of-bag error |
+| 21 | [Gradient Boosting](classes/gradient-boosting/index.md) | Boosting, GBM, XGBoost, LightGBM |
 
 ### G — Edge Approaches
 
 | # | Subject | Topics |
 |---|---------|--------|
-| 23 | [Neural Networks](classes/neural-networks/index.md) | Perceptron to MLP, backpropagation, bridge to deep learning |
-| 24 | [Explainability](classes/explainability/index.md) | Permutation importance, SHAP, LIME |
-| 25 | [AutoML](classes/automl/index.md) | Hyperparameter optimization, Optuna, successive halving |
-| 26 | [MLOps](classes/mlops/index.md) | Serving, monitoring, drift, reproducibility |
-| 27 | [The Frontier](classes/frontier/index.md) | Foundation models, transfer learning, LLMs, what's next |
+| 22 | [Neural Networks](classes/neural-networks/index.md) | Perceptron to MLP, backpropagation, bridge to deep learning |
+| 23 | [Explainability](classes/explainability/index.md) | Permutation importance, SHAP, LIME |
+| 24 | [AutoML](classes/automl/index.md) | Hyperparameter optimization, Optuna, successive halving |
+| 25 | [MLOps](classes/mlops/index.md) | Serving, monitoring, drift, reproducibility |
+| 26 | [The Frontier](classes/frontier/index.md) | Foundation models, transfer learning, LLMs, what's next |
 
 ## Class materials
 

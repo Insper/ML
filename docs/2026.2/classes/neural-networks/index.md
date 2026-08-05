@@ -66,7 +66,7 @@ For **tabular data**, the honest current answer remains: [gradient boosting](../
 | tabular / structured | boosted trees ([Part V](../gradient-boosting/index.md)) |
 | images, audio, video | CNNs / vision transformers → ANN-DL |
 | text | transformers ([embeddings](../text-representation/index.md) you already used) |
-| tiny datasets | linear models, [Naive Bayes](../naive-bayes/index.md), k-NN |
+| tiny datasets | linear models, k-NN |
 
 ---
 

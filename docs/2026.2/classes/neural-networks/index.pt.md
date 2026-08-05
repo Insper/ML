@@ -66,7 +66,7 @@ Para **dados tabulares**, a resposta atual honesta permanece: o [gradient boosti
 | tabular / estruturado | árvores com boosting ([Parte V](../gradient-boosting/index.md)) |
 | imagens, áudio, vídeo | CNNs / vision transformers → ANN-DL |
 | texto | transformers (os [embeddings](../text-representation/index.md) que você já usou) |
-| conjuntos minúsculos | modelos lineares, [Naive Bayes](../naive-bayes/index.md), k-NN |
+| conjuntos minúsculos | modelos lineares, k-NN |
 
 ---
 

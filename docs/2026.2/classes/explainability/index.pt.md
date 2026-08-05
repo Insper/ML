@@ -9,7 +9,7 @@ Duas perguntas complementares:
 
 ## Interpretável por design
 
-Antes de explicar uma caixa-preta, pergunte se você precisa de uma. A [regressão linear/logística](../logistic-regression/index.md#chances-odds-e-interpretabilidade) (coeficientes, razões de chances), [árvores de decisão](../decision-trees/index.md) pequenas (regras legíveis) e o Naive Bayes (evidência por atributo) são transparentes nativamente. Quando sua acurácia basta — o que ocorre com frequência em problemas tabulares — a explicação mais simples é o próprio modelo. Quando a diferença de acurácia justifica uma caixa-preta, use métodos **post-hoc e agnósticos ao modelo**:
+Antes de explicar uma caixa-preta, pergunte se você precisa de uma. A [regressão linear/logística](../logistic-regression/index.md#chances-odds-e-interpretabilidade) (coeficientes, razões de chances) e as [árvores de decisão](../decision-trees/index.md) pequenas (regras legíveis) são transparentes nativamente. Quando sua acurácia basta — o que ocorre com frequência em problemas tabulares — a explicação mais simples é o próprio modelo. Quando a diferença de acurácia justifica uma caixa-preta, use métodos **post-hoc e agnósticos ao modelo**:
 
 ## Importância por permutação (global)
 

@@ -157,7 +157,7 @@ buildQuiz('gradient-boosting', 'Gradient Boosting', [
       "redes neurais profundas",
       "gradient boosting ajustado (XGBoost/LightGBM/CatBoost)",
       "k-vizinhos mais próximos",
-      "naive Bayes"
+      "regressão logística"
     ],
     ans: 1,
     exp: "Benchmarks (ex.: Grinsztajn et al., 2022) mostram repetidamente árvores com boosting liderando em dados tabulares — robustas a escalas de atributos, valores faltantes e colunas irrelevantes. O deep learning vence em percepção (imagens, áudio, texto)."
