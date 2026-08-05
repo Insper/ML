@@ -38,6 +38,66 @@ Bem-vindo(a) à oferta 2026.2 de **Machine Learning**.
 
 ## Alunos
 
+## Calendário
+
+<div class="calendar-wrap" markdown>
+
+<div class="table-fit" markdown>
+
+| | Dom | Seg | Ter | Qua | Qui | Sex | Sáb |
+|-|-|-|-|-|-|-|-|
+| Ago |    | 10 |    |    |    | 14 |    |
+|     |    | 17 |    |    |    | 21 |    |
+|     |    | 24 |    |    |    | 28 |    |
+|     |    | 31 |    |    |    |    |    |
+| Set |    |    |    |    |    | 04 |    |
+|     |    |    |    |    |    | <span class='calendar-eda'>11</span> |    |
+|     |    | 14 |    |    | <span class='calendar-mexam'>17</span> | <span class='calendar-mexam'>18</span> |    |
+|     |    | <span class='calendar-mexam'>21</span> | <span class='calendar-mexam'>22</span> | <span class='calendar-mexam'>23</span> |    |    |    |
+|     |    | 28 |    |    |    |    |    |
+| Out |    |    |    |    |    | 02 |    |
+|     |    | 05 |    |    |    | 09 |    |
+|     |    |    |    |    |    | 16 |    |
+|     |    | 19 |    |    |    | 23 |    |
+|     |    | <span class='calendar-classification'>2</span><span class='calendar-regression'>6</span> |    |    |    | 30 |    |
+| Nov |    |    |    |    | <span class='calendar-fexam'>05</span> | <span class='calendar-fexam'>06</span> |    |
+|     |    | <span class='calendar-fexam'>09</span> | <span class='calendar-fexam'>10</span> | <span class='calendar-fexam'>11</span> |    |    |    |
+|     |    | <span class='calendar-ssprint'>16</span> |    |    |    |    |    |
+|     |    | 23 |    |    |    | 27 |    |
+|     |    | 30 |    |    |    |    |    |
+| Dez |    |    |    |    |    | <span class='calendar-fsprint'>04</span> |    |
+|     |    |    |    |    | <span class='calendar-sexam'>10</span> | <span class='calendar-sexam'>11</span> |    |
+
+</div>
+
+<div class="calendar-legend" markdown>
+
+<div class="calendar-legend-box" markdown>
+
+<p class="calendar-legend-title">Individual</p>
+
+<span class='calendar-mexam'>Prova Intermediária</span>
+<span class='calendar-fexam'>Prova Final</span>
+<span class='calendar-sexam'>Prova Substitutiva</span>
+
+</div>
+
+<div class="calendar-legend-box" markdown>
+
+<p class="calendar-legend-title">Equipe</p>
+
+<span class='calendar-eda'>EDA</span>
+<span class='calendar-classification'>Classificação</span>
+<span class='calendar-regression'>Regressão</span>
+
+</div>
+
+<span class='calendar-ssprint'>Início da Sprint</span>
+<span class='calendar-fsprint'>Prova da Sprint</span>
+
+</div>
+
+</div>
 
 ## Ementa
 

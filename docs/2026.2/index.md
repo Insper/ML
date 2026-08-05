@@ -39,6 +39,67 @@ Welcome to the 2026.2 offering of **Machine Learning**.
 ## Students
 
 
+## Calendar
+
+<div class="calendar-wrap" markdown>
+
+<div class="table-fit" markdown>
+
+| | Sun | Mon | Tue | Wed | Thu | Fri | Sat |
+|-|-|-|-|-|-|-|-|
+| Aug |    | 10 |    |    |    | 14 |    |
+|     |    | 17 |    |    |    | 21 |    |
+|     |    | 24 |    |    |    | 28 |    |
+|     |    | 31 |    |    |    |    |    |
+| Sep |    |    |    |    |    | 04 |    |
+|     |    |    |    |    |    | <span class='calendar-eda'>11</span> |    |
+|     |    | 14 |    |    | <span class='calendar-mexam'>17</span> | <span class='calendar-mexam'>18</span> |    |
+|     |    | <span class='calendar-mexam'>21</span> | <span class='calendar-mexam'>22</span> | <span class='calendar-mexam'>23</span> |    |    |    |
+|     |    | 28 |    |    |    |    |    |
+| Oct |    |    |    |    |    | 02 |    |
+|     |    | 05 |    |    |    | 09 |    |
+|     |    |    |    |    |    | 16 |    |
+|     |    | 19 |    |    |    | 23 |    |
+|     |    | <span class='calendar-classification'>2</span><span class='calendar-regression'>6</span> |    |    |    | 30 |    |
+| Nov |    |    |    |    | <span class='calendar-fexam'>05</span> | <span class='calendar-fexam'>06</span> |    |
+|     |    | <span class='calendar-fexam'>09</span> | <span class='calendar-fexam'>10</span> | <span class='calendar-fexam'>11</span> |    |    |    |
+|     |    | <span class='calendar-ssprint'>16</span> |    |    |    |    |    |
+|     |    | 23 |    |    |    | 27 |    |
+|     |    | 30 |    |    |    |    |    |
+| Dec |    |    |    |    |    | <span class='calendar-fsprint'>04</span> |    |
+|     |    |    |    |    | <span class='calendar-sexam'>10</span> | <span class='calendar-sexam'>11</span> |    |
+
+</div>
+
+<div class="calendar-legend" markdown>
+
+<div class="calendar-legend-box" markdown>
+
+<p class="calendar-legend-title">Individual</p>
+
+<span class='calendar-mexam'>Midterm Exam</span>
+<span class='calendar-fexam'>Final Exam</span>
+<span class='calendar-sexam'>Substitutive Exam</span>
+
+</div>
+
+<div class="calendar-legend-box" markdown>
+
+<p class="calendar-legend-title">Team</p>
+
+<span class='calendar-eda'>EDA</span>
+<span class='calendar-classification'>Classification</span>
+<span class='calendar-regression'>Regression</span>
+
+</div>
+
+<span class='calendar-ssprint'>Sprint Start</span>
+<span class='calendar-fsprint'>Sprint Exam</span>
+
+</div>
+
+</div>
+
 ## Syllabus
 
 ### A — Foundations & History

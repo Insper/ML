@@ -13,3 +13,84 @@
 .md-typeset__table table:not([class]) {
     display: table
 }
+
+/* Tables wrapped in .table-fit shrink to their content instead of the page width */
+.md-typeset .table-fit .md-typeset__scrollwrap,
+.md-typeset .table-fit .md-typeset__table {
+    width: auto;
+}
+
+.md-typeset .table-fit table:not([class]) {
+    width: auto;
+    min-width: 0;
+}
+
+/* Material gives every header cell min-width: 5rem, which is what stretches the table */
+.md-typeset .table-fit table:not([class]) th,
+.md-typeset .table-fit table:not([class]) td {
+    min-width: 0;
+    padding: .5em .75em;
+}
+
+/* Calendar table and its legend side by side */
+.md-typeset .calendar-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: .8rem 1.6rem;
+    /* same size Material uses for table text */
+    font-size: .6rem;
+
+}
+
+.md-typeset .calendar-legend {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1em;
+}
+
+/* framed group inside the legend */
+.md-typeset .calendar-legend-box {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    padding: .5rem .6rem;
+    border: .05rem solid var(--md-typeset-table-color);
+    border-radius: .2rem;
+}
+
+.md-typeset .calendar-legend-title {
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    opacity: .65;
+    /* same size Material uses for table text */
+    font-size: .5rem;
+}
+
+.md-typeset .calendar-legend p {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .35rem;
+    margin: 0;
+}
+
+.calendar-mexam, .calendar-fexam, .calendar-sexam,
+.calendar-ssprint, .calendar-fsprint,
+.calendar-eda, .calendar-classification, .calendar-regression {
+    padding: 4px;
+    border-radius: 4px;
+    color: white;
+}
+
+.calendar-mexam { background-color: #EE0F0F; }
+.calendar-fexam { background-color: crimson; }
+.calendar-sexam { background-color: coral; }
+.calendar-ssprint { background-color: blue; }
+.calendar-fsprint { background-color: darkblue; }
+.calendar-eda { background-color: green; }
+.calendar-classification { background-color: darkseagreen; }
+.calendar-regression { background-color: yellowgreen; }
