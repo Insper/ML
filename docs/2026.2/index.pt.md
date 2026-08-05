@@ -76,9 +76,9 @@ Bem-vindo(a) à oferta 2026.2 de **Machine Learning**.
 
 <p class="calendar-legend-title">Individual</p>
 
-<span class='calendar-mexam'>Prova Intermediária</span>
-<span class='calendar-fexam'>Prova Final</span>
-<span class='calendar-sexam'>Prova Substitutiva</span>
+<span class='calendar-mexam'>Avaliação Intermediária</span>
+<span class='calendar-fexam'>Avaliação Final</span>
+<span class='calendar-sexam'>Avaliação Substitutiva</span>
 
 </div>
 
