@@ -50,7 +50,16 @@
     margin-top: 1em;
 }
 
+/* Grade: the individual and team boxes side by side */
+.md-typeset .grade-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: .8rem 1.6rem;
+}
+
 /* framed group inside the legend */
+.md-typeset .grade-box,
 .md-typeset .calendar-legend-box {
     display: flex;
     flex-direction: column;
@@ -60,6 +69,7 @@
     border-radius: .2rem;
 }
 
+.md-typeset .grade-box-title,
 .md-typeset .calendar-legend-title {
     margin: 0;
     font-weight: 700;
@@ -68,6 +78,30 @@
     opacity: .65;
     /* same size Material uses for table text */
     font-size: .5rem;
+}
+
+.md-typeset .grade-box-title {
+    font-size: .7rem;
+}
+
+/* the two grade tables size to their content, not to the box */
+.md-typeset .grade-box .md-typeset__scrollwrap,
+.md-typeset .grade-box .md-typeset__table {
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.md-typeset .grade-box table:not([class]) {
+    width: 100%;
+    min-width: 0;
+    border: none;
+}
+
+.md-typeset .grade-box table:not([class]) th,
+.md-typeset .grade-box table:not([class]) td {
+    min-width: 0;
+    padding: .35em .6em;
 }
 
 .md-typeset .calendar-legend p {
@@ -84,6 +118,56 @@
     padding: 4px;
     border-radius: 4px;
     color: white;
+}
+
+/* Syllabus: quieter table chrome, emphasis on the lesson titles */
+.md-typeset .syllabus h3 {
+    margin: 1.8em 0 .4em;
+    font-size: .75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .syllabus .md-typeset__scrollwrap {
+    margin-top: 0;
+}
+
+.md-typeset .syllabus table:not([class]) {
+    border: none;
+    border-radius: 0;
+}
+
+.md-typeset .syllabus table:not([class]) th {
+    padding: .3em .8em;
+    font-size: .55rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: var(--md-default-fg-color--light);
+    border-bottom: .05rem solid var(--md-typeset-table-color);
+}
+
+.md-typeset .syllabus table:not([class]) td {
+    padding: .5em .8em;
+}
+
+.md-typeset .syllabus table:not([class]) th:first-child,
+.md-typeset .syllabus table:not([class]) td:first-child {
+    width: 2rem;
+    min-width: 0;
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .syllabus table:not([class]) td:nth-child(2) {
+    font-weight: 600;
+}
+
+.md-typeset .syllabus table:not([class]) td:last-child {
+    color: var(--md-default-fg-color--light);
 }
 
 .calendar-mexam { background-color: #EE0F0F; }
