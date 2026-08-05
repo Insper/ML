@@ -7,6 +7,7 @@ This course was designed and is maintained by:
 | Name | |
 |-|-|
 | Humberto Sandmann | [:simple-github:](https://github.com/hsandmann){:target="_blank"} [:material-linkedin:](https://www.linkedin.com/in/hsandmann/){:target="_blank"} [:material-web:](https://hsandmann.github.io/){:target="_blank"} |
+| Luciano Pinheiro | [:simple-github:](https://github.com/lucianopinheirob){:target="_blank"} [:material-linkedin:](https://www.linkedin.com/in/lucianopinheirob/){:target="_blank"} |
 
 ---
 
