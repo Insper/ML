@@ -25,14 +25,14 @@ Bem-vindo(a) à oferta 2026.2 de **Machine Learning**.
     [:simple-github:](https://github.com/hsandmann){:target="_blank"}
     [:material-linkedin:](https://www.linkedin.com/in/hsandmann/){:target="_blank"}
 
-<!-- -   :material-account-tie:{ .lg .middle } **Professora Assistente**
+-   :material-account-tie:{ .lg .middle } **Professor Assistente**
 
     ---
 
-    **Ana Beatriz da Cunha**
+    **Luciano Pinheiro**
 
-    [:simple-github:](https://github.com/aninhaabc){:target="_blank"}
-    [:material-linkedin:](https://www.linkedin.com/in/ana-beatriz-da-cunha-755676279/){:target="_blank"} -->
+    [:simple-github:](https://github.com/lucianopinheirob){:target="_blank"}
+    [:material-linkedin:](https://www.linkedin.com/in/lucianopinheirob/){:target="_blank"}
 
 </div>
 

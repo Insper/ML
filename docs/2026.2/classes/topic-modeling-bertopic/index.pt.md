@@ -124,7 +124,7 @@ topic_model.visualize_heatmap()     # matriz de similaridade de tópicos
 
 Baixe o notebook e rode no Colab ou localmente (`pip install bertopic`):
 
-[:octicons-download-24: bertopic_example.ipynb](bertopic_example.ipynb)
+[:octicons-download-24: bertopic_example.ipynb](/ML/2026.2/classes/topic-modeling-bertopic/bertopic_example.ipynb)
 
 ---
 
