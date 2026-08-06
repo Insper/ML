@@ -50,19 +50,12 @@
     margin-top: 1em;
 }
 
-/* Grade: the individual and team boxes as two equal columns */
+/* Grade: the individual and team boxes side by side, equal width */
 .md-typeset .grade-wrap {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: start;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
     gap: .8rem 1.6rem;
-}
-
-/* stack the two boxes on narrow (phone) screens */
-@media screen and (max-width: 44.9375em) {
-    .md-typeset .grade-wrap {
-        grid-template-columns: 1fr;
-    }
 }
 
 /* framed group inside the legend */
@@ -76,8 +69,9 @@
     border-radius: .2rem;
 }
 
-/* let the grid tracks stay equal instead of expanding to table content */
+/* both boxes share the row at equal width */
 .md-typeset .grade-box {
+    flex: 1 1 0;
     min-width: 0;
 }
 
