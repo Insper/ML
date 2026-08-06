@@ -93,7 +93,7 @@
 /* the two grade tables size to their content, not to the box */
 .md-typeset .grade-box .md-typeset__scrollwrap,
 .md-typeset .grade-box .md-typeset__table {
-    width: auto;
+    width: 100%;
     margin: 0;
     padding: 0;
 }
