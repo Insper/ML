@@ -62,7 +62,7 @@ $$
 <p class="grade-box-title">Individual</p>
 
 | Component | When | Weight |
-|---|---|---|
+|---|---|--:|
 | <span class='calendar-mexam'>Midterm Exam</span> | Sep 17–23 | 40% |
 | <span class='calendar-fexam'>Final Exam</span> | Nov 5–11 | 60% |
 
@@ -73,7 +73,7 @@ $$
 <p class="grade-box-title">Team</p>
 
 | Component | When | Weight |
-|---|---|---|
+|---|---|--:|
 | <span class='calendar-eda'>EDA</span> | Sep 11 | 20% |
 | <span class='calendar-classification'>Classification</span> | Oct 26 | 30% |
 | <span class='calendar-regression'>Regression</span> | Oct 26 | 30% |

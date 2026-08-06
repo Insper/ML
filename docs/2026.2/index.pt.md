@@ -62,7 +62,7 @@ $$
 <p class="grade-box-title">Individual</p>
 
 | Componente | Quando | Peso |
-|---|---|---|
+|---|---|--:|
 | <span class='calendar-mexam'>Avaliação Intermediária</span> | 17–23 set | 40% |
 | <span class='calendar-fexam'>Avaliação Final</span> | 5–11 nov | 60% |
 
@@ -73,7 +73,7 @@ $$
 <p class="grade-box-title">Grupo</p>
 
 | Componente | Quando | Peso |
-|---|---|---|
+|---|---|--:|
 | <span class='calendar-eda'>EDA</span> | 11 set | 20% |
 | <span class='calendar-classification'>Classificação</span> | 26 out | 30% |
 | <span class='calendar-regression'>Regressão</span> | 26 out | 30% |
