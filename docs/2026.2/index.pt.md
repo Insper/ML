@@ -87,6 +87,10 @@ A <span class='calendar-sexam'>Avaliação Substitutiva</span> (10–11 dez) cob
 !!! tip "Quizzes"
     Toda aula termina com um quiz interativo. Os quizzes **não valem nota** — dão retorno imediato e são o ensaio mais próximo das questões das avaliações.
 
+!!! danger "ARGUIÇÃO"
+
+    **TODAS AS NOTAS** da disciplina estão sujeitas a arguição a fim de validação. Em caso de resultado negativo na arguição, a nota específica será **ZERADA**.
+
 ## Calendário
 
 <div class="calendar-wrap" markdown>
@@ -214,7 +218,7 @@ A <span class='calendar-sexam'>Avaliação Substitutiva</span> (10–11 dez) cob
 | 26 | [A Fronteira](classes/frontier/index.md) | Modelos de fundação, transfer learning, LLMs, próximos passos |
 
 </div>
-
+    
 ## Material de aula
 
 A maioria das aulas inclui um **notebook prático no Colab** usado em sala (linkado ao final de cada página de aula, em *Material de aula*). A coleção completa — notebooks, slides, conjuntos de dados e artigos — está na [pasta do Drive do curso](https://drive.google.com/drive/folders/1lyndgoY0AG64AYwreUjy-Xasxj3Z8Sow){:target="_blank"}.

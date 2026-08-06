@@ -87,6 +87,10 @@ The <span class='calendar-sexam'>Substitutive Exam</span> (Dec 10–11) covers t
 !!! tip "Quizzes"
     Every lesson ends with an interactive quiz. Quizzes are **not graded** — they give immediate feedback and are the closest rehearsal available for exam questions.
 
+!!! danger "ORAL EXAMINATION"
+
+    **ALL GRADES** in this course are subject to an oral examination for validation. If the outcome of the oral examination is negative, that specific grade will be **ZEROED**.
+
 ## Calendar
 
 <div class="calendar-wrap" markdown>
