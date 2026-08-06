@@ -46,7 +46,7 @@ $$
 \text{Final} = \left\{\begin{array}{lll}
     \text{IG} \geq 5 \bigwedge \text{TG} \geq 5 &
     \implies &
-    \displaystyle \frac{ \text{IG} + \text{TG} } {2}
+    \displaystyle \text{IG} \times 0.6 + \text{TG} \times 0.4
     \\
     \\
     \text{Otherwise} &

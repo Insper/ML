@@ -46,7 +46,7 @@ $$
 \text{Final} = \left\{\begin{array}{lll}
     \text{NI} \geq 5 \bigwedge \text{NG} \geq 5 &
     \implies &
-    \displaystyle \frac{ \text{NI} + \text{NG} } {2}
+    \displaystyle \text{NI} \times 0.6 + \text{NG} \times 0.4
     \\
     \\
     \text{Caso contrário} &
