@@ -1,0 +1,74 @@
+[
+    {
+        "title": "Least Squares",
+        "content": "**The historical basis of regression.**<br>Adrien-Marie Legendre publishes the method of least squares for fitting orbits of comets; Carl Friedrich Gauss claims prior use and later gives it a probabilistic justification. Two centuries later it is still the first tool to try on a regression problem.<br><br><small>Legendre, A.-M. (1805). Nouvelles méthodes pour la détermination des orbites des comètes.</small><br>[:material-wikipedia:](https://en.wikipedia.org/wiki/Least_squares){target='_blank'}",
+        "icon": ":octicons-graph-24:",
+        "sub_title": "1805"
+    },
+    {
+        "title": "Regression to the Mean",
+        "content": "**The word regression enters statistics.**<br>Francis Galton, studying heredity, observes that children of unusually tall parents tend to be closer to average height — regression towards mediocrity. The phenomenon still traps analysts today, as we will see in Model Selection.<br><br><small>Galton, F. (1886). Regression towards mediocrity in hereditary stature.</small><br>[:material-wikipedia:](https://en.wikipedia.org/wiki/Regression_toward_the_mean){target='_blank'}",
+        "icon": ":octicons-people-24:",
+        "sub_title": "1886"
+    },
+    {
+        "title": "Statistical Foundations",
+        "content": "**Modern statistical inference takes shape.**<br>Ronald Fisher develops maximum likelihood estimation, analysis of variance, and experimental design; in 1936 he introduces linear discriminant analysis with the iris dataset — still a canonical teaching dataset today.<br><br><small>Fisher, R. A. (1936). The use of multiple measurements in taxonomic problems.</small><br>[:material-wikipedia:](https://en.wikipedia.org/wiki/Iris_flower_data_set){target='_blank'}",
+        "icon": ":octicons-beaker-24:",
+        "sub_title": "1920s–1936"
+    },
+    {
+        "title": "Turing's Question",
+        "content": "**Can machines think?**<br>Alan Turing publishes Computing Machinery and Intelligence, proposing the imitation game (Turing Test) and, remarkably, suggesting that instead of programming an adult mind we should build a child machine that learns — anticipating machine learning itself.<br><br><small>Turing, A. M. (1950). Computing Machinery and Intelligence.</small><br>[:octicons-book-24:](https://doi.org/10.1093/mind/LIX.236.433){target='_blank'} [:material-wikipedia:](https://en.wikipedia.org/wiki/Computing_Machinery_and_Intelligence){target='_blank'}",
+        "icon": ":octicons-question-24:",
+        "sub_title": "1950"
+    },
+    {
+        "title": "Birth of AI & the Perceptron",
+        "content": "**The field gets a name and a first learning machine.**<br>The Dartmouth workshop (1956) coins artificial intelligence. Frank Rosenblatt (1958) builds the perceptron, a linear classifier that learns its weights from examples — the ancestor of today's neural networks. Arthur Samuel's checkers program (1959) popularizes the term machine learning.<br><br><small>Rosenblatt, F. (1958). The Perceptron: a probabilistic model for information storage and organization in the brain.</small><br>[:material-wikipedia:](https://en.wikipedia.org/wiki/Perceptron){target='_blank'}",
+        "icon": ":octicons-rocket-24:",
+        "sub_title": "1956–1959"
+    },
+    {
+        "title": "First AI Winter",
+        "content": "**Hype meets its limits.**<br>Minsky and Papert prove that a single perceptron cannot solve non-linearly-separable problems such as XOR (1969). The Lighthill Report (1973) concludes AI failed to deliver; funding collapses across the US and UK.<br><br><small>Minsky, M., Papert, S. (1969). Perceptrons.</small><br>[:material-wikipedia:](https://en.wikipedia.org/wiki/AI_winter){target='_blank'}",
+        "icon": ":octicons-moon-24:",
+        "sub_title": "1969–1980"
+    },
+    {
+        "title": "Backpropagation & Decision Trees",
+        "content": "**Learning revives on two fronts.**<br>Breiman, Friedman, Olshen and Stone publish CART (1984); Quinlan releases ID3 (1986) — decision trees become practical. Rumelhart, Hinton and Williams popularize backpropagation (1986), making multi-layer neural networks trainable.<br><br><small>Rumelhart, D., Hinton, G., Williams, R. (1986). Learning representations by back-propagating errors.</small><br>[:octicons-book-24:](https://doi.org/10.1038/323533a0){target='_blank'}",
+        "icon": ":octicons-git-branch-24:",
+        "sub_title": "1984–1986"
+    },
+    {
+        "title": "Statistical Learning Era",
+        "content": "**Rigorous theory, powerful algorithms.**<br>Cortes and Vapnik publish the support vector machine (1995), grounded in statistical learning theory. Freund and Schapire's AdaBoost (1997) shows weak learners can be combined into strong ones. ML becomes a discipline of margins, generalization bounds, and honest validation.<br><br><small>Cortes, C., Vapnik, V. (1995). Support-Vector Networks.</small><br>[:octicons-book-24:](https://doi.org/10.1007/BF00994018){target='_blank'}",
+        "icon": ":octicons-law-24:",
+        "sub_title": "1995–1997"
+    },
+    {
+        "title": "Ensembles & the Two Cultures",
+        "content": "**The workhorses of tabular ML arrive.**<br>Leo Breiman publishes Random Forests (2001) and, the same year, the essay Statistical Modeling: The Two Cultures, arguing for algorithmic prediction over pure data modeling. Friedman formalizes gradient boosting (2001).<br><br><small>Breiman, L. (2001). Random Forests. / Friedman, J. (2001). Greedy function approximation: a gradient boosting machine.</small><br>[:octicons-book-24:](https://doi.org/10.1023/A:1010933404324){target='_blank'}",
+        "icon": ":octicons-stack-24:",
+        "sub_title": "2001"
+    },
+    {
+        "title": "Deep Learning Breakthrough",
+        "content": "**Neural networks return, at scale.**<br>AlexNet wins the ImageNet challenge by a huge margin using a deep convolutional network trained on GPUs (2012). Word2vec (2013) shows words can be embedded in vector spaces that capture meaning. XGBoost (2016) dominates tabular competitions while deep learning dominates perception.<br><br><small>Krizhevsky, A., Sutskever, I., Hinton, G. (2012). ImageNet classification with deep convolutional neural networks.</small><br>[:material-wikipedia:](https://en.wikipedia.org/wiki/AlexNet){target='_blank'}",
+        "icon": ":octicons-cpu-24:",
+        "sub_title": "2012–2016"
+    },
+    {
+        "title": "Transformers",
+        "content": "**Attention is all you need.**<br>Vaswani et al. introduce the Transformer architecture (2017); BERT (2018) shows that pre-training on unlabeled text and fine-tuning transfers to nearly every language task. Sentence embeddings from these models will power BERTopic in Part II of this course.<br><br><small>Vaswani, A. et al. (2017). Attention Is All You Need.</small><br>[:octicons-book-24:](https://arxiv.org/abs/1706.03762){target='_blank'}",
+        "icon": ":octicons-zap-24:",
+        "sub_title": "2017–2018"
+    },
+    {
+        "title": "Foundation Models — the Current Edge",
+        "content": "**One model, many tasks.**<br>GPT-3 (2020) demonstrates few-shot learning from a single giant pre-trained model; ChatGPT (2022) brings LLMs to the public; multimodal foundation models follow. Classical ML does not disappear — it powers the pipelines, evaluation, and tabular problems around these systems, and remains the right tool when data is small and structured.<br><br><small>Brown, T. et al. (2020). Language Models are Few-Shot Learners.</small><br>[:octicons-book-24:](https://arxiv.org/abs/2005.14165){target='_blank'}",
+        "icon": ":octicons-sparkle-fill-24:",
+        "sub_title": "2020–today"
+    }
+]
