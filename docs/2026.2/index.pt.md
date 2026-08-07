@@ -74,9 +74,8 @@ $$
 
 | Componente | Quando | Peso |
 |---|---|--:|
-| <span class='calendar-eda'>EDA</span> | 11 set | 20% |
-| <span class='calendar-classification'>Classificação</span> | 26 out | 30% |
-| <span class='calendar-regression'>Regressão</span> | 26 out | 30% |
+| <span class='calendar-eda'>EDA</span> | 11 set | 40% |
+| <span class='calendar-classification'>Classificação</span> $\lor$ <span class='calendar-regression'>Regressão</span> | 26 out | 60% |
 
 </div>
 
@@ -145,8 +144,14 @@ A <span class='calendar-sexam'>Avaliação Substitutiva</span> (10–11 dez) cob
 
 </div>
 
-<span class='calendar-ssprint'>Início da Sprint</span>
-<span class='calendar-fsprint'>Prova da Sprint</span>
+<div class="calendar-legend-box" markdown>
+
+<p class="calendar-legend-title">Sprint</p>
+
+<span class='calendar-ssprint'>Início</span>
+<span class='calendar-fsprint'>Prova</span>
+
+</div>
 
 </div>
 

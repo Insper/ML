@@ -74,9 +74,8 @@ $$
 
 | Component | When | Weight |
 |---|---|--:|
-| <span class='calendar-eda'>EDA</span> | Sep 11 | 20% |
-| <span class='calendar-classification'>Classification</span> | Oct 26 | 30% |
-| <span class='calendar-regression'>Regression</span> | Oct 26 | 30% |
+| <span class='calendar-eda'>EDA</span> | Sep 11 | 40% |
+| <span class='calendar-classification'>Classification</span> $\lor$ <span class='calendar-regression'>Regression</span> | Oct 26 | 60% |
 
 </div>
 
@@ -145,8 +144,14 @@ The <span class='calendar-sexam'>Substitutive Exam</span> (Dec 10–11) covers t
 
 </div>
 
-<span class='calendar-ssprint'>Sprint Start</span>
-<span class='calendar-fsprint'>Sprint Exam</span>
+<div class="calendar-legend-box" markdown>
+
+<p class="calendar-legend-title">Sprint</p>
+
+<span class='calendar-ssprint'>Start</span>
+<span class='calendar-fsprint'>Exam</span>
+
+</div>
 
 </div>
 
