@@ -36,7 +36,7 @@ Bem-vindo(a) à oferta 2026.2 de **Machine Learning**.
 
 </div>
 
-## Alunos
+## Estudantes
 
 ## Nota
 
