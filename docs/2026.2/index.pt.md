@@ -74,8 +74,8 @@ $$
 
 | Componente | Quando | Peso |
 |---|---|--:|
-| <span class='calendar-eda'>EDA</span> | 11 set | 40% |
-| <span class='calendar-classification'>Classificação</span> $\lor$ <span class='calendar-regression'>Regressão</span> | 26 out | 60% |
+| <span class='calendar-eda'>EDA</span> | 11 set | 30% |
+| <span class='calendar-classification'>Classificação</span> $\lor$ <span class='calendar-regression'>Regressão</span> | 26 out | 70% |
 
 </div>
 

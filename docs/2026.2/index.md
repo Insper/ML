@@ -74,8 +74,8 @@ $$
 
 | Component | When | Weight |
 |---|---|--:|
-| <span class='calendar-eda'>EDA</span> | Sep 11 | 40% |
-| <span class='calendar-classification'>Classification</span> $\lor$ <span class='calendar-regression'>Regression</span> | Oct 26 | 60% |
+| <span class='calendar-eda'>EDA</span> | Sep 11 | 30% |
+| <span class='calendar-classification'>Classification</span> $\lor$ <span class='calendar-regression'>Regression</span> | Oct 26 | 70% |
 
 </div>
 
