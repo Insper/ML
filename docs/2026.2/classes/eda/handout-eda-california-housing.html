@@ -10130,7 +10130,12 @@ L 789.240425 328.643962
 
   <h4>Comparando as colunas entre si</h4>
   <p>Os painéis acima têm escalas independentes, então não dá para comparar dispersões entre variáveis. Padronizando tudo em escore z, elas passam a caber num único eixo:</p>
-<pre>z = (df[cols] - df[cols].mean()) / df[cols].std()
+<pre><b>def</b> n_outliers(s):
+    <u># quantos pontos a regra 1,5 x IQR marca nesta coluna</u>
+    q1, q3 = s.quantile([<em>.25</em>, <em>.75</em>]); iqr = q3 - q1
+    <b>return</b> <b>int</b>(((s &lt; q1 - <em>1.5</em>*iqr) | (s &gt; q3 + <em>1.5</em>*iqr)).sum())
+
+z = (df[cols] - df[cols].mean()) / df[cols].std()
 
 <u># ordena da coluna mais bem-comportada para a mais problemática</u>
 ordem = <b>sorted</b>(cols, key=<b>lambda</b> c: n_outliers(df[c].dropna()))
@@ -26522,6 +26527,12 @@ df[<i>"population_per_household"</i>] = df.population / df.households</pre>
   </div>
 <pre><b>from</b> sklearn.pipeline <b>import</b> Pipeline
 <b>from</b> sklearn.compose <b>import</b> ColumnTransformer
+<b>from</b> sklearn.impute <b>import</b> SimpleImputer
+<b>from</b> sklearn.preprocessing <b>import</b> StandardScaler, OneHotEncoder
+<b>from</b> sklearn.model_selection <b>import</b> train_test_split
+
+num_cols = [<i>"longitude"</i>, <i>"latitude"</i>, <i>"housing_median_age"</i>, <i>"total_rooms"</i>,
+            <i>"total_bedrooms"</i>, <i>"population"</i>, <i>"households"</i>, <i>"median_income"</i>]
 
 num_pipe = Pipeline([(<i>"imp"</i>, SimpleImputer(strategy=<i>"median"</i>)),
                      (<i>"esc"</i>, StandardScaler())])
@@ -26531,7 +26542,8 @@ prep = ColumnTransformer([(<i>"num"</i>, num_pipe, num_cols),
 
 treino, teste = train_test_split(df, test_size=<em>.2</em>, random_state=<em>42</em>,
                                  stratify=df.income_cat)
-prep.fit(treino)   <u># nunca fit no teste</u></pre>
+prep.fit(treino)                 <u># nunca fit no teste</u>
+prep.transform(teste).shape      <u># (4128, 13)</u></pre>
   <p>Por que estratificar por <code>income_cat</code>? Porque renda é o preditor dominante (r = 0,688): um desbalanceamento acidental de renda entre treino e teste é o que mais distorceria a avaliação.</p>
 
   <h3 id="s9-3"><span>9.3</span>Síntese: o data card</h3>
@@ -26651,7 +26663,9 @@ pares[pares &gt; <em>0.8</em>]</pre>
       <p class="ex__t"><b>6</b>Simulação da classe rara<span class="tag">bloco 4 · código</span></p>
       <p>Rode 1.000 splits 80/20 <em>sem</em> estratificação e conte em que fração o teste fica sem nenhum <code>ISLAND</code>. Compare com 0,8⁵.</p>
       <details><summary>Ver solução</summary><div>
-<pre>faltou = <b>sum</b>((train_test_split(df, test_size=<em>.2</em>, random_state=s)[<em>1</em>]
+<pre><b>from</b> sklearn.model_selection <b>import</b> train_test_split
+
+faltou = <b>sum</b>((train_test_split(df, test_size=<em>.2</em>, random_state=s)[<em>1</em>]
                 .ocean_proximity == <i>"ISLAND"</i>).sum() == <em>0</em>
              <b>for</b> s <b>in</b> <b>range</b>(<em>1000</em>)) / <em>1000</em>      <u># ≈ 0,33</u>
 <em>0.8</em>**<em>5</em>                                            <u># 0,328 — bate</u></pre>

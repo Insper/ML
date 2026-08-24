@@ -339,6 +339,7 @@ window.__ir = function(a){
     <a href="#s7" onclick="return __ir(this)"><b>7</b><span>Pipeline sem vazamento</span></a>
     <h4>Prática</h4>
     <a href="#ex" onclick="return __ir(this)"><b>8</b><span>Exercício em aula</span></a>
+    <a href="#pipe" onclick="return __ir(this)"><b>9</b><span>Pipeline completo</span></a>
     <h4>Referência</h4>
     <a href="#r1" onclick="return __ir(this)"><b>A</b><span>Tabela de técnicas</span></a>
   </nav>
@@ -4732,111 +4733,115 @@ L 845.700313 29.708775
     <p class="lede">Uma coluna, uma pergunta de cada vez. Este é o mapa que a aula inteira detalha — vale imprimir e deixar ao lado do teclado.</p>
   </div>
 
-  <figure class="fig fig--wide"><svg role="img" viewBox="0 0 1080 700" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto" aria-label="Diagrama de decisão de técnicas de transformação por tipo de variável">
+  <figure class="fig fig--wide"><svg role="img" viewBox="0 0 1080 706" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto" aria-label="Diagrama de decisão de técnicas de transformação por tipo de variável">
 <defs>
   <marker id="diagrama-dg-seta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-    <path d="M 0 0 L 10 5 L 0 10 z" fill="#8FA0A6"/>
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#7A8B91"/>
   </marker>
   <style>
-    .dg-t   { font-family:'Archivo',sans-serif; fill:#13242B; }
-    .dg-m   { font-family:'IBM Plex Mono',monospace; }
-    .raiz   { font-size:15px; font-weight:700; }
-    .ramo   { font-size:14px; font-weight:700; }
-    .cx     { font-size:12.5px; font-weight:600; }
-    .sub    { font-size:10.5px; fill:#4C5F66; font-weight:400; }
-    .cond   { font-size:10.5px; fill:#7C8C91; font-family:'IBM Plex Mono',monospace; letter-spacing:.02em; }
-    .lig    { stroke:#8FA0A6; stroke-width:1.4; fill:none; marker-end:url(#diagrama-dg-seta); }
-    .ligf   { stroke:#C3D0D4; stroke-width:1.2; fill:none; stroke-dasharray:3 3; }
+    .dg-t    { font-family:'Archivo',sans-serif; fill:#13242B; }
+    .dg-m    { font-family:'IBM Plex Mono',monospace; }
+    .dg-raiz { font-size:15.5px; font-weight:700; fill:#FFFFFF; }
+    .dg-rsub { font-size:11px;   font-weight:400; fill:#D4DEE2; }
+    .dg-ramo { font-size:14.5px; font-weight:700; fill:#FFFFFF; letter-spacing:.06em; }
+    .dg-cx   { font-size:12.5px; font-weight:700; fill:#13242B; }
+    .dg-sub  { font-size:10.6px; font-weight:400; fill:#46585F; }
+    .dg-cond { font-size:10.5px; font-weight:500; fill:#5C6D73; font-family:'IBM Plex Mono',monospace; letter-spacing:.02em; }
+    .dg-lig  { stroke:#7A8B91; stroke-width:1.4; fill:none; marker-end:url(#diagrama-dg-seta); }
+    .dg-ligf { stroke:#B4C3C8; stroke-width:1.2; fill:none; stroke-dasharray:3 3; }
+    .dg-num  { fill:#FFFFFF; stroke:#1F6B8E; stroke-width:1.3; }
+    .dg-cat  { fill:#FFFFFF; stroke:#7A2E86; stroke-width:1.3; }
+    .dg-opt  { fill:#F1F4F0; stroke:#AFBEC3; stroke-width:1.2; }
   </style>
 </defs>
 
 <!-- RAIZ -->
-<rect x="410" y="14" width="260" height="46" rx="3" fill="#13242B"/>
-<text class="dg-t raiz" x="540" y="35" text-anchor="middle" fill="#FFFFFF">Coluna do dataset</text>
-<text class="dg-t sub" x="540" y="51" text-anchor="middle" fill="#B9CBD3">qual é o tipo?</text>
+<rect x="410" y="14" width="260" height="48" rx="3" fill="#22333B"/>
+<text class="dg-t dg-raiz" x="540" y="36" text-anchor="middle">Coluna do dataset</text>
+<text class="dg-t dg-rsub" x="540" y="53" text-anchor="middle">qual é o tipo?</text>
 
-<path class="lig" d="M 480 60 L 480 82 L 268 82 L 268 100"/>
-<path class="lig" d="M 600 60 L 600 82 L 812 82 L 812 100"/>
+<path class="dg-lig" d="M 480 62 L 480 84 L 268 84 L 268 102"/>
+<path class="dg-lig" d="M 600 62 L 600 84 L 812 84 L 812 102"/>
 
 <!-- ===== NUMÉRICA ===== -->
-<rect x="128" y="100" width="280" height="40" rx="3" fill="#1F6B8E"/>
-<text class="dg-t ramo" x="268" y="126" text-anchor="middle" fill="#FFFFFF">NUMÉRICA</text>
+<rect x="128" y="102" width="280" height="40" rx="3" fill="#1F6B8E"/>
+<text class="dg-t dg-ramo" x="268" y="128" text-anchor="middle">NUMÉRICA</text>
 
-<path class="lig" d="M 268 140 L 268 160"/>
-<text class="dg-t cond" x="278" y="156">1º · tratar ausentes</text>
-<rect x="128" y="162" width="280" height="62" rx="3" fill="#FFFFFF" stroke="#1F6B8E" stroke-width="1.2"/>
-<text class="dg-t cx" x="142" y="181">Imputação</text>
-<text class="dg-t sub" x="142" y="196">mediana (assimétrica) · média (simétrica)</text>
-<text class="dg-t sub" x="142" y="210">por grupo · KNN · iterativa · + flag <tspan class="dg-m">_faltou</tspan></text>
+<path class="dg-lig" d="M 268 142 L 268 162"/>
+<text class="dg-t dg-cond" x="278" y="158">1º · tratar ausentes</text>
+<rect class="dg-num" x="128" y="164" width="280" height="62" rx="3"/>
+<text class="dg-t dg-cx"  x="142" y="183">Imputação</text>
+<text class="dg-t dg-sub" x="142" y="198">mediana (assimétrica) · média (simétrica)</text>
+<text class="dg-t dg-sub" x="142" y="212">por grupo · KNN · iterativa · + flag <tspan class="dg-m">_faltou</tspan></text>
 
-<path class="lig" d="M 268 224 L 268 246"/>
-<text class="dg-t cond" x="278" y="242">2º · corrigir a forma</text>
-<rect x="128" y="248" width="280" height="76" rx="3" fill="#FFFFFF" stroke="#1F6B8E" stroke-width="1.2"/>
-<text class="dg-t cx" x="142" y="267">Transformação de forma</text>
-<text class="dg-t sub" x="142" y="282"><tspan class="dg-m">log1p</tspan> · <tspan class="dg-m">sqrt</tspan> — assimetria à direita</text>
-<text class="dg-t sub" x="142" y="296"><tspan class="dg-m">Box-Cox</tspan> (x &gt; 0) · <tspan class="dg-m">Yeo-Johnson</tspan> (aceita 0 e negativo)</text>
-<text class="dg-t sub" x="142" y="310"><tspan class="dg-m">QuantileTransformer</tspan> — força normal ou uniforme</text>
+<path class="dg-lig" d="M 268 226 L 268 248"/>
+<text class="dg-t dg-cond" x="278" y="244">2º · corrigir a forma</text>
+<rect class="dg-num" x="128" y="250" width="280" height="76" rx="3"/>
+<text class="dg-t dg-cx"  x="142" y="269">Transformação de forma</text>
+<text class="dg-t dg-sub" x="142" y="284"><tspan class="dg-m">log1p</tspan> · <tspan class="dg-m">sqrt</tspan> — assimetria à direita</text>
+<text class="dg-t dg-sub" x="142" y="298"><tspan class="dg-m">Box-Cox</tspan> (x &gt; 0) · <tspan class="dg-m">Yeo-Johnson</tspan> (aceita 0 e negativo)</text>
+<text class="dg-t dg-sub" x="142" y="312"><tspan class="dg-m">QuantileTransformer</tspan> — força normal ou uniforme</text>
 
-<path class="lig" d="M 268 324 L 268 346"/>
-<text class="dg-t cond" x="278" y="342">3º · igualar a escala</text>
-<rect x="128" y="348" width="280" height="90" rx="3" fill="#FFFFFF" stroke="#1F6B8E" stroke-width="1.2"/>
-<text class="dg-t cx" x="142" y="367">Escalonamento</text>
-<text class="dg-t sub" x="142" y="382"><tspan class="dg-m">StandardScaler</tspan> — z-score, (x−μ)/σ · padrão</text>
-<text class="dg-t sub" x="142" y="396"><tspan class="dg-m">MinMaxScaler</tspan> — [0,1] · redes neurais, imagens</text>
-<text class="dg-t sub" x="142" y="410"><tspan class="dg-m">RobustScaler</tspan> — mediana/IQR · há outliers</text>
-<text class="dg-t sub" x="142" y="424"><tspan class="dg-m">MaxAbsScaler</tspan> · <tspan class="dg-m">Normalizer</tspan> — esparso, por linha</text>
+<path class="dg-lig" d="M 268 326 L 268 348"/>
+<text class="dg-t dg-cond" x="278" y="344">3º · igualar a escala</text>
+<rect class="dg-num" x="128" y="350" width="280" height="90" rx="3"/>
+<text class="dg-t dg-cx"  x="142" y="369">Escalonamento</text>
+<text class="dg-t dg-sub" x="142" y="384"><tspan class="dg-m">StandardScaler</tspan> — z-score, (x−μ)/σ · padrão</text>
+<text class="dg-t dg-sub" x="142" y="398"><tspan class="dg-m">MinMaxScaler</tspan> — [0,1] · redes neurais, imagens</text>
+<text class="dg-t dg-sub" x="142" y="412"><tspan class="dg-m">RobustScaler</tspan> — mediana/IQR · há outliers</text>
+<text class="dg-t dg-sub" x="142" y="426"><tspan class="dg-m">MaxAbsScaler</tspan> · <tspan class="dg-m">Normalizer</tspan> — esparso, por linha</text>
 
-<path class="lig" d="M 268 438 L 268 460"/>
-<text class="dg-t cond" x="278" y="456">opcional</text>
-<rect x="128" y="462" width="280" height="52" rx="3" fill="#F2F5F0" stroke="#C3D0D4" stroke-width="1.2"/>
-<text class="dg-t cx" x="142" y="481">Discretização</text>
-<text class="dg-t sub" x="142" y="496"><tspan class="dg-m">KBinsDiscretizer</tspan> · <tspan class="dg-m">pd.cut</tspan> · <tspan class="dg-m">pd.qcut</tspan></text>
-<text class="dg-t sub" x="142" y="508">vira categórica — segue pelo ramo da direita</text>
-<path class="ligf" d="M 408 488 L 560 488 L 560 250 L 672 250"/>
+<path class="dg-lig" d="M 268 440 L 268 462"/>
+<text class="dg-t dg-cond" x="278" y="458">opcional</text>
+<rect class="dg-opt" x="128" y="464" width="280" height="52" rx="3"/>
+<text class="dg-t dg-cx"  x="142" y="483">Discretização</text>
+<text class="dg-t dg-sub" x="142" y="498"><tspan class="dg-m">KBinsDiscretizer</tspan> · <tspan class="dg-m">pd.cut</tspan> · <tspan class="dg-m">pd.qcut</tspan></text>
+<text class="dg-t dg-sub" x="142" y="510">vira categórica — segue pelo ramo da direita</text>
+<path class="dg-ligf" d="M 408 490 L 560 490 L 560 252 L 672 252"/>
 
 <!-- ===== CATEGÓRICA ===== -->
-<rect x="672" y="100" width="280" height="40" rx="3" fill="#7A2E86"/>
-<text class="dg-t ramo" x="812" y="126" text-anchor="middle" fill="#FFFFFF">CATEGÓRICA</text>
+<rect x="672" y="102" width="280" height="40" rx="3" fill="#7A2E86"/>
+<text class="dg-t dg-ramo" x="812" y="128" text-anchor="middle">CATEGÓRICA</text>
 
-<path class="lig" d="M 812 140 L 812 160"/>
-<text class="dg-t cond" x="822" y="156">1º · tratar ausentes</text>
-<rect x="672" y="162" width="280" height="62" rx="3" fill="#FFFFFF" stroke="#7A2E86" stroke-width="1.2"/>
-<text class="dg-t cx" x="686" y="181">Imputação</text>
-<text class="dg-t sub" x="686" y="196">moda · categoria própria <tspan class="dg-m">"Desconhecido"</tspan></text>
-<text class="dg-t sub" x="686" y="210">descartar coluna se a falta for a regra, não a exceção</text>
+<path class="dg-lig" d="M 812 142 L 812 162"/>
+<text class="dg-t dg-cond" x="822" y="158">1º · tratar ausentes</text>
+<rect class="dg-cat" x="672" y="164" width="280" height="62" rx="3"/>
+<text class="dg-t dg-cx"  x="686" y="183">Imputação</text>
+<text class="dg-t dg-sub" x="686" y="198">moda · categoria própria <tspan class="dg-m">"Desconhecido"</tspan></text>
+<text class="dg-t dg-sub" x="686" y="212">descartar coluna se a falta for a regra, não a exceção</text>
 
-<path class="lig" d="M 812 224 L 812 246"/>
-<text class="dg-t cond" x="822" y="242">2º · a ordem importa?</text>
+<path class="dg-lig" d="M 812 226 L 812 248"/>
+<text class="dg-t dg-cond" x="822" y="244">2º · a ordem importa?</text>
 
-<rect x="672" y="248" width="280" height="76" rx="3" fill="#FFFFFF" stroke="#7A2E86" stroke-width="1.2"/>
-<text class="dg-t cx" x="686" y="267">ORDINAL — existe ordem real</text>
-<text class="dg-t sub" x="686" y="282"><tspan class="dg-m">OrdinalEncoder(categories=[...])</tspan></text>
-<text class="dg-t sub" x="686" y="296">ordem definida por você, nunca alfabética</text>
-<text class="dg-t sub" x="686" y="310">ex.: <tspan class="dg-m">Pclass</tspan> 1ª &gt; 2ª &gt; 3ª · escolaridade · faixas</text>
+<rect class="dg-cat" x="672" y="250" width="280" height="76" rx="3"/>
+<text class="dg-t dg-cx"  x="686" y="269">ORDINAL — existe ordem real</text>
+<text class="dg-t dg-sub" x="686" y="284"><tspan class="dg-m">OrdinalEncoder(categories=[...])</tspan></text>
+<text class="dg-t dg-sub" x="686" y="298">ordem definida por você, nunca alfabética</text>
+<text class="dg-t dg-sub" x="686" y="312">ex.: <tspan class="dg-m">Pclass</tspan> 1ª &gt; 2ª &gt; 3ª · escolaridade · faixas</text>
 
-<rect x="672" y="336" width="280" height="118" rx="3" fill="#FFFFFF" stroke="#7A2E86" stroke-width="1.2"/>
-<text class="dg-t cx" x="686" y="355">NOMINAL — sem ordem</text>
-<text class="dg-t sub" x="686" y="371">poucas categorias (≲ 10)</text>
-<text class="dg-t sub" x="686" y="385">→ <tspan class="dg-m">OneHotEncoder</tspan> · <tspan class="dg-m">drop="first"</tspan> se linear</text>
-<text class="dg-t sub" x="686" y="403">muitas categorias (≳ 50)</text>
-<text class="dg-t sub" x="686" y="417">→ agrupar raras em <tspan class="dg-m">"Outro"</tspan> · <tspan class="dg-m">frequency</tspan></text>
-<text class="dg-t sub" x="686" y="431">→ <tspan class="dg-m">target encoding</tspan> (com CV) · <tspan class="dg-m">hashing</tspan></text>
-<text class="dg-t sub" x="686" y="445">→ extrair estrutura: <tspan class="dg-m">Cabin</tspan> → deck · <tspan class="dg-m">Name</tspan> → título</text>
-<path class="lig" d="M 812 324 L 812 336"/>
+<path class="dg-lig" d="M 812 326 L 812 338"/>
+<rect class="dg-cat" x="672" y="338" width="280" height="118" rx="3"/>
+<text class="dg-t dg-cx"  x="686" y="357">NOMINAL — sem ordem</text>
+<text class="dg-t dg-sub" x="686" y="373">poucas categorias (≲ 10)</text>
+<text class="dg-t dg-sub" x="686" y="387">→ <tspan class="dg-m">OneHotEncoder</tspan> · <tspan class="dg-m">drop="first"</tspan> se linear</text>
+<text class="dg-t dg-sub" x="686" y="405">muitas categorias (≳ 50)</text>
+<text class="dg-t dg-sub" x="686" y="419">→ agrupar raras em <tspan class="dg-m">"Outro"</tspan> · <tspan class="dg-m">frequency</tspan></text>
+<text class="dg-t dg-sub" x="686" y="433">→ <tspan class="dg-m">target encoding</tspan> (com CV) · <tspan class="dg-m">hashing</tspan></text>
+<text class="dg-t dg-sub" x="686" y="447">→ extrair estrutura: <tspan class="dg-m">Cabin</tspan> → deck · <tspan class="dg-m">Name</tspan> → título</text>
 
-<rect x="672" y="466" width="280" height="48" rx="3" fill="#F2F5F0" stroke="#C3D0D4" stroke-width="1.2"/>
-<text class="dg-t cx" x="686" y="485">BINÁRIA — duas categorias</text>
-<text class="dg-t sub" x="686" y="501">um único 0/1 basta · <tspan class="dg-m">Sex</tspan> → <tspan class="dg-m">is_female</tspan></text>
-<path class="lig" d="M 812 454 L 812 466"/>
+<path class="dg-lig" d="M 812 456 L 812 468"/>
+<rect class="dg-opt" x="672" y="468" width="280" height="48" rx="3"/>
+<text class="dg-t dg-cx"  x="686" y="487">BINÁRIA — duas categorias</text>
+<text class="dg-t dg-sub" x="686" y="503">um único 0/1 basta · <tspan class="dg-m">Sex</tspan> → <tspan class="dg-m">is_female</tspan></text>
 
 <!-- ===== REGRAS TRANSVERSAIS ===== -->
-<rect x="128" y="548" width="824" height="132" rx="3" fill="#F2F5F0" stroke="#9AA8AC" stroke-width="1.2"/>
-<text class="dg-t cx" x="148" y="572" font-size="13.5">Vale para os dois ramos</text>
-<text class="dg-t sub" x="148" y="594" font-size="11.5">1 · <tspan font-weight="600">Separe treino e teste antes de qualquer coisa.</tspan> Todo parâmetro — mediana, μ, σ, mín, máx, categorias vistas — se aprende só no treino.</text>
-<text class="dg-t sub" x="148" y="614" font-size="11.5">2 · <tspan font-weight="600">A ordem é ausentes → forma → escala.</tspan> Escalar antes de imputar contamina μ e σ; transformar depois de escalar desfaz a escala.</text>
-<text class="dg-t sub" x="148" y="634" font-size="11.5">3 · <tspan font-weight="600">Árvores dispensam quase tudo.</tspan> São invariantes a transformações monotônicas e a escala; só precisam de ausentes e codificação.</text>
-<text class="dg-t sub" x="148" y="654" font-size="11.5">4 · <tspan font-weight="600">Modelos de distância e com regularização exigem escala.</tspan> k-NN, k-means, SVM, PCA, redes neurais, Ridge e Lasso.</text>
-<text class="dg-t sub" x="148" y="672" font-size="11.5">5 · <tspan font-weight="600">Use <tspan class="dg-m">Pipeline</tspan> + <tspan class="dg-m">ColumnTransformer</tspan>.</tspan> É o que torna as regras 1 e 2 automáticas em vez de disciplina pessoal.</text>
+<rect x="128" y="550" width="824" height="136" rx="3" fill="#F1F4F0" stroke="#8FA0A6" stroke-width="1.2"/>
+<text class="dg-t dg-cx" x="148" y="575" font-size="13.5">Vale para os dois ramos</text>
+<text class="dg-t dg-sub" x="148" y="597" font-size="11.5">1 · <tspan font-weight="700">Separe treino e teste antes de qualquer coisa.</tspan> Todo parâmetro — mediana, μ, σ, mín, máx, categorias vistas — se aprende só no treino.</text>
+<text class="dg-t dg-sub" x="148" y="617" font-size="11.5">2 · <tspan font-weight="700">A ordem é ausentes → forma → escala.</tspan> Escalar antes de imputar contamina μ e σ; transformar depois de escalar desfaz a escala.</text>
+<text class="dg-t dg-sub" x="148" y="637" font-size="11.5">3 · <tspan font-weight="700">Árvores dispensam quase tudo.</tspan> São invariantes a transformações monotônicas e a escala; só precisam de ausentes e codificação.</text>
+<text class="dg-t dg-sub" x="148" y="657" font-size="11.5">4 · <tspan font-weight="700">Modelos de distância e com regularização exigem escala.</tspan> k-NN, k-means, SVM, PCA, redes neurais, Ridge e Lasso.</text>
+<text class="dg-t dg-sub" x="148" y="677" font-size="11.5">5 · <tspan font-weight="700">Use <tspan class="dg-m">Pipeline</tspan> + <tspan class="dg-m">ColumnTransformer</tspan>.</tspan> É o que torna as regras 1 e 2 automáticas em vez de disciplina pessoal.</text>
 </svg><figcaption><b>Diagrama de decisão.</b> Percorra uma coluna por vez, de cima para baixo. O ramo esquerdo trata numéricas na ordem obrigatória — ausentes, forma, escala; o direito trata categóricas, ramificando conforme exista ou não ordem real e conforme a cardinalidade. O laço tracejado marca o único cruzamento entre os dois: uma numérica discretizada vira categórica e volta ao ramo da direita. A faixa inferior reúne as cinco regras que valem para qualquer coluna.</figcaption></figure>
 
   <div class="box box--obs">
@@ -9520,6 +9525,60 @@ df[<i>"is_female"</i>] = (df.Sex == <i>"female"</i>).astype(<b>int</b>)</pre>
     <p>Uma regressão logística com <code>Embarked</code> codificado como 0, 1, 2 estima <em>um</em> coeficiente e assume que o efeito de ir de <code>C</code> para <code>Q</code> é igual ao de ir de <code>Q</code> para <code>S</code> — uma afirmação sobre o mundo que ninguém fez. Uma árvore, ao contrário, pode cortar em "&lt; 0,5" e depois em "&lt; 1,5", isolando cada categoria em folhas separadas. Ela reconstrói o one-hot por conta própria, ao custo de alguns níveis de profundidade.</p>
     <p>Consequência prática: com árvores, o label encoding é aceitável e <strong>mais eficiente</strong>, porque evita a explosão de colunas esparsas. Com modelos lineares, é um erro conceitual.</p>
   </div>
+  <h3 id="s5-4"><span>5.4</span>Antes de seguir: <code>fit</code>, <code>transform</code> e <code>Pipeline</code></h3>
+  <p>Os próximos blocos usam três classes do scikit-learn que ainda não foram apresentadas. Elas seguem uma convenção única, e entendê-la agora dispensa decorar cada uma depois.</p>
+
+  <h4>Todo transformador tem dois métodos</h4>
+  <p>Tudo que vimos até aqui — imputar, escalar, codificar — precisa <strong>aprender alguma coisa dos dados</strong> antes de conseguir aplicá-la. O <code>StandardScaler</code> precisa da média e do desvio; o <code>SimpleImputer</code>, da mediana; o <code>OneHotEncoder</code>, da lista de categorias existentes. O scikit-learn separa esses dois momentos:</p>
+  <div class="tw">
+  <table class="txt">
+    <thead><tr><th style="width:170px">Método</th><th>O que faz</th></tr></thead>
+    <tbody>
+      <tr><td><code>.fit(X)</code></td><td><strong>Aprende</strong> os parâmetros e os guarda dentro do objeto. Não devolve dados transformados — devolve o próprio objeto, agora "treinado".</td></tr>
+      <tr><td><code>.transform(X)</code></td><td><strong>Aplica</strong> os parâmetros já aprendidos e devolve a matriz transformada. Exige um <code>fit</code> anterior.</td></tr>
+      <tr><td><code>.fit_transform(X)</code></td><td>Atalho para os dois em sequência. Conveniente — e é exatamente por ser conveniente que ele é a origem da maioria dos vazamentos.</td></tr>
+    </tbody>
+  </table>
+  </div>
+<pre><b>from</b> sklearn.preprocessing <b>import</b> StandardScaler
+
+esc = StandardScaler()
+esc.fit(df[[<i>"Age"</i>]].fillna(<em>28</em>))    <u># aprende e guarda</u>
+esc.mean_, esc.scale_                <u># [29.36] [13.01]  ← os parâmetros aprendidos</u>
+
+esc.transform(df[[<i>"Age"</i>]].fillna(<em>28</em>))   <u># aplica os MESMOS 29,36 e 13,01</u></pre>
+  <p>É essa separação que torna o vazamento evitável: <code>fit</code> vê o treino, <code>transform</code> aplica nos dois conjuntos. Um objeto que já sofreu <code>fit</code> carrega os parâmetros consigo, e você pode inspecioná-los — <code>esc.mean_</code>, <code>imp.statistics_</code>, <code>oh.categories_</code>. O sublinhado final é a convenção do scikit-learn para "atributo aprendido dos dados".</p>
+
+  <h4><code>Pipeline</code> — encadear transformadores</h4>
+  <p>Um <code>Pipeline</code> é uma <strong>lista ordenada de etapas</strong> que se comporta como um transformador único. Chamar <code>fit</code> nele chama <code>fit_transform</code> em cada etapa, passando o resultado adiante; chamar <code>transform</code> percorre a mesma sequência usando os parâmetros já aprendidos.</p>
+<pre><b>from</b> sklearn.pipeline <b>import</b> Pipeline
+<b>from</b> sklearn.impute <b>import</b> SimpleImputer
+
+<u># cada etapa é uma tupla (nome, objeto). O nome serve para inspecionar depois.</u>
+pipe = Pipeline([
+    (<i>"imp"</i>, SimpleImputer(strategy=<i>"median"</i>)),
+    (<i>"esc"</i>, StandardScaler()),
+])
+
+pipe.fit_transform(df[[<i>"Age"</i>]])    <u># imputa e depois escala, nesta ordem</u>
+pipe.named_steps[<i>"imp"</i>].statistics_  <u># [28.0] ← a mediana que a 1ª etapa aprendeu</u></pre>
+  <p>Duas vantagens sobre chamar as etapas na mão: a <strong>ordem fica registrada no código</strong>, em vez de depender da memória de quem escreveu; e o conjunto inteiro passa a ter um só <code>fit</code>, o que torna impossível ajustar uma etapa no lugar certo e outra no errado.</p>
+
+  <h4><code>ColumnTransformer</code> — aplicar pipelines diferentes a colunas diferentes</h4>
+  <p>O <code>Pipeline</code> resolve a sequência, mas aplica tudo a todas as colunas. E o Titanic exige tratamentos distintos: <code>Age</code> precisa de mediana e escala, <code>Sex</code> precisa de moda e one-hot, <code>Age_faltou</code> não precisa de nada. O <code>ColumnTransformer</code> é quem faz esse roteamento — uma lista de <code>(nome, transformador, colunas)</code> — e depois <strong>concatena os resultados lado a lado</strong> numa única matriz.</p>
+<pre><b>from</b> sklearn.compose <b>import</b> ColumnTransformer
+<b>from</b> sklearn.preprocessing <b>import</b> OneHotEncoder
+
+prep = ColumnTransformer([
+    (<i>"num"</i>, pipe,                                  [<i>"Age"</i>, <i>"SibSp"</i>]),
+    (<i>"cat"</i>, OneHotEncoder(handle_unknown=<i>"ignore"</i>), [<i>"Sex"</i>]),
+])
+prep.fit_transform(df).shape        <u># (891, 4)  ← 2 numéricas + 2 do one-hot</u>
+prep.get_feature_names_out()        <u># ['num__Age' 'num__SibSp' 'cat__Sex_female' 'cat__Sex_male']</u></pre>
+  <div class="box box--note">
+    <h5>Os prefixos nos nomes</h5>
+    <p>Repare no <code>num__</code> e no <code>cat__</code>: o <code>ColumnTransformer</code> prefixa cada coluna de saída com o nome do ramo que a produziu. Isso é o que permite, mais adiante, saber a que corresponde a coluna 17 de uma matriz de 29 — sem isso, o resultado é um bloco de números anônimos.</p>
+  </div>
   <a class="top" href="#" onclick="return __ir(this)">↑ topo</a>
 </section>
 
@@ -9573,7 +9632,7 @@ df[<i>"is_female"</i>] = (df.Sex == <i>"female"</i>).astype(<b>int</b>)</pre>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-08-24T01:07:28.146442</dc:date>
+    <dc:date>2026-08-24T15:04:41.005745</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -9609,16 +9668,16 @@ z
      <g id="t_leak-line2d_1">
       <path d="M 113.431531 269.989219 
 L 113.431531 20.589219 
-" clip-path="url(#t_leak-pd9a062f086)" style="fill: none; stroke: #d8dfd9; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#t_leak-p7829b6f226)" style="fill: none; stroke: #d8dfd9; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="t_leak-line2d_2">
       <defs>
-       <path id="t_leak-me8bf6c382b" d="M 0 0 
+       <path id="t_leak-m6806353b44" d="M 0 0 
 L 0 3.5 
 " style="stroke: #5a6b70; stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#t_leak-me8bf6c382b" x="113.431531" y="269.989219" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
+       <use xlink:href="#t_leak-m6806353b44" x="113.431531" y="269.989219" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="t_leak-text_1">
@@ -9629,11 +9688,11 @@ L 0 3.5
      <g id="t_leak-line2d_3">
       <path d="M 208.822716 269.989219 
 L 208.822716 20.589219 
-" clip-path="url(#t_leak-pd9a062f086)" style="fill: none; stroke: #d8dfd9; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#t_leak-p7829b6f226)" style="fill: none; stroke: #d8dfd9; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="t_leak-line2d_4">
       <g>
-       <use xlink:href="#t_leak-me8bf6c382b" x="208.822716" y="269.989219" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
+       <use xlink:href="#t_leak-m6806353b44" x="208.822716" y="269.989219" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="t_leak-text_2">
@@ -9644,11 +9703,11 @@ L 208.822716 20.589219
      <g id="t_leak-line2d_5">
       <path d="M 304.213901 269.989219 
 L 304.213901 20.589219 
-" clip-path="url(#t_leak-pd9a062f086)" style="fill: none; stroke: #d8dfd9; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#t_leak-p7829b6f226)" style="fill: none; stroke: #d8dfd9; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="t_leak-line2d_6">
       <g>
-       <use xlink:href="#t_leak-me8bf6c382b" x="304.213901" y="269.989219" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
+       <use xlink:href="#t_leak-m6806353b44" x="304.213901" y="269.989219" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="t_leak-text_3">
@@ -9659,11 +9718,11 @@ L 304.213901 20.589219
      <g id="t_leak-line2d_7">
       <path d="M 399.605086 269.989219 
 L 399.605086 20.589219 
-" clip-path="url(#t_leak-pd9a062f086)" style="fill: none; stroke: #d8dfd9; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#t_leak-p7829b6f226)" style="fill: none; stroke: #d8dfd9; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="t_leak-line2d_8">
       <g>
-       <use xlink:href="#t_leak-me8bf6c382b" x="399.605086" y="269.989219" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
+       <use xlink:href="#t_leak-m6806353b44" x="399.605086" y="269.989219" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="t_leak-text_4">
@@ -9674,11 +9733,11 @@ L 399.605086 20.589219
      <g id="t_leak-line2d_9">
       <path d="M 494.996271 269.989219 
 L 494.996271 20.589219 
-" clip-path="url(#t_leak-pd9a062f086)" style="fill: none; stroke: #d8dfd9; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#t_leak-p7829b6f226)" style="fill: none; stroke: #d8dfd9; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="t_leak-line2d_10">
       <g>
-       <use xlink:href="#t_leak-me8bf6c382b" x="494.996271" y="269.989219" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
+       <use xlink:href="#t_leak-m6806353b44" x="494.996271" y="269.989219" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="t_leak-text_5">
@@ -9689,11 +9748,11 @@ L 494.996271 20.589219
      <g id="t_leak-line2d_11">
       <path d="M 590.387456 269.989219 
 L 590.387456 20.589219 
-" clip-path="url(#t_leak-pd9a062f086)" style="fill: none; stroke: #d8dfd9; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#t_leak-p7829b6f226)" style="fill: none; stroke: #d8dfd9; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="t_leak-line2d_12">
       <g>
-       <use xlink:href="#t_leak-me8bf6c382b" x="590.387456" y="269.989219" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
+       <use xlink:href="#t_leak-m6806353b44" x="590.387456" y="269.989219" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="t_leak-text_6">
@@ -9708,12 +9767,12 @@ L 590.387456 20.589219
     <g id="t_leak-ytick_1">
      <g id="t_leak-line2d_13">
       <defs>
-       <path id="t_leak-m64f0e3173f" d="M 0 0 
+       <path id="t_leak-md04dba707a" d="M 0 0 
 L -3.5 0 
 " style="stroke: #5a6b70; stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#t_leak-m64f0e3173f" x="113.431531" y="236.711506" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
+       <use xlink:href="#t_leak-md04dba707a" x="113.431531" y="236.711506" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="t_leak-text_8">
@@ -9724,7 +9783,7 @@ L -3.5 0
     <g id="t_leak-ytick_2">
      <g id="t_leak-line2d_14">
       <g>
-       <use xlink:href="#t_leak-m64f0e3173f" x="113.431531" y="175.763315" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
+       <use xlink:href="#t_leak-md04dba707a" x="113.431531" y="175.763315" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="t_leak-text_9">
@@ -9735,7 +9794,7 @@ L -3.5 0
     <g id="t_leak-ytick_3">
      <g id="t_leak-line2d_15">
       <g>
-       <use xlink:href="#t_leak-m64f0e3173f" x="113.431531" y="114.815123" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
+       <use xlink:href="#t_leak-md04dba707a" x="113.431531" y="114.815123" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="t_leak-text_10">
@@ -9746,7 +9805,7 @@ L -3.5 0
     <g id="t_leak-ytick_4">
      <g id="t_leak-line2d_16">
       <g>
-       <use xlink:href="#t_leak-m64f0e3173f" x="113.431531" y="53.866931" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
+       <use xlink:href="#t_leak-md04dba707a" x="113.431531" y="53.866931" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="t_leak-text_11">
@@ -9761,7 +9820,7 @@ L 302.401468 236.711506
 L 302.401468 214.770157 
 L -363.524393 214.770157 
 z
-" clip-path="url(#t_leak-pd9a062f086)" style="fill: #7a2e86"/>
+" clip-path="url(#t_leak-p7829b6f226)" style="fill: #7a2e86"/>
    </g>
    <g id="t_leak-patch_4">
     <path d="M -363.524393 175.763315 
@@ -9769,15 +9828,15 @@ L 412.673678 175.763315
 L 412.673678 153.821966 
 L -363.524393 153.821966 
 z
-" clip-path="url(#t_leak-pd9a062f086)" style="fill: #7a2e86"/>
+" clip-path="url(#t_leak-p7829b6f226)" style="fill: #7a2e86"/>
    </g>
    <g id="t_leak-patch_5">
     <path d="M -363.524393 114.815123 
-L 260.620129 114.815123 
-L 260.620129 92.873774 
+L 249.936317 114.815123 
+L 249.936317 92.873774 
 L -363.524393 92.873774 
 z
-" clip-path="url(#t_leak-pd9a062f086)" style="fill: #7a2e86"/>
+" clip-path="url(#t_leak-p7829b6f226)" style="fill: #7a2e86"/>
    </g>
    <g id="t_leak-patch_6">
     <path d="M -363.524393 53.866931 
@@ -9785,7 +9844,7 @@ L 534.679004 53.866931
 L 534.679004 31.925582 
 L -363.524393 31.925582 
 z
-" clip-path="url(#t_leak-pd9a062f086)" style="fill: #7a2e86"/>
+" clip-path="url(#t_leak-p7829b6f226)" style="fill: #7a2e86"/>
    </g>
    <g id="t_leak-patch_7">
     <path d="M -363.524393 258.652855 
@@ -9793,7 +9852,7 @@ L 305.644769 258.652855
 L 305.644769 236.711506 
 L -363.524393 236.711506 
 z
-" clip-path="url(#t_leak-pd9a062f086)" style="fill: #5a7a3f"/>
+" clip-path="url(#t_leak-p7829b6f226)" style="fill: #5a7a3f"/>
    </g>
    <g id="t_leak-patch_8">
     <path d="M -363.524393 197.704664 
@@ -9801,15 +9860,15 @@ L 399.795868 197.704664
 L 399.795868 175.763315 
 L -363.524393 175.763315 
 z
-" clip-path="url(#t_leak-pd9a062f086)" style="fill: #5a7a3f"/>
+" clip-path="url(#t_leak-p7829b6f226)" style="fill: #5a7a3f"/>
    </g>
    <g id="t_leak-patch_9">
     <path d="M -363.524393 136.756472 
-L 182.494749 136.756472 
-L 182.494749 114.815123 
+L 201.763768 136.756472 
+L 201.763768 114.815123 
 L -363.524393 114.815123 
 z
-" clip-path="url(#t_leak-pd9a062f086)" style="fill: #5a7a3f"/>
+" clip-path="url(#t_leak-p7829b6f226)" style="fill: #5a7a3f"/>
    </g>
    <g id="t_leak-patch_10">
     <path d="M -363.524393 75.80828 
@@ -9817,7 +9876,7 @@ L 312.035978 75.80828
 L 312.035978 53.866931 
 L -363.524393 53.866931 
 z
-" clip-path="url(#t_leak-pd9a062f086)" style="fill: #5a7a3f"/>
+" clip-path="url(#t_leak-p7829b6f226)" style="fill: #5a7a3f"/>
    </g>
    <g id="t_leak-patch_11">
     <path d="M 113.431531 269.989219 
@@ -9852,10 +9911,10 @@ L 590.387456 20.589219
     <text style="font-size: 8px; font-family: 'Archivo', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #5a7a3f" x="405.519339" y="188.941489" transform="rotate(-0 405.519339 188.941489)">0.8002</text>
    </g>
    <g id="t_leak-text_16">
-    <text style="font-size: 8px; font-family: 'Archivo', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #7a2e86" x="266.343601" y="106.051948" transform="rotate(-0 266.343601 106.051948)">0.6543</text>
+    <text style="font-size: 8px; font-family: 'Archivo', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #7a2e86" x="255.659788" y="106.051948" transform="rotate(-0 255.659788 106.051948)">0.6431</text>
    </g>
    <g id="t_leak-text_17">
-    <text style="font-size: 8px; font-family: 'Archivo', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #5a7a3f" x="188.21822" y="127.993297" transform="rotate(-0 188.21822 127.993297)">0.5724</text>
+    <text style="font-size: 8px; font-family: 'Archivo', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #5a7a3f" x="207.48724" y="127.993297" transform="rotate(-0 207.48724 127.993297)">0.5926</text>
    </g>
    <g id="t_leak-text_18">
     <text style="font-size: 8px; font-family: 'Archivo', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #7a2e86" x="540.402475" y="45.103757" transform="rotate(-0 540.402475 45.103757)">0.9416</text>
@@ -9905,11 +9964,11 @@ z
      <g id="t_leak-line2d_17">
       <path d="M 656.535172 269.989219 
 L 656.535172 20.589219 
-" clip-path="url(#t_leak-p689d33bd8c)" style="fill: none; stroke: #d8dfd9; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#t_leak-p612c2ea0f7)" style="fill: none; stroke: #d8dfd9; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="t_leak-line2d_18">
       <g>
-       <use xlink:href="#t_leak-me8bf6c382b" x="656.535172" y="269.989219" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
+       <use xlink:href="#t_leak-m6806353b44" x="656.535172" y="269.989219" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="t_leak-text_23">
@@ -9920,11 +9979,11 @@ L 656.535172 20.589219
      <g id="t_leak-line2d_19">
       <path d="M 710.065579 269.989219 
 L 710.065579 20.589219 
-" clip-path="url(#t_leak-p689d33bd8c)" style="fill: none; stroke: #d8dfd9; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#t_leak-p612c2ea0f7)" style="fill: none; stroke: #d8dfd9; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="t_leak-line2d_20">
       <g>
-       <use xlink:href="#t_leak-me8bf6c382b" x="710.065579" y="269.989219" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
+       <use xlink:href="#t_leak-m6806353b44" x="710.065579" y="269.989219" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="t_leak-text_24">
@@ -9935,11 +9994,11 @@ L 710.065579 20.589219
      <g id="t_leak-line2d_21">
       <path d="M 763.595986 269.989219 
 L 763.595986 20.589219 
-" clip-path="url(#t_leak-p689d33bd8c)" style="fill: none; stroke: #d8dfd9; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#t_leak-p612c2ea0f7)" style="fill: none; stroke: #d8dfd9; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="t_leak-line2d_22">
       <g>
-       <use xlink:href="#t_leak-me8bf6c382b" x="763.595986" y="269.989219" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
+       <use xlink:href="#t_leak-m6806353b44" x="763.595986" y="269.989219" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="t_leak-text_25">
@@ -9950,11 +10009,11 @@ L 763.595986 20.589219
      <g id="t_leak-line2d_23">
       <path d="M 817.126392 269.989219 
 L 817.126392 20.589219 
-" clip-path="url(#t_leak-p689d33bd8c)" style="fill: none; stroke: #d8dfd9; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#t_leak-p612c2ea0f7)" style="fill: none; stroke: #d8dfd9; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="t_leak-line2d_24">
       <g>
-       <use xlink:href="#t_leak-me8bf6c382b" x="817.126392" y="269.989219" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
+       <use xlink:href="#t_leak-m6806353b44" x="817.126392" y="269.989219" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="t_leak-text_26">
@@ -9965,11 +10024,11 @@ L 817.126392 20.589219
      <g id="t_leak-line2d_25">
       <path d="M 870.656799 269.989219 
 L 870.656799 20.589219 
-" clip-path="url(#t_leak-p689d33bd8c)" style="fill: none; stroke: #d8dfd9; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#t_leak-p612c2ea0f7)" style="fill: none; stroke: #d8dfd9; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="t_leak-line2d_26">
       <g>
-       <use xlink:href="#t_leak-me8bf6c382b" x="870.656799" y="269.989219" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
+       <use xlink:href="#t_leak-m6806353b44" x="870.656799" y="269.989219" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="t_leak-text_27">
@@ -9980,11 +10039,11 @@ L 870.656799 20.589219
      <g id="t_leak-line2d_27">
       <path d="M 924.187206 269.989219 
 L 924.187206 20.589219 
-" clip-path="url(#t_leak-p689d33bd8c)" style="fill: none; stroke: #d8dfd9; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#t_leak-p612c2ea0f7)" style="fill: none; stroke: #d8dfd9; stroke-width: 0.6; stroke-linecap: square"/>
      </g>
      <g id="t_leak-line2d_28">
       <g>
-       <use xlink:href="#t_leak-me8bf6c382b" x="924.187206" y="269.989219" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
+       <use xlink:href="#t_leak-m6806353b44" x="924.187206" y="269.989219" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="t_leak-text_28">
@@ -9999,28 +10058,28 @@ L 924.187206 20.589219
     <g id="t_leak-ytick_5">
      <g id="t_leak-line2d_29">
       <g>
-       <use xlink:href="#t_leak-m64f0e3173f" x="613.710847" y="234.786826" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
+       <use xlink:href="#t_leak-md04dba707a" x="613.710847" y="234.786826" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
       </g>
      </g>
     </g>
     <g id="t_leak-ytick_6">
      <g id="t_leak-line2d_30">
       <g>
-       <use xlink:href="#t_leak-m64f0e3173f" x="613.710847" y="175.121755" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
+       <use xlink:href="#t_leak-md04dba707a" x="613.710847" y="175.121755" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
       </g>
      </g>
     </g>
     <g id="t_leak-ytick_7">
      <g id="t_leak-line2d_31">
       <g>
-       <use xlink:href="#t_leak-m64f0e3173f" x="613.710847" y="115.456683" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
+       <use xlink:href="#t_leak-md04dba707a" x="613.710847" y="115.456683" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
       </g>
      </g>
     </g>
     <g id="t_leak-ytick_8">
      <g id="t_leak-line2d_32">
       <g>
-       <use xlink:href="#t_leak-m64f0e3173f" x="613.710847" y="55.791611" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
+       <use xlink:href="#t_leak-md04dba707a" x="613.710847" y="55.791611" style="fill: #5a6b70; stroke: #5a6b70; stroke-width: 0.8"/>
       </g>
      </g>
     </g>
@@ -10031,7 +10090,7 @@ L 652.895104 258.652855
 L 652.895104 210.920798 
 L 656.535172 210.920798 
 z
-" clip-path="url(#t_leak-p689d33bd8c)" style="fill: #9aa8ac"/>
+" clip-path="url(#t_leak-p612c2ea0f7)" style="fill: #9aa8ac"/>
    </g>
    <g id="t_leak-patch_19">
     <path d="M 656.535172 198.987783 
@@ -10039,15 +10098,15 @@ L 670.988382 198.987783
 L 670.988382 151.255726 
 L 656.535172 151.255726 
 z
-" clip-path="url(#t_leak-p689d33bd8c)" style="fill: #a8763f"/>
+" clip-path="url(#t_leak-p612c2ea0f7)" style="fill: #a8763f"/>
    </g>
    <g id="t_leak-patch_20">
     <path d="M 656.535172 139.322712 
-L 744.217978 139.322712 
-L 744.217978 91.590654 
+L 710.600883 139.322712 
+L 710.600883 91.590654 
 L 656.535172 91.590654 
 z
-" clip-path="url(#t_leak-p689d33bd8c)" style="fill: #7a2e86"/>
+" clip-path="url(#t_leak-p612c2ea0f7)" style="fill: #7a2e86"/>
    </g>
    <g id="t_leak-patch_21">
     <path d="M 656.535172 79.65764 
@@ -10055,12 +10114,12 @@ L 906.415111 79.65764
 L 906.415111 31.925582 
 L 656.535172 31.925582 
 z
-" clip-path="url(#t_leak-p689d33bd8c)" style="fill: #7a2e86"/>
+" clip-path="url(#t_leak-p612c2ea0f7)" style="fill: #7a2e86"/>
    </g>
    <g id="t_leak-line2d_33">
     <path d="M 656.535172 269.989219 
 L 656.535172 20.589219 
-" clip-path="url(#t_leak-p689d33bd8c)" style="fill: none; stroke: #5a6b70; stroke-linecap: square"/>
+" clip-path="url(#t_leak-p612c2ea0f7)" style="fill: none; stroke: #5a6b70; stroke-linecap: square"/>
    </g>
    <g id="t_leak-patch_22">
     <path d="M 613.710847 269.989219 
@@ -10089,7 +10148,7 @@ L 967.011531 20.589219
     <text style="font-size: 8.5px; font-family: 'Archivo', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #13242b" x="676.341423" y="177.467223" transform="rotate(-0 676.341423 177.467223)">+1.3 p.p.</text>
    </g>
    <g id="t_leak-text_32">
-    <text style="font-size: 8.5px; font-family: 'Archivo', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #13242b" x="749.571019" y="117.802152" transform="rotate(-0 749.571019 117.802152)">+8.2 p.p.</text>
+    <text style="font-size: 8.5px; font-family: 'Archivo', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #13242b" x="715.953924" y="117.802152" transform="rotate(-0 715.953924 117.802152)">+5.0 p.p.</text>
    </g>
    <g id="t_leak-text_33">
     <text style="font-size: 8.5px; font-family: 'Archivo', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #13242b" x="911.768151" y="58.13708" transform="rotate(-0 911.768151 58.13708)">+23.3 p.p.</text>
@@ -10100,35 +10159,74 @@ L 967.011531 20.589219
   </g>
  </g>
  <defs>
-  <clipPath id="t_leak-pd9a062f086">
+  <clipPath id="t_leak-p7829b6f226">
    <rect x="113.431531" y="20.589219" width="476.955924" height="249.4"/>
   </clipPath>
-  <clipPath id="t_leak-p689d33bd8c">
+  <clipPath id="t_leak-p612c2ea0f7">
    <rect x="613.710847" y="20.589219" width="353.300685" height="249.4"/>
   </clipPath>
  </defs>
 </svg><figcaption><b>Quatro vazamentos, medidos.</b> Mesmo dataset, mesma validação cruzada de 5 folds — muda apenas <em>onde</em> o parâmetro foi aprendido. À esquerda, o que a métrica mostra em cada caso; à direita, a ilusão criada. A ordenação não é acidental: quanto mais o <b>alvo</b> participa da transformação, maior o vazamento. O escalonamento não usa o alvo e praticamente não vaza (a diferença de 0,34 p.p. é ruído, e está no sentido oposto). O <em>target encoding</em> é feito da média do alvo e infla <b>23,3 pontos percentuais</b> — um modelo que parece ter 94% de acerto e tem 71%.</figcaption></figure>
 
-<pre><u># --- 1. o mais brando: z-score ajustado na base inteira ---</u>
-X_vazado = StandardScaler().fit_transform(X_imputado)     <u># fit vê tudo</u>
-cross_val_score(KNeighborsClassifier(<em>5</em>), X_vazado, y, cv=cv)   <u># 0,6981</u>
-cross_val_score(pipeline_correto,           X,        y, cv=cv)   <u># 0,7015</u>
+<pre><b>import</b> warnings; warnings.filterwarnings(<i>"ignore"</i>)
+<b>from</b> sklearn.pipeline <b>import</b> Pipeline
+<b>from</b> sklearn.compose <b>import</b> ColumnTransformer
+<b>from</b> sklearn.impute <b>import</b> SimpleImputer
+<b>from</b> sklearn.preprocessing <b>import</b> StandardScaler, OneHotEncoder
+<b>from</b> sklearn.feature_selection <b>import</b> SelectKBest, f_classif
+<b>from</b> sklearn.linear_model <b>import</b> LogisticRegression
+<b>from</b> sklearn.neighbors <b>import</b> KNeighborsClassifier
+<b>from</b> sklearn.ensemble <b>import</b> RandomForestClassifier
+<b>from</b> sklearn.model_selection <b>import</b> cross_val_score, StratifiedKFold, GroupKFold
+
+y  = df.Survived
+cv = StratifiedKFold(<em>5</em>, shuffle=<b>True</b>, random_state=<em>0</em>)
+
+<u># --- 1. o mais brando: z-score ajustado na base inteira ---</u>
+X_num      = df[[<i>"Age"</i>, <i>"SibSp"</i>, <i>"Parch"</i>, <i>"Fare"</i>]]
+X_imputado = SimpleImputer(strategy=<i>"median"</i>).fit_transform(X_num)
+X_vazado   = StandardScaler().fit_transform(X_imputado)      <u># o fit vê tudo</u>
+
+correto = Pipeline([(<i>"imp"</i>, SimpleImputer(strategy=<i>"median"</i>)),
+                    (<i>"esc"</i>, StandardScaler()),
+                    (<i>"clf"</i>, KNeighborsClassifier(<em>5</em>))])
+
+cross_val_score(KNeighborsClassifier(<em>5</em>), X_vazado, y, cv=cv).mean()   <u># 0,6981</u>
+cross_val_score(correto,                    X_num,    y, cv=cv).mean()   <u># 0,7015</u>
 
 <u># --- 2. split aleatório com famílias divididas ---</u>
-<b>from</b> sklearn.model_selection <b>import</b> GroupKFold
-cross_val_score(modelo, df, y, cv=StratifiedKFold(<em>5</em>, shuffle=<b>True</b>))    <u># 0,8137</u>
-cross_val_score(modelo, df, y, cv=GroupKFold(<em>5</em>), groups=df.Ticket)   <u># 0,8002</u>
+num = [<i>"Age"</i>, <i>"SibSp"</i>, <i>"Parch"</i>, <i>"Fare"</i>]
+cat = [<i>"Sex"</i>, <i>"Embarked"</i>, <i>"Pclass"</i>, <i>"Titulo"</i>]
+prep = ColumnTransformer([
+    (<i>"n"</i>, Pipeline([(<i>"i"</i>, SimpleImputer(strategy=<i>"median"</i>)),
+                    (<i>"e"</i>, StandardScaler())]), num),
+    (<i>"c"</i>, Pipeline([(<i>"i"</i>, SimpleImputer(strategy=<i>"most_frequent"</i>)),
+                    (<i>"o"</i>, OneHotEncoder(handle_unknown=<i>"ignore"</i>))]), cat)])
+modelo = Pipeline([(<i>"prep"</i>, prep),
+                   (<i>"clf"</i>, RandomForestClassifier(<em>300</em>, random_state=<em>0</em>))])
+
+cross_val_score(modelo, df, y, cv=cv).mean()                          <u># 0,8137</u>
+cross_val_score(modelo, df, y, cv=GroupKFold(<em>5</em>), groups=df.Ticket).mean()   <u># 0,8002</u>
 
 <u># --- 3. seleção de features sobre 1.000 colunas de RUÍDO PURO ---</u>
-R = pd.DataFrame(rng.standard_normal((<em>891</em>, <em>1000</em>)))    <u># nada aqui prevê nada</u>
-melhores = SelectKBest(f_classif, k=<em>10</em>).fit_transform(R, y)   <u># seleção vê o alvo inteiro</u>
-cross_val_score(LogisticRegression(), melhores, y, cv=cv)      <u># 0,6543 (!)</u>
-cross_val_score(Pipeline([(<i>"s"</i>, SelectKBest(f_classif, k=<em>10</em>)),
-                          (<i>"c"</i>, LogisticRegression())]), R, y, cv=cv)  <u># 0,5724</u>
+rng = np.random.default_rng(<em>0</em>)
+R = pd.DataFrame(rng.standard_normal((<b>len</b>(df), <em>1000</em>)))    <u># nada aqui prevê nada</u>
+
+melhores = SelectKBest(f_classif, k=<em>10</em>).fit_transform(R, y)  <u># a seleção vê o alvo inteiro</u>
+cross_val_score(LogisticRegression(max_iter=<em>1000</em>), melhores, y, cv=cv).mean()   <u># 0,6431 (!)</u>
+
+cross_val_score(Pipeline([(<i>"sel"</i>, SelectKBest(f_classif, k=<em>10</em>)),
+                          (<i>"clf"</i>, LogisticRegression(max_iter=<em>1000</em>))]),
+                R, y, cv=cv).mean()                                       <u># 0,5926</u>
+<b>max</b>(y.mean(), <em>1</em> - y.mean())                                              <u># 0,6162 ← classe majoritária</u>
 
 <u># --- 4. target encoding calculado na base inteira ---</u>
-df[<i>"te"</i>] = df.groupby(<i>"Ticket"</i>).Survived.transform(<i>"mean"</i>)   <u># usa o alvo do teste</u>
-<u># com vazamento: 0,9416   ·   feito por fold: 0,7082</u></pre>
+X_te = pd.DataFrame({<i>"te"</i>:  df.groupby(<i>"Ticket"</i>).Survived.transform(<i>"mean"</i>),
+                     <i>"Age"</i>: df.Age.fillna(df.Age.median()),
+                     <i>"Fare"</i>: df.Fare})
+cross_val_score(Pipeline([(<i>"esc"</i>, StandardScaler()),
+                          (<i>"clf"</i>, LogisticRegression(max_iter=<em>1000</em>))]),
+                X_te, y, cv=cv).mean()      <u># 0,9416 · feito por fold daria 0,7082</u></pre>
 
   <div class="box box--obs">
     <h5>A lição da ordenação</h5>
@@ -10136,7 +10234,7 @@ df[<i>"te"</i>] = df.groupby(<i>"Ticket"</i>).Survived.transform(<i>"mean"</i>) 
     <ul>
       <li><strong>Escalonamento não usa o alvo</strong> e quase não vaza — 0,34 p.p., no sentido oposto, ou seja, ruído amostral. Isso não é permissão para relaxar; é a explicação de por que o erro passa despercebido tanto tempo.</li>
       <li><strong>O split por grupos</strong> custa 1,35 p.p. Parece pouco, mas note que a direção é traiçoeira: a validação otimista faria você escolher o modelo errado numa comparação apertada.</li>
-      <li><strong>A seleção de features é o experimento mais perturbador.</strong> As 1.000 colunas são ruído gaussiano puro — não existe sinal algum. Ainda assim, escolher "as 10 melhores" olhando o alvo inteiro produz 0,6543, acima da acurácia da classe majoritária (0,6162). O procedimento correto devolve 0,5724, que é o que se espera de ruído. <strong>O vazamento não amplificou um sinal fraco; ele fabricou sinal do nada.</strong></li>
+      <li><strong>A seleção de features é o experimento mais perturbador.</strong> As 1.000 colunas são ruído gaussiano puro — não existe sinal algum. Ainda assim, escolher "as 10 melhores" olhando o alvo inteiro produz 0,6431, acima da acurácia da classe majoritária (0,6162). O procedimento correto devolve 0,5926, que é o que se espera de ruído. <strong>O vazamento não amplificou um sinal fraco; ele fabricou sinal do nada.</strong></li>
       <li><strong>O <em>target encoding</em> infla 23,3 pontos percentuais.</strong> A média do alvo por bilhete, calculada com as linhas de teste dentro, entrega a resposta ao modelo pela porta dos fundos: se sua irmã está no treino e sobreviveu, sua média de bilhete já sabe disso.</li>
     </ul>
   </div>
@@ -10169,7 +10267,7 @@ df[<i>"te"</i>] = df.groupby(<i>"Ticket"</i>).Survived.transform(<i>"mean"</i>) 
   <div class="aulahead">
     <p class="n">Bloco 7 · 20 min</p>
     <h2>Pipeline sem vazamento</h2>
-    <p class="lede">Sabendo o que é vazamento, resta torná-lo impossível por construção — em vez de depender de lembrar da regra a cada célula do notebook.</p>
+    <p class="lede">Já vimos o que <code>Pipeline</code> e <code>ColumnTransformer</code> fazem (seção 5.4) e o que é vazamento. Resta torná-lo impossível por construção — em vez de depender de lembrar da regra a cada célula do notebook.</p>
   </div>
 
   <p>Recapitulando o que está em jogo: mediana de imputação, μ e σ do z-score, mínimo e máximo, λ do Box-Cox, lista de categorias vistas, média do alvo por categoria — <strong>todos são parâmetros aprendidos a partir dos dados</strong>. Cada um deles é uma oportunidade de vazamento do tipo 1. A questão prática não é saber disso, e sim garantir que o procedimento correto seja o caminho de menor esforço.</p>
@@ -12207,11 +12305,16 @@ z
     <p><code>fit</code> só no treino. <code>transform</code> em treino e teste. Nunca <code>fit_transform</code> no teste.</p>
     <p>O risco é proporcional a <strong>quanto o alvo participa da transformação</strong>. Escalonamento vaza pouco, porque μ e σ são estatísticas estáveis. Imputação por modelo vaza mais. <em>Target encoding</em> vaza muito — a média do alvo calculada com as linhas de teste dentro entrega a resposta ao modelo por via indireta.</p>
   </div>
-<pre><b>from</b> sklearn.pipeline <b>import</b> Pipeline
+<pre><b>import</b> numpy <b>as</b> np, pandas <b>as</b> pd
+<b>from</b> sklearn.pipeline <b>import</b> Pipeline
 <b>from</b> sklearn.compose <b>import</b> ColumnTransformer
 <b>from</b> sklearn.impute <b>import</b> SimpleImputer
 <b>from</b> sklearn.preprocessing <b>import</b> StandardScaler, OneHotEncoder, FunctionTransformer
-<b>from</b> sklearn.model_selection <b>import</b> train_test_split, cross_val_score
+<b>from</b> sklearn.neighbors <b>import</b> KNeighborsClassifier
+<b>from</b> sklearn.model_selection <b>import</b> cross_val_score, StratifiedKFold
+
+X, y = df, df.Survived
+cv   = StratifiedKFold(<em>5</em>, shuffle=<b>True</b>, random_state=<em>0</em>)
 
 num = [<i>"Age"</i>, <i>"SibSp"</i>, <i>"Parch"</i>]
 mon = [<i>"Fare"</i>]                                   <u># precisa de log antes da escala</u>
@@ -12240,7 +12343,7 @@ prep = ColumnTransformer([
 modelo = Pipeline([(<i>"prep"</i>, prep), (<i>"clf"</i>, KNeighborsClassifier(<em>5</em>))])
 
 <u># a validação cruzada refaz o fit do prep em cada fold — vazamento impossível</u>
-cross_val_score(modelo, X, y, cv=<em>5</em>, scoring=<i>"accuracy"</i>).mean()</pre>
+cross_val_score(modelo, X, y, cv=cv, scoring=<i>"accuracy"</i>).mean()   <u># 0,8103</u></pre>
   <div class="box box--note">
     <h5>Por que <code>Pipeline</code> e não células soltas no notebook</h5>
     <ul>
@@ -12417,7 +12520,7 @@ A.sum(axis=<em>1</em>)[:<em>5</em>]             <u># [5. 5. 5. 5. 5.]  ← cinco
     <div class="ex">
       <p class="ex__t"><b>5</b>Montar o <code>ColumnTransformer</code> completo<span class="tag">8 min</span></p>
       <p>Junte tudo em três ramos — numéricas, monetária (com log) e categóricas — mais a flag <code>Age_faltou</code> via <code>passthrough</code>. Aplique e inspecione a saída.</p>
-      <p class="cap" style="margin:8px 0 0"><strong>Verificação:</strong> saída com <strong>891 linhas e 27 colunas</strong>, <strong>zero</strong> <code>NaN</code>, e <code>get_feature_names_out()</code> devolvendo 27 nomes.</p>
+      <p class="cap" style="margin:8px 0 0"><strong>Verificação:</strong> saída com <strong>891 linhas e 28 colunas</strong>, <strong>zero</strong> <code>NaN</code>, e <code>get_feature_names_out()</code> devolvendo 28 nomes.</p>
       <details><summary>Ver solução</summary><div>
 <pre>df[<i>"Age_faltou"</i>] = df.Age.isna().astype(<b>int</b>)
 df[<i>"TamFamilia"</i>] = df.SibSp + df.Parch + <em>1</em>
@@ -12442,33 +12545,33 @@ prep = ColumnTransformer([
 ])
 
 M = prep.fit_transform(df)
-M.shape                       <u># (891, 27)</u>
+M.shape                       <u># (891, 28)</u>
 np.isnan(M).sum()             <u># 0</u>
-<b>len</b>(prep.get_feature_names_out())   <u># 27</u></pre>
-      <p>A conta das 27: 4 numéricas + 1 monetária + 22 do one-hot... daria 27 se o one-hot tivesse 22 colunas, e tem. Confira a sua: se der 28, você provavelmente esqueceu de imputar <code>Embarked</code> e o <code>SimpleImputer</code> criou um nível a mais.</p>
+<b>len</b>(prep.get_feature_names_out())   <u># 28</u></pre>
+      <p>A conta das 28: <strong>4</strong> numéricas (<code>Age</code>, <code>SibSp</code>, <code>Parch</code>, <code>TamFamilia</code>) + <strong>1</strong> monetária (<code>Fare</code>) + <strong>22</strong> do one-hot (as mesmas do checkpoint 4) + <strong>1</strong> flag. Se a sua deu 27, confira se <code>Deck</code> entrou na lista de categóricas — sem ele o one-hot cai para 13 colunas.</p>
       </div></details>
     </div>
 
     <div class="ex">
       <p class="ex__t"><b>6</b>Onde o parâmetro é aprendido<span class="tag">10 min</span></p>
       <p>Separe 20% das linhas com <code>train_test_split(df, test_size=0.2, random_state=2, stratify=df.Survived)</code>. Compare os parâmetros que o pré-processamento aprenderia usando a base inteira contra usando só as 712 linhas de treino.</p>
-      <p class="cap" style="margin:8px 0 0"><strong>Verificação:</strong> a mediana de <code>Age</code> muda de 28,0 para 28,5 e o desvio de <code>Fare</code> de 49,67 para 48,03. E, com <code>random_state=2</code>, o deck <code>T</code> cai no <em>teste</em> — descubra o que acontece sem <code>handle_unknown="ignore"</code>.</p>
+      <p class="cap" style="margin:8px 0 0"><strong>Verificação:</strong> o desvio padrão de <code>Fare</code> muda de 49,69 (base inteira) para 53,33 (só treino), enquanto a mediana de <code>Age</code> permanece em 28,0 nos dois casos. E o deck <code>T</code> cai no <em>teste</em> — descubra o que acontece sem <code>handle_unknown="ignore"</code>.</p>
       <details><summary>Ver solução</summary><div>
 <pre><b>from</b> sklearn.model_selection <b>import</b> train_test_split
 treino, teste = train_test_split(df, test_size=<em>0.2</em>, random_state=<em>2</em>,
                                  stratify=df.Survived)
 <b>len</b>(treino), <b>len</b>(teste)      <u># 712, 179</u>
 
-<b>print</b>(df.Age.median(),  treino.Age.median())    <u># 28.0  vs  28.5</u>
-<b>print</b>(df.Fare.std(),    treino.Fare.std())      <u># 49.67 vs  48.03</u>
+<b>print</b>(df.Age.median(),  treino.Age.median())    <u># 28.00 vs 28.00  ← não mudou</u>
+<b>print</b>(df.Fare.std(),    treino.Fare.std())      <u># 49.69 vs 53.33  ← mudou 7%</u>
 <b>print</b>(<b>sorted</b>(<b>set</b>(teste.Deck) - <b>set</b>(treino.Deck)))   <u># ['T'] ← inédito no treino</u>
 
 <u># o jeito certo: aprende no treino, aplica nos dois</u>
 prep.fit(treino)                 <u># só o treino define medianas, μ, σ e categorias</u>
 M_treino = prep.transform(treino)
 M_teste  = prep.transform(teste)  <u># funciona porque handle_unknown="ignore"</u></pre>
-      <p><strong>O deck <code>T</code>:</strong> ele tem um único passageiro em toda a base, e com esta semente ele caiu no teste. Sem <code>handle_unknown="ignore"</code>, o <code>transform</code> do teste lançaria <code>ValueError: Found unknown categories ['T']</code> — o pipeline quebra em produção por causa de uma linha. Com a opção ligada, aquele passageiro recebe zeros em todas as colunas de deck, o que é a resposta honesta: "esta categoria não foi vista no treino".</p>
-      <p><strong>As diferenças numéricas são pequenas</strong> — 0,5 ano na mediana, 1,6 no desvio. É exatamente por isso que o erro passa despercebido: usar a base inteira aqui quase não muda o resultado. O ponto não é a magnitude neste caso, é o hábito. As mesmas duas linhas de código, aplicadas a um <em>target encoding</em>, produziriam os 23 pontos percentuais de ilusão do bloco 6.</p>
+      <p><strong>O deck <code>T</code>:</strong> ele tem um único passageiro em toda a base, e com esta semente ele caiu no teste. Sem <code>handle_unknown="ignore"</code>, o <code>transform</code> do teste lançaria <code>ValueError: Found unknown categories ['T']</code> — o pipeline quebra em produção por causa de uma linha. Com a opção ligada, aquele passageiro recebe <strong>zero em todas as oito colunas de deck</strong>, o que é a resposta honesta: "esta categoria não foi vista no treino".</p><p><strong>E repare na dimensão:</strong> ajustado na base inteira o <code>prep</code> produzia <strong>28</strong> colunas; ajustado só no treino produz <strong>27</strong>, porque o deck <code>T</code> deixou de existir para o codificador. Essa diferença de uma coluna <em>é</em> o vazamento, tornado visível: no procedimento errado, a matriz de treino carregava uma coluna que só a linha de teste justificava.</p>
+      <p><strong>Repare que os dois parâmetros se comportam de forma diferente.</strong> A mediana de <code>Age</code> não se moveu — medianas são robustas e 712 linhas bastam para estabilizá-la. Já o desvio padrão de <code>Fare</code> saltou 7%, porque depende dos extremos e a passagem de 512 libras caiu no treino desta vez. É essa irregularidade que torna o erro difícil de perceber: às vezes não muda nada. O ponto não é a magnitude neste caso, é o hábito. As mesmas duas linhas de código, aplicadas a um <em>target encoding</em>, produziriam os 23 pontos percentuais de ilusão do bloco 6.</p>
       </div></details>
     </div>
   </div>
@@ -12487,10 +12590,11 @@ M_teste  = prep.transform(teste)  <u># funciona porque handle_unknown="ignore"</
       <tr><td>3</td><td>mediana de <code>Fare</code> bruto sob min-max</td><td class="num">0,028</td></tr>
       <tr><td>4</td><td>colunas geradas pelo one-hot</td><td class="num">22</td></tr>
       <tr><td>4</td><td>passageiros no deck <code>T</code></td><td class="num">1</td></tr>
-      <tr><td>5</td><td>formato da matriz final</td><td class="num">(891, 27)</td></tr>
+      <tr><td>5</td><td>formato da matriz final</td><td class="num">(891, 28)</td></tr>
       <tr><td>5</td><td><code>NaN</code> na matriz final</td><td class="num">0</td></tr>
-      <tr><td>6</td><td>mediana de <code>Age</code>: base inteira → só treino</td><td class="num">28,0 → 28,5</td></tr>
+      <tr><td>6</td><td>desvio de <code>Fare</code>: base inteira → só treino</td><td class="num">49,69 → 53,33</td></tr>
       <tr><td>6</td><td>categorias de deck inéditas no teste</td><td class="num">1 (o deck T)</td></tr>
+      <tr><td>6</td><td>colunas do <code>prep</code>: ajustado na base → só no treino</td><td class="num">28 → 27</td></tr>
     </tbody>
     <caption>Pequenas diferenças na terceira casa decimal são esperadas conforme a versão do pandas e do scikit-learn.</caption>
   </table>
@@ -12500,8 +12604,243 @@ M_teste  = prep.transform(teste)  <u># funciona porque handle_unknown="ignore"</
     <ol>
       <li><strong>Toda imputação reduz a variância.</strong> Nenhuma das três versões recupera o desvio original de 14,53. A pergunta certa não é "qual delas acerta", e sim "qual erra menos, e o que perdemos ao inventar 177 idades".</li>
       <li><strong>Uma coluna com 77% de ausência virou 9 colunas úteis.</strong> Descartar <code>Cabin</code> teria sido a decisão fácil; tratar a ausência como categoria e extrair o deck aproveitou o que havia. Sob MNAR, faltar é informação.</li>
-      <li><strong>O checkpoint 6 quase não muda nada — e é o mais importante.</strong> Meia unidade na mediana, 1,6 no desvio. É essa pequenez que faz o vazamento sobreviver em tanto código: quando ele finalmente importa, já virou hábito.</li>
+      <li><strong>O checkpoint 6 mal se mexe — e é o mais importante.</strong> A mediana nem muda; o desvio muda 7%. É essa irregularidade que faz o vazamento sobreviver em tanto código: quando ele finalmente importa, já virou hábito.</li>
     </ol>
+  </div>
+  <a class="top" href="#" onclick="return __ir(this)">↑ topo</a>
+</section>
+
+<section id="pipe">
+  <div class="aulahead">
+    <p class="n">Fechamento</p>
+    <h2>O pipeline completo</h2>
+    <p class="lede">Tudo o que a aula construiu, reunido num único bloco executável. É este o ponto de partida para qualquer modelo que você venha a estudar depois.</p>
+  </div>
+
+  <p>Os blocos anteriores foram propositalmente parciais: cada um isolava uma decisão. Aqui está a versão consolidada — carrega os dados, cria os atributos derivados, separa treino e teste, aprende os parâmetros <strong>apenas no treino</strong> e verifica o resultado. Roda de ponta a ponta em qualquer ambiente com <code>pandas</code> e <code>scikit-learn</code>.</p>
+  <figure class="fig fig--wide"><svg role="img" viewBox="0 0 1090 470" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto" aria-label="Diagrama do pipeline construído: quatro ramos de colunas, cada um com suas etapas, convergindo numa matriz de 29 colunas">
+<defs>
+  <marker id="pipe-pp-seta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#7A8B91"/>
+  </marker>
+  <style>
+    .pp-t    { font-family:'Archivo',sans-serif; fill:#13242B; }
+    .pp-m    { font-family:'IBM Plex Mono',monospace; }
+    .pp-cab  { font-size:10px; font-weight:700; letter-spacing:.16em; fill:#5C6D73; }
+    .pp-ramo { font-size:11.5px; font-weight:700; }
+    .pp-col  { font-size:10.5px; font-weight:400; fill:#46585F; font-family:'IBM Plex Mono',monospace; }
+    .pp-step { font-size:11px; font-weight:600; fill:#13242B; font-family:'IBM Plex Mono',monospace; }
+    .pp-note { font-size:9.5px; font-weight:400; fill:#5C6D73; }
+    .pp-out  { font-size:15px; font-weight:700; fill:#FFFFFF; }
+    .pp-outs { font-size:10px; font-weight:400; fill:#D4DEE2; font-family:'IBM Plex Mono',monospace; }
+    .pp-n    { font-size:13px; font-weight:700; fill:#13242B; }
+    .pp-lig  { stroke:#7A8B91; stroke-width:1.3; fill:none; marker-end:url(#pipe-pp-seta); }
+    .pp-bar  { stroke:#5C6D73; stroke-width:2; fill:none; }
+  </style>
+</defs>
+
+<text class="pp-t pp-cab" x="18"  y="26">COLUNAS DE ENTRADA</text>
+<text class="pp-t pp-cab" x="228" y="26">ETAPAS DO RAMO — na ordem ausentes → forma → escala</text>
+<text class="pp-t pp-cab" x="742" y="26">SAÍDA</text>
+
+<!-- ===== ramo num ===== -->
+<rect x="18" y="46" width="190" height="60" rx="3" fill="#FFFFFF" stroke="#1F6B8E" stroke-width="1.3"/>
+<text class="pp-t pp-ramo" x="30" y="64" fill="#1F6B8E">num · 4 colunas</text>
+<text class="pp-t pp-col"  x="30" y="80">Age · SibSp · Parch</text>
+<text class="pp-t pp-col"  x="30" y="95">TamFamilia</text>
+<path class="pp-lig" d="M 208 76 L 236 76"/>
+<rect x="238" y="56" width="164" height="40" rx="3" fill="#EAF1F5" stroke="#1F6B8E" stroke-width="1.1"/>
+<text class="pp-t pp-step" x="250" y="73">SimpleImputer</text>
+<text class="pp-t pp-note" x="250" y="87">strategy="median"</text>
+<path class="pp-lig" d="M 402 76 L 428 76"/>
+<rect x="430" y="56" width="164" height="40" rx="3" fill="#EAF1F5" stroke="#1F6B8E" stroke-width="1.1"/>
+<text class="pp-t pp-step" x="442" y="73">StandardScaler</text>
+<text class="pp-t pp-note" x="442" y="87">(x − μ) / σ</text>
+<path class="pp-lig" d="M 594 76 L 740 76"/>
+<text class="pp-t pp-n" x="752" y="81">4</text>
+
+<!-- ===== ramo mon ===== -->
+<rect x="18" y="122" width="190" height="46" rx="3" fill="#FFFFFF" stroke="#5A7A3F" stroke-width="1.3"/>
+<text class="pp-t pp-ramo" x="30" y="140" fill="#5A7A3F">mon · 1 coluna</text>
+<text class="pp-t pp-col"  x="30" y="157">Fare</text>
+<path class="pp-lig" d="M 208 145 L 236 145"/>
+<rect x="238" y="125" width="164" height="40" rx="3" fill="#EEF3E9" stroke="#5A7A3F" stroke-width="1.1"/>
+<text class="pp-t pp-step" x="250" y="142">SimpleImputer</text>
+<text class="pp-t pp-note" x="250" y="156">strategy="median"</text>
+<path class="pp-lig" d="M 402 145 L 428 145"/>
+<rect x="430" y="125" width="164" height="40" rx="3" fill="#EEF3E9" stroke="#5A7A3F" stroke-width="1.1"/>
+<text class="pp-t pp-step" x="442" y="142">FunctionTransformer</text>
+<text class="pp-t pp-note" x="442" y="156">np.log1p — corrige a forma</text>
+<path class="pp-lig" d="M 594 145 L 620 145"/>
+<rect x="622" y="125" width="112" height="40" rx="3" fill="#EEF3E9" stroke="#5A7A3F" stroke-width="1.1"/>
+<text class="pp-t pp-step" x="632" y="142">StandardScaler</text>
+<text class="pp-t pp-note" x="632" y="156">(x − μ) / σ</text>
+<path class="pp-lig" d="M 734 145 L 742 145"/>
+<text class="pp-t pp-n" x="752" y="150">1</text>
+
+<!-- ===== ramo cat ===== -->
+<rect x="18" y="192" width="190" height="74" rx="3" fill="#FFFFFF" stroke="#7A2E86" stroke-width="1.3"/>
+<text class="pp-t pp-ramo" x="30" y="210" fill="#7A2E86">cat · 5 colunas</text>
+<text class="pp-t pp-col"  x="30" y="226">Sex · Embarked</text>
+<text class="pp-t pp-col"  x="30" y="241">Pclass · Titulo</text>
+<text class="pp-t pp-col"  x="30" y="256">Deck</text>
+<path class="pp-lig" d="M 208 229 L 236 229"/>
+<rect x="238" y="209" width="164" height="40" rx="3" fill="#F3EAF5" stroke="#7A2E86" stroke-width="1.1"/>
+<text class="pp-t pp-step" x="250" y="226">SimpleImputer</text>
+<text class="pp-t pp-note" x="250" y="240">strategy="most_frequent"</text>
+<path class="pp-lig" d="M 402 229 L 428 229"/>
+<rect x="430" y="209" width="164" height="40" rx="3" fill="#F3EAF5" stroke="#7A2E86" stroke-width="1.1"/>
+<text class="pp-t pp-step" x="442" y="226">OneHotEncoder</text>
+<text class="pp-t pp-note" x="442" y="240">handle_unknown="ignore"</text>
+<path class="pp-lig" d="M 594 229 L 740 229"/>
+<text class="pp-t pp-n" x="748" y="234">22</text>
+<text class="pp-t pp-note" x="604" y="264">2 + 3 + 3 + 5 + 9 níveis</text>
+
+<!-- ===== ramo bin ===== -->
+<rect x="18" y="292" width="190" height="46" rx="3" fill="#FFFFFF" stroke="#8FA0A6" stroke-width="1.3"/>
+<text class="pp-t pp-ramo" x="30" y="310" fill="#5C6D73">bin · 2 colunas</text>
+<text class="pp-t pp-col"  x="30" y="327">Age_faltou · Sozinho</text>
+<path class="pp-lig" d="M 208 315 L 236 315"/>
+<rect x="238" y="295" width="164" height="40" rx="3" fill="#F1F4F0" stroke="#8FA0A6" stroke-width="1.1"/>
+<text class="pp-t pp-step" x="250" y="312">"passthrough"</text>
+<text class="pp-t pp-note" x="250" y="326">já são 0/1 — nada a fazer</text>
+<path class="pp-lig" d="M 402 315 L 740 315"/>
+<text class="pp-t pp-n" x="752" y="320">2</text>
+
+<!-- ===== descartadas ===== -->
+<rect x="18" y="360" width="190" height="46" rx="3" fill="#F7F8F5" stroke="#C3D0D4" stroke-width="1.1" stroke-dasharray="4 3"/>
+<text class="pp-t pp-ramo" x="30" y="378" fill="#8FA0A6">descartadas</text>
+<text class="pp-t pp-col"  x="30" y="395" fill="#8FA0A6">PassengerId · Name</text>
+<text class="pp-t pp-note" x="228" y="386">remainder="drop" — identificadores e texto bruto não entram no X</text>
+
+<!-- ===== concatenação ===== -->
+<path class="pp-bar" d="M 790 70 L 790 320"/>
+<path class="pp-lig" d="M 790 195 L 826 195"/>
+<rect x="828" y="150" width="244" height="90" rx="3" fill="#22333B"/>
+<text class="pp-t pp-out"  x="950" y="182" text-anchor="middle">X_prep</text>
+<text class="pp-t pp-outs" x="950" y="202" text-anchor="middle">712 × 29  (treino)</text>
+<text class="pp-t pp-outs" x="950" y="220" text-anchor="middle">179 × 29  (teste)</text>
+
+<!-- ===== rodapé ===== -->
+<rect x="18" y="424" width="1054" height="34" rx="3" fill="#F1F4F0" stroke="#8FA0A6" stroke-width="1.1"/>
+<text class="pp-t pp-note" x="34" y="438" font-size="11"><tspan font-weight="700">prep.fit_transform(X_tr)</tspan> aprende as medianas, a moda, μ, σ e a lista de categorias — e transforma. Só no treino.</text>
+<text class="pp-t pp-note" x="34" y="452" font-size="11"><tspan font-weight="700">prep.transform(X_te)</tspan> reaplica exatamente esses mesmos parâmetros ao teste. Nunca <tspan class="pp-m">fit</tspan> aqui — é onde o vazamento entra.</text>
+</svg><figcaption><b>O pipeline construído.</b> Cada ramo recebe um subconjunto de colunas e aplica sua própria sequência de etapas; ao final, o <code>ColumnTransformer</code> concatena os resultados lado a lado. Repare que os quatro ramos existem porque os tratamentos são diferentes, não por organização: <code>Fare</code> tem uma etapa a mais que as demais numéricas — a correção de forma —, e as binárias não têm nenhuma. As colunas não listadas em nenhum ramo são descartadas por <code>remainder="drop"</code>. A faixa inferior é a regra que o diagrama inteiro serve para tornar visível: o <code>fit</code> acontece uma vez, no treino, e o <code>transform</code> reaplica os mesmos parâmetros aos dois conjuntos.</figcaption></figure>
+
+
+<pre><u># ============================================================</u>
+<u># Titanic — pipeline de preparação completo, de ponta a ponta</u>
+<u># ============================================================</u>
+<b>import</b> numpy <b>as</b> np, pandas <b>as</b> pd
+
+<b>from</b> sklearn.pipeline <b>import</b> Pipeline
+<b>from</b> sklearn.compose <b>import</b> ColumnTransformer
+<b>from</b> sklearn.impute <b>import</b> SimpleImputer
+<b>from</b> sklearn.preprocessing <b>import</b> StandardScaler, OneHotEncoder, FunctionTransformer
+<b>from</b> sklearn.model_selection <b>import</b> train_test_split
+
+URL = (<i>"https://raw.githubusercontent.com/datasciencedojo/"</i>
+       <i>"datasets/master/titanic.csv"</i>)
+
+<u># ---------- 1. engenharia de atributos ----------</u>
+<u>#     Feita fora do ColumnTransformer porque cria colunas novas.</u>
+<u>#     Nenhuma linha aqui usa o alvo — por isso pode vir antes do split.</u>
+<b>def</b> preparar(df):
+    df = df.copy()
+    df[<i>"Titulo"</i>] = (df.Name.str.extract(<b>r</b><i>",\s*([^\.]+)\."</i>)[<em>0</em>]
+                      .str.strip()
+                      .replace([<i>"Mlle"</i>, <i>"Ms"</i>], <i>"Miss"</i>)      <u># variantes do mesmo título</u>
+                      .replace([<i>"Mme"</i>], <i>"Mrs"</i>))
+    comuns = [<i>"Mr"</i>, <i>"Miss"</i>, <i>"Mrs"</i>, <i>"Master"</i>]
+    df[<i>"Titulo"</i>]     = df.Titulo.where(df.Titulo.isin(comuns), <i>"Outro"</i>)
+    df[<i>"Deck"</i>]       = df.Cabin.str[<em>0</em>].fillna(<i>"Desconhecido"</i>)   <u># ausência vira categoria</u>
+    df[<i>"TamFamilia"</i>] = df.SibSp + df.Parch + <em>1</em>
+    df[<i>"Sozinho"</i>]    = (df.TamFamilia == <em>1</em>).astype(<b>int</b>)
+    df[<i>"Age_faltou"</i>] = df.Age.isna().astype(<b>int</b>)          <u># a flag, sempre</u>
+    <b>return</b> df
+
+df = preparar(pd.read_csv(URL))
+y  = df.Survived
+X  = df.drop(columns=[<i>"Survived"</i>, <i>"PassengerId"</i>, <i>"Name"</i>, <i>"Ticket"</i>, <i>"Cabin"</i>])
+
+<u># ---------- 2. separar ANTES de aprender qualquer parâmetro ----------</u>
+X_tr, X_te, y_tr, y_te = train_test_split(
+    X, y, test_size=<em>0.2</em>, random_state=<em>42</em>, stratify=y)
+
+<u># ---------- 3. um ramo por tipo de tratamento ----------</u>
+num  = [<i>"Age"</i>, <i>"SibSp"</i>, <i>"Parch"</i>, <i>"TamFamilia"</i>]   <u># ausentes → escala</u>
+mon  = [<i>"Fare"</i>]                                <u># ausentes → forma → escala</u>
+cat  = [<i>"Sex"</i>, <i>"Embarked"</i>, <i>"Pclass"</i>, <i>"Titulo"</i>, <i>"Deck"</i>]  <u># ausentes → one-hot</u>
+bina = [<i>"Age_faltou"</i>, <i>"Sozinho"</i>]                  <u># já são 0/1, passam direto</u>
+
+pipe_num = Pipeline([
+    (<i>"imp"</i>, SimpleImputer(strategy=<i>"median"</i>)),
+    (<i>"esc"</i>, StandardScaler()),
+])
+pipe_mon = Pipeline([
+    (<i>"imp"</i>, SimpleImputer(strategy=<i>"median"</i>)),
+    (<i>"log"</i>, FunctionTransformer(np.log1p, feature_names_out=<i>"one-to-one"</i>)),
+    (<i>"esc"</i>, StandardScaler()),
+])
+pipe_cat = Pipeline([
+    (<i>"imp"</i>, SimpleImputer(strategy=<i>"most_frequent"</i>)),
+    (<i>"cod"</i>, OneHotEncoder(handle_unknown=<i>"ignore"</i>, sparse_output=<b>False</b>)),
+])
+
+prep = ColumnTransformer(
+    [(<i>"num"</i>, pipe_num, num),
+     (<i>"mon"</i>, pipe_mon, mon),
+     (<i>"cat"</i>, pipe_cat, cat),
+     (<i>"bin"</i>, <i>"passthrough"</i>, bina)],
+    remainder=<i>"drop"</i>)                <u># o que não foi listado é descartado</u>
+
+<u># ---------- 4. aprender no treino, aplicar nos dois ----------</u>
+X_tr_prep = prep.fit_transform(X_tr)   <u># fit + transform</u>
+X_te_prep = prep.transform(X_te)       <u># SÓ transform — nunca fit aqui</u>
+nomes     = prep.get_feature_names_out()
+
+<u># ---------- 5. conferir ----------</u>
+<b>print</b>(<i>"treino:"</i>, X_tr_prep.shape, <i>"| teste:"</i>, X_te_prep.shape)
+<u># treino: (712, 29) | teste: (179, 29)</u>
+
+<b>print</b>(<i>"NaN:"</i>, np.isnan(X_tr_prep).sum(), np.isnan(X_te_prep).sum())
+<u># NaN: 0 0</u>
+
+<b>print</b>(pd.Series([n.split(<i>"__"</i>)[<em>0</em>] <b>for</b> n <b>in</b> nomes]).value_counts().sort_index().to_dict())
+<u># {'bin': 2, 'cat': 22, 'mon': 1, 'num': 4}   →  29 colunas</u>
+
+i = [k <b>for</b> k, n <b>in</b> <b>enumerate</b>(nomes) <b>if</b> n.startswith((<i>"num__"</i>, <i>"mon__"</i>))]
+<b>print</b>(<i>"treino  — média:"</i>, np.<b>abs</b>(X_tr_prep[:, i].mean(axis=<em>0</em>)).max().round(<em>9</em>),
+      <i>"desvio:"</i>, np.<b>abs</b>(X_tr_prep[:, i].std(axis=<em>0</em>) - <em>1</em>).max().round(<em>9</em>))
+<u># treino  — média: 0.0 desvio: 0.0        ← exatamente o que o fit prometeu</u>
+
+<b>print</b>(<i>"teste   — média:"</i>, X_te_prep[:, i].mean(axis=<em>0</em>).round(<em>3</em>))
+<u># teste   — média: [-0.036  0.141 -0.053  0.066  0.058]   ← e isto está CERTO</u></pre>
+
+  <div class="box box--obs">
+    <h5>Cinco coisas para reparar neste código</h5>
+    <ol>
+      <li><strong>A engenharia de atributos vem antes do split, e tudo bem.</strong> Nenhuma linha da função <code>preparar</code> usa <code>Survived</code>: extrair o título de um nome ou somar <code>SibSp + Parch</code> são operações linha a linha, que dariam o mesmo resultado se aplicadas a um passageiro isolado. O que <em>não</em> pode vir antes do split é qualquer coisa que agregue várias linhas — mediana, μ, σ, lista de categorias.</li>
+      <li><strong>Cada ramo tem uma ordem, e ela é a do diagrama.</strong> Em <code>pipe_mon</code>: imputar, depois transformar a forma, depois escalar. Inverter os dois últimos passos desfaria a padronização.</li>
+      <li><strong>A média do teste não é zero — e isso é o sinal de que está certo.</strong> Os valores em torno de ±0,1 aparecem porque o teste foi padronizado com o μ e o σ do <em>treino</em>, que não o conhecem. Se a média do teste desse exatamente zero, o <code>fit</code> teria visto o teste, e você teria vazamento.</li>
+      <li><strong><code>remainder="drop"</code> é uma escolha explícita.</strong> Colunas não listadas são descartadas em silêncio. O padrão do scikit-learn já é esse, mas escrevê-lo evita que alguém suponha o contrário; se quiser o oposto, use <code>remainder="passthrough"</code>.</li>
+      <li><strong>Os nomes das colunas sobrevivem.</strong> <code>get_feature_names_out()</code> devolve <code>num__Age</code>, <code>cat__Titulo_Master</code>, <code>bin__Sozinho</code> e assim por diante — o que torna possível interpretar coeficientes ou importâncias depois, em vez de olhar para 29 números anônimos.</li>
+    </ol>
+  </div>
+
+  <div class="box box--note">
+    <h5>Onde entra o modelo</h5>
+    <p>Quando você chegar ao primeiro algoritmo do curso, ele vira mais um passo no fim da linha, e o objeto inteiro passa a ser tratado como um só. Para experimentar agora, use o <code>DummyClassifier</code>: ele não aprende nada — apenas responde sempre a classe majoritária — e serve como <strong>piso de comparação</strong> para tudo o que vier depois.</p>
+<pre style="margin-top:12px"><b>from</b> sklearn.dummy <b>import</b> DummyClassifier
+
+modelo = Pipeline([(<i>"prep"</i>, prep),
+                   (<i>"clf"</i>,  DummyClassifier(strategy=<i>"most_frequent"</i>))])
+modelo.fit(X_tr, y_tr)
+modelo.score(X_te, y_te)     <u># 0,6145 — a proporção de mortos no teste</u>
+
+<u># troque a última etapa pelo algoritmo da vez; o resto do código não muda</u></pre>
+    <p>O 0,6145 é o número a bater: qualquer modelo que não o supere não aprendeu nada de útil, por mais sofisticado que seja.</p>
+    <p>A partir daí, <code>modelo</code> é uma unidade: pode ser validado, otimizado, serializado com <code>joblib</code> e enviado para produção sabendo que o pré-processamento vai junto — com os mesmos parâmetros aprendidos no treino. É essa garantia que faz o <code>Pipeline</code> valer o esforço de montá-lo.</p>
   </div>
   <a class="top" href="#" onclick="return __ir(this)">↑ topo</a>
 </section>
