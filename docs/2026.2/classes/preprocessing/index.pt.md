@@ -127,6 +127,14 @@ flowchart TD
     Notebook prático usado em sala — **Aula 03 — Normalização**:
     [:simple-googlecolab: abrir no Colab](https://colab.research.google.com/drive/1h1pv5pIiv2w4BZM0K8BGOA031yQeOLT0){:target="_blank"}
 
+!!! abstract "Roteiro completo de transformação — Titanic (em português)"
+    Material de referência de 3 h partindo dos dados faltantes: mecanismos MCAR / MAR / MNAR com
+    evidência empírica, diagrama de decisão de técnicas por tipo de variável, escalonamento e
+    transformação de forma, codificação de categóricas, vazamento medido em quatro cenários, e um
+    exercício de aula em sete *checkpoints* que constrói a matriz de atributos sem usar modelo algum.
+
+    [:material-file-document-outline: abrir o roteiro](handout-normalizacao-titanic.html){:target="_blank"}
+
 ---
 
 ## Quiz

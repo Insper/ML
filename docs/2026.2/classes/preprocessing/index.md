@@ -127,6 +127,14 @@ flowchart TD
     Hands-on notebook used in class — **Aula 03 — Normalização**:
     [:simple-googlecolab: open in Colab](https://colab.research.google.com/drive/1h1pv5pIiv2w4BZM0K8BGOA031yQeOLT0){:target="_blank"}
 
+!!! abstract "Full transformation walkthrough — Titanic (in Portuguese)"
+    A 3-hour reference handout that starts from missing data: MCAR / MAR / MNAR with empirical
+    evidence, a decision diagram of techniques by variable type, scaling and shape transformation,
+    categorical encoding, leakage measured across four scenarios, and a seven-checkpoint in-class
+    exercise that builds the feature matrix without training any model.
+
+    [:material-file-document-outline: open the handout](handout-normalizacao-titanic.html){:target="_blank"}
+
 ---
 
 ## Quiz

@@ -154,6 +154,14 @@ Guided exercises from the notebook:
     Hands-on notebook used in class — **Aula 02 — Análise Exploratória de Dados**:
     [:simple-googlecolab: open in Colab](https://colab.research.google.com/drive/1LeRg-XlFcVOBcp9UBtOI8Nn-b6QknSkC){:target="_blank"}
 
+!!! abstract "Full EDA walkthrough — California Housing (in Portuguese)"
+    A 3-hour reference handout with every figure rendered from the actual data: histogram and
+    boxplot grids, univariate analysis for numeric and categorical variables, all three pairings
+    (numeric × numeric, categorical × numeric, categorical × categorical), multivariate and
+    geospatial analysis, an interactive skewness/kurtosis simulator, and 10 solved exercises.
+
+    [:material-file-document-outline: open the handout](handout-eda-california-housing.html){:target="_blank"}
+
 ---
 
 ## Quiz

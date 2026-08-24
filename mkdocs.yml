@@ -136,6 +136,7 @@ nav:
   - Overview: index.md
   - 2026.2:
     - Overview: ./2026.2/index.md
+    - Handouts: ./2026.2/handouts/index.md
     - Foundations & History:
       - 1. Introduction & History: ./2026.2/classes/introduction/index.md
       - 2. The ML Landscape: ./2026.2/classes/ml-landscape/index.md

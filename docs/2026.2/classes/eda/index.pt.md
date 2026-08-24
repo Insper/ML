@@ -154,6 +154,14 @@ Exercícios guiados do notebook:
     Notebook prático usado em sala — **Aula 02 — Análise Exploratória de Dados**:
     [:simple-googlecolab: abrir no Colab](https://colab.research.google.com/drive/1LeRg-XlFcVOBcp9UBtOI8Nn-b6QknSkC){:target="_blank"}
 
+!!! abstract "Roteiro completo de EDA — California Housing (em português)"
+    Material de referência de 3 h, com todos os gráficos renderizados a partir dos dados reais:
+    grade de histogramas e de boxplots, univariada numérica e categórica, os três cruzamentos
+    (numérica × numérica, categórica × numérica, categórica × categórica), análise multivariada e
+    geoespacial, simulador interativo de assimetria e curtose, e 10 exercícios com solução.
+
+    [:material-file-document-outline: abrir o roteiro](handout-eda-california-housing.html){:target="_blank"}
+
 ---
 
 ## Quiz
