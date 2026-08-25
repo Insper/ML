@@ -133,7 +133,7 @@ flowchart TD
     transformação de forma, codificação de categóricas, vazamento medido em quatro cenários, e um
     exercício de aula em sete *checkpoints* que constrói a matriz de atributos sem usar modelo algum.
 
-    [:material-file-document-outline: abrir o roteiro](handout-normalizacao-titanic.html){:target="_blank"}
+    [:material-file-document-outline: abrir o roteiro](../../handouts/handout-normalizacao-titanic.html){:target="_blank"}
 
 ---
 

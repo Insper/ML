@@ -19,7 +19,7 @@ São **complementares** ao conteúdo das aulas, não substitutos: aprofundam um 
 
     ~3 h · 19 figuras · 10 exercícios
 
-    [:material-file-document-outline: abrir](../classes/eda/handout-eda-california-housing.html){:target="_blank"}
+    [:material-file-document-outline: abrir](./handout-eda-california-housing.html){:target="_blank"}
     · [:material-school-outline: aula](../classes/eda/index.md)
 
 -   :material-tune-variant:{ .lg .middle } **Normalização e Transformação**
@@ -34,7 +34,7 @@ São **complementares** ao conteúdo das aulas, não substitutos: aprofundam um 
 
     ~3 h · 10 figuras · exercício em 7 checkpoints
 
-    [:material-file-document-outline: abrir](../classes/preprocessing/handout-normalizacao-titanic.html){:target="_blank"}
+    [:material-file-document-outline: abrir](./handout-normalizacao-titanic.html){:target="_blank"}
     · [:material-school-outline: aula](../classes/preprocessing/index.md)
 
 </div>

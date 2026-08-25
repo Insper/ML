@@ -24,7 +24,7 @@ both as a companion during class and as a reference afterwards.
 
     ~3 h · 19 figures · 10 exercises
 
-    [:material-file-document-outline: open](../classes/eda/handout-eda-california-housing.html){:target="_blank"}
+    [:material-file-document-outline: open](./handout-eda-california-housing.html){:target="_blank"}
     · [:material-school-outline: class](../classes/eda/index.md)
 
 -   :material-tune-variant:{ .lg .middle } **Normalization and Transformation**
@@ -39,7 +39,7 @@ both as a companion during class and as a reference afterwards.
 
     ~3 h · 10 figures · seven-checkpoint exercise
 
-    [:material-file-document-outline: open](../classes/preprocessing/handout-normalizacao-titanic.html){:target="_blank"}
+    [:material-file-document-outline: open](./handout-normalizacao-titanic.html){:target="_blank"}
     · [:material-school-outline: class](../classes/preprocessing/index.md)
 
 </div>
