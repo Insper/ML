@@ -160,7 +160,7 @@ Guided exercises from the notebook:
     (numeric × numeric, categorical × numeric, categorical × categorical), multivariate and
     geospatial analysis, an interactive skewness/kurtosis simulator, and 10 solved exercises.
 
-    [:material-file-document-outline: open the handout](../../handouts/handout-eda-california-housing.html){:target="_blank"}
+    [:material-file-document-outline: open the handout](https://htmlpreview.github.io/?https://raw.githubusercontent.com/hsandmann/biblio/refs/heads/main/material/handouts/handout-eda-california-housing.html){:target="_blank"}
 
 ---
 

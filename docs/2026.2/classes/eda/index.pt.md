@@ -160,7 +160,7 @@ Exercícios guiados do notebook:
     (numérica × numérica, categórica × numérica, categórica × categórica), análise multivariada e
     geoespacial, simulador interativo de assimetria e curtose, e 10 exercícios com solução.
 
-    [:material-file-document-outline: abrir o roteiro](../../handouts/handout-eda-california-housing.html){:target="_blank"}
+    [:material-file-document-outline: abrir o roteiro](https://htmlpreview.github.io/?https://raw.githubusercontent.com/hsandmann/biblio/refs/heads/main/material/handouts/handout-eda-california-housing.html){:target="_blank"}
 
 ---
 

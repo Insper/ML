@@ -133,7 +133,7 @@ flowchart TD
     categorical encoding, leakage measured across four scenarios, and a seven-checkpoint in-class
     exercise that builds the feature matrix without training any model.
 
-    [:material-file-document-outline: open the handout](../../handouts/handout-normalizacao-titanic.html){:target="_blank"}
+    [:material-file-document-outline: open the handout](https://htmlpreview.github.io/?https://raw.githubusercontent.com/hsandmann/biblio/refs/heads/main/material/handouts/handout-normalizacao-titanic.html){:target="_blank"}
 
 ---
 
