@@ -42,6 +42,21 @@ both as a companion during class and as a reference afterwards.
     [:material-file-document-outline: open](https://htmlpreview.github.io/?https://raw.githubusercontent.com/hsandmann/biblio/refs/heads/main/material/handouts/handout-normalizacao-titanic.html){:target="_blank"}
     · [:material-school-outline: class](../classes/preprocessing/index.md)
 
+-   :material-chart-bubble:{ .lg .middle } **Dimensionality Reduction**
+
+    ---
+
+    **Iris and MNIST** — from 4 dimensions to 784.
+
+    PCA from two derivations, how to choose k, reconstruction and interpretation. Where PCA fails
+    on non-linear manifolds, then t-SNE and UMAP: what each one preserves, what each one distorts,
+    and a decision rule for choosing between them. Appendix on the curse of dimensionality.
+
+    ~3 h · 12 live simulators · eight-step Iris lab + 5 MNIST tasks
+
+    [:material-file-document-outline: open](https://htmlpreview.github.io/?https://raw.githubusercontent.com/hsandmann/biblio/refs/heads/main/material/handouts/handout-reducao-dimensionalidade.html){:target="_blank"}
+    · [:material-school-outline: class](../classes/dimensionality-reduction/index.md)
+
 </div>
 
 !!! tip "Classroom use"
