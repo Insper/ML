@@ -1,7 +1,7 @@
 # Handouts
 
-Full class walkthroughs as single-page documents. Each one renders every figure from the actual
-data, ships the code to reproduce it, and includes solved exercises.
+Full class walkthroughs, as single-page documents and as notebooks to run. Each one renders every
+figure from the actual data, ships the code to reproduce it, and includes solved exercises.
 
 They **complement** the class pages rather than replace them: each goes deep on one topic and works
 both as a companion during class and as a reference afterwards.
@@ -55,6 +55,22 @@ both as a companion during class and as a reference afterwards.
     ~3 h · 12 live simulators · eight-step Iris lab + 5 MNIST tasks
 
     [:material-file-document-outline: open](https://htmlpreview.github.io/?https://raw.githubusercontent.com/hsandmann/biblio/refs/heads/main/material/handouts/handout-reducao-dimensionalidade.html){:target="_blank"}
+    · [:material-school-outline: class](../classes/dimensionality-reduction/index.md)
+
+-   :material-notebook-outline:{ .lg .middle } **From EDA to Dimensionality Reduction**
+
+    ---
+
+    **Palmer Penguins** — 344 penguins, 6 input columns, 19 missing values from two causes.
+
+    An in-class lab that runs the whole path end to end: univariate then bivariate analysis, a
+    train/test split *before* any transformation, a pipeline that handles missing values and
+    scaling without leaking, and the same data projected by PCA, t-SNE and UMAP — compared under
+    a single criterion, then applied to unseen points.
+
+    Colab notebook · 8 steps, each ending in a check value
+
+    [:material-google: open in Colab](https://colab.research.google.com/drive/1ytcn6p5Jbk-0swDvGmLOV0qnP5oP0fa5?usp=sharing){:target="_blank"}
     · [:material-school-outline: class](../classes/dimensionality-reduction/index.md)
 
 </div>

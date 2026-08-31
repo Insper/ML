@@ -1,7 +1,8 @@
 # Handouts
 
-Roteiros de aula completos, em formato de página única. Cada um traz todos os gráficos renderizados
-a partir dos dados reais, o código para reproduzi-los e exercícios com solução.
+Roteiros de aula completos, em formato de página única ou em notebook para rodar. Cada um traz
+todos os gráficos renderizados a partir dos dados reais, o código para reproduzi-los e exercícios
+com solução.
 
 São **complementares** ao conteúdo das aulas, não substitutos: aprofundam um tópico específico e servem tanto para acompanhar a aula quanto para consulta posterior.
 
@@ -50,6 +51,22 @@ São **complementares** ao conteúdo das aulas, não substitutos: aprofundam um 
     ~3 h · 12 simuladores ao vivo · lab do Iris em 8 passos + 5 tarefas do MNIST
 
     [:material-file-document-outline: abrir](https://htmlpreview.github.io/?https://raw.githubusercontent.com/hsandmann/biblio/refs/heads/main/material/handouts/handout-reducao-dimensionalidade.html){:target="_blank"}
+    · [:material-school-outline: aula](../classes/dimensionality-reduction/index.md)
+
+-   :material-notebook-outline:{ .lg .middle } **Do EDA à Redução de Dimensionalidade**
+
+    ---
+
+    **Palmer Penguins** — 344 pinguins, 6 colunas de entrada, 19 ausentes de duas causas.
+
+    Laboratório em aula que percorre o caminho inteiro: univariada, depois bivariada, separação
+    treino/teste *antes* de qualquer transformação, pipeline que trata ausentes e escalas sem
+    vazar, e os mesmos dados projetados por PCA, t-SNE e UMAP — comparados sob um único critério
+    e aplicados a pontos novos.
+
+    Notebook no Colab · 8 etapas, cada uma com valor de verificação
+
+    [:material-google: abrir no Colab](https://colab.research.google.com/drive/1ytcn6p5Jbk-0swDvGmLOV0qnP5oP0fa5?usp=sharing){:target="_blank"}
     · [:material-school-outline: aula](../classes/dimensionality-reduction/index.md)
 
 </div>
