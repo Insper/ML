@@ -1,46 +1,48 @@
-O enunciado do projeto da disciplina está especificado na seguinte página:
 
-[==https://colab.research.google.com/drive/1sW6GFmk9OxxCs072sQWSxA7EyugpUBN2==](https://colab.research.google.com/drive/1sW6GFmk9OxxCs072sQWSxA7EyugpUBN2?usp=sharing){:target="_blank"}
+!!! info "Enunciado"
 
-São duas etapas de entregas:
+    [==https://colab.research.google.com/drive/1sW6GFmk9OxxCs072sQWSxA7EyugpUBN2==](https://colab.research.google.com/drive/1sW6GFmk9OxxCs072sQWSxA7EyugpUBN2?usp=sharing){:target="_blank"}
 
-<div class="grid cards" markdown>
 
--   **1. EDA (Análise Exploratória de Dados)**
+!!! success "Etapas de entrega"
 
-    ---
+    <div class="grid cards" markdown>
 
-    :date: 14.set (segunda-feira)
-    
-    :clock1: Commits até 23:59
+    -   **1. EDA (Análise Exploratória de Dados)**
 
-    :material-account-group: Até 2 membros
+        ---
 
-    <!-- :simple-github: Enviar o Link do GitHub Pages (sim, **apenas** o link das pages) via [insper.blackboard.com](https://insper.blackboard.com){:target="_blank"}. -->
+        :date: 14.set (segunda-feira)
+        
+        :clock1: Commits até 23:59
 
-    ---
+        :material-account-group: Até 2 membros
 
-    :material-file-document-outline: Colab ou arquivo .ipynb
+        <!-- :simple-github: Enviar o Link do GitHub Pages (sim, **apenas** o link das pages) via [insper.blackboard.com](https://insper.blackboard.com){:target="_blank"}. -->
 
-    :material-upload: [Clique aqui para entregar](){:target="_blank"}
+        ---
 
--   **2. Classificação ou Regressão**
+        :material-file-document-outline: Colab ou arquivo .ipynb
 
-    ---
+        :material-upload: [Clique aqui para entregar](){:target="_blank"}
 
-    :date: 26.out (segunda-feira)
-    
-    :clock1: Commits até 23:59
+    -   **2. Classificação ou Regressão**
 
-    :material-account-group: **OS MESMOS** membros do EDA
+        ---
 
-    ---
+        :date: 26.out (segunda-feira)
+        
+        :clock1: Commits até 23:59
 
-    :material-file-document-outline: Colab ou arquivo .ipynb
+        :material-account-group: **OS MESMOS** membros do EDA
 
-    :material-upload: [Clique aqui para entregar](){:target="_blank"}
+        ---
 
-</div>
+        :material-file-document-outline: Colab ou arquivo .ipynb
+
+        :material-upload: [Clique aqui para entregar](){:target="_blank"}
+
+    </div>
 
 
 !!! danger "Permissão de acesso do Colab"

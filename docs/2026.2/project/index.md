@@ -1,46 +1,48 @@
-The course project statement is specified on the following page:
 
-[==https://colab.research.google.com/drive/1sW6GFmk9OxxCs072sQWSxA7EyugpUBN2==](https://colab.research.google.com/drive/1sW6GFmk9OxxCs072sQWSxA7EyugpUBN2?usp=sharing){:target="_blank"}
+!!! info "Statement"
 
-There are two submission stages:
+    [==https://colab.research.google.com/drive/1sW6GFmk9OxxCs072sQWSxA7EyugpUBN2==](https://colab.research.google.com/drive/1sW6GFmk9OxxCs072sQWSxA7EyugpUBN2?usp=sharing){:target="_blank"}
 
-<div class="grid cards" markdown>
 
--   **1. EDA (Exploratory Data Analysis)**
+!!! success "Submission stages"
 
-    ---
+    <div class="grid cards" markdown>
 
-    :date: Sep 14 (Monday)
-    
-    :clock1: Commits until 23:59
+    -   **1. EDA (Exploratory Data Analysis)**
 
-    :material-account-group: Up to 2 members
+        ---
 
-    <!-- :simple-github: Submit the GitHub Pages link (yes, **only** the pages link) via [insper.blackboard.com](https://insper.blackboard.com){:target="_blank"}. -->
+        :date: Sep 14 (Monday)
+        
+        :clock1: Commits until 23:59
 
-    ---
+        :material-account-group: Up to 2 members
 
-    :material-file-document-outline: Colab or .ipynb file
+        <!-- :simple-github: Submit the GitHub Pages link (yes, **only** the pages link) via [insper.blackboard.com](https://insper.blackboard.com){:target="_blank"}. -->
 
-    :material-upload: [Click here to submit](){:target="_blank"}
+        ---
 
--   **2. Classification or Regression**
+        :material-file-document-outline: Colab or .ipynb file
 
-    ---
+        :material-upload: [Click here to submit](){:target="_blank"}
 
-    :date: Oct 26 (Monday)
-    
-    :clock1: Commits until 23:59
+    -   **2. Classification or Regression**
 
-    :material-account-group: **THE SAME** members as in the EDA
+        ---
 
-    ---
+        :date: Oct 26 (Monday)
+        
+        :clock1: Commits until 23:59
 
-    :material-file-document-outline: Colab or .ipynb file
+        :material-account-group: **THE SAME** members as in the EDA
 
-    :material-upload: [Click here to submit](){:target="_blank"}
+        ---
 
-</div>
+        :material-file-document-outline: Colab or .ipynb file
+
+        :material-upload: [Click here to submit](){:target="_blank"}
+
+    </div>
 
 
 !!! danger "Colab access permission"
