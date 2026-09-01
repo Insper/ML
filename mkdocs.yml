@@ -171,6 +171,7 @@ nav:
         - 25. MLOps: ./2026.2/classes/mlops/index.md
         - 26. The Frontier: ./2026.2/classes/frontier/index.md
     - Handouts: ./2026.2/handouts/index.md
+    - Project: ./2026.2/project/index.md
 
   - References: references/index.md
   - Disclaimer: disclaimer/index.md

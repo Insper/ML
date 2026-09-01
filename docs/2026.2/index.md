@@ -74,7 +74,7 @@ $$
 
 | Component | When | Weight |
 |---|---|--:|
-| <span class='calendar-eda'>EDA</span> | Sep 11 | 30% |
+| <span class='calendar-eda'>EDA</span> | Sep 14 | 30% |
 | <span class='calendar-classification'>Classification</span> $\lor$ <span class='calendar-regression'>Regression</span> | Oct 26 | 70% |
 
 </div>
@@ -103,8 +103,8 @@ The <span class='calendar-sexam'>Substitutive Exam</span> (Dec 10–11) covers t
 |     |    | 24 |    |    |    | 28 |    |
 |     |    | 31 |    |    |    |    |    |
 | Sep |    |    |    |    |    | 04 |    |
-|     |    |    |    |    |    | <span class='calendar-eda'>11</span> |    |
-|     |    | 14 |    |    | <span class='calendar-mexam'>17</span> | <span class='calendar-mexam'>18</span> |    |
+|     |    |    |    |    |    | 11 |    |
+|     |    | <span class='calendar-eda'>14</span> |    |    | <span class='calendar-mexam'>17</span> | <span class='calendar-mexam'>18</span> |    |
 |     |    | <span class='calendar-mexam'>21</span> | <span class='calendar-mexam'>22</span> | <span class='calendar-mexam'>23</span> |    |    |    |
 |     |    | 28 |    |    |    |    |    |
 | Oct |    |    |    |    |    | 02 |    |

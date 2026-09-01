@@ -74,7 +74,7 @@ $$
 
 | Componente | Quando | Peso |
 |---|---|--:|
-| <span class='calendar-eda'>EDA</span> | 11 set | 30% |
+| <span class='calendar-eda'>EDA</span> | 14 set | 30% |
 | <span class='calendar-classification'>Classificação</span> $\lor$ <span class='calendar-regression'>Regressão</span> | 26 out | 70% |
 
 </div>
@@ -103,8 +103,8 @@ A <span class='calendar-sexam'>Avaliação Substitutiva</span> (10–11 dez) cob
 |     |    | 24 |    |    |    | 28 |    |
 |     |    | 31 |    |    |    |    |    |
 | Set |    |    |    |    |    | 04 |    |
-|     |    |    |    |    |    | <span class='calendar-eda'>11</span> |    |
-|     |    | 14 |    |    | <span class='calendar-mexam'>17</span> | <span class='calendar-mexam'>18</span> |    |
+|     |    |    |    |    |    | 11 |    |
+|     |    | <span class='calendar-eda'>14</span> |    |    | <span class='calendar-mexam'>17</span> | <span class='calendar-mexam'>18</span> |    |
 |     |    | <span class='calendar-mexam'>21</span> | <span class='calendar-mexam'>22</span> | <span class='calendar-mexam'>23</span> |    |    |    |
 |     |    | 28 |    |    |    |    |    |
 | Out |    |    |    |    |    | 02 |    |
