@@ -22,7 +22,7 @@
 
         ---
 
-        :material-file-document-outline: Colab or .ipynb file
+        :material-file-document-outline: Link Colab or .ipynb file
 
         :material-upload: [Click here to submit](){:target="_blank"}
 
@@ -38,7 +38,7 @@
 
         ---
 
-        :material-file-document-outline: Colab or .ipynb file
+        :material-file-document-outline: Link Colab or .ipynb file
 
         :material-upload: [Click here to submit](){:target="_blank"}
 
