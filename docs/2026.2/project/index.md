@@ -18,13 +18,11 @@
 
         :material-account-group: Up to 2 members
 
-        <!-- :simple-github: Submit the GitHub Pages link (yes, **only** the pages link) via [insper.blackboard.com](https://insper.blackboard.com){:target="_blank"}. -->
-
         ---
 
         :material-file-document-outline: Link Colab or .ipynb file
 
-        :material-upload: [Click here to submit](){:target="_blank"}
+        :material-upload: [Click here to submit](https://forms.gle/QprAFZQpyFEuiJtT6){:target="_blank"}
 
     -   **2. Classification or Regression**
 

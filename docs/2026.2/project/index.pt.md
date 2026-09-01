@@ -18,13 +18,11 @@
 
         :material-account-group: Até 2 membros
 
-        <!-- :simple-github: Enviar o Link do GitHub Pages (sim, **apenas** o link das pages) via [insper.blackboard.com](https://insper.blackboard.com){:target="_blank"}. -->
-
         ---
 
         :material-file-document-outline: Link Colab ou arquivo .ipynb
 
-        :material-upload: [Clique aqui para entregar](){:target="_blank"}
+        :material-upload: [Clique aqui para entregar](https://forms.gle/QprAFZQpyFEuiJtT6){:target="_blank"}
 
     -   **2. Classificação ou Regressão**
 
