@@ -118,7 +118,7 @@
     margin: 0;
 }
 
-.calendar-mexam, .calendar-fexam, .calendar-sexam,
+.calendar-mexam, .calendar-mexamw, .calendar-fexam, .calendar-fexamw, .calendar-sexam,
 .calendar-ssprint, .calendar-fsprint,
 .calendar-eda, .calendar-classification, .calendar-regression {
     padding: 4px;
@@ -177,7 +177,9 @@
 }
 
 .calendar-mexam { background-color: #EE0F0F; }
+.calendar-mexamw { background-color: #EECFCF; }
 .calendar-fexam { background-color: crimson; }
+.calendar-fexamw { background-color: #F0B0B0; }
 .calendar-sexam { background-color: coral; }
 .calendar-ssprint { background-color: blue; }
 .calendar-fsprint { background-color: darkblue; }

@@ -104,16 +104,16 @@ The <span class='calendar-sexam'>Substitutive Exam</span> (Dec 10–11) covers t
 |     |    | 31 |    |    |    |    |    |
 | Sep |    |    |    |    |    | 04 |    |
 |     |    |    |    |    |    | 11 |    |
-|     |    | <span class='calendar-eda'>14</span> |    |    | <span class='calendar-mexam'>17</span> | <span class='calendar-mexam'>18</span> |    |
-|     |    | <span class='calendar-mexam'>21</span> | <span class='calendar-mexam'>22</span> | <span class='calendar-mexam'>23</span> |    |    |    |
+|     |    | <span class='calendar-eda'>14</span> |    |    | <span class='calendar-mexamw'>17</span> | <span class='calendar-mexamw'>18</span> |    |
+|     |    | <span class='calendar-mexam'>21</span> | <span class='calendar-mexamw'>22</span> | <span class='calendar-mexamw'>23</span> |    |    |    |
 |     |    | 28 |    |    |    |    |    |
 | Oct |    |    |    |    |    | 02 |    |
 |     |    | 05 |    |    |    | 09 |    |
 |     |    |    |    |    |    | 16 |    |
 |     |    | 19 |    |    |    | 23 |    |
 |     |    | <span class='calendar-classification'>2</span><span class='calendar-regression'>6</span> |    |    |    | 30 |    |
-| Nov |    |    |    |    | <span class='calendar-fexam'>05</span> | <span class='calendar-fexam'>06</span> |    |
-|     |    | <span class='calendar-fexam'>09</span> | <span class='calendar-fexam'>10</span> | <span class='calendar-fexam'>11</span> |    |    |    |
+| Nov |    |    |    |    | <span class='calendar-fexamw'>05</span> | <span class='calendar-fexam'>06</span> |    |
+|     |    | <span class='calendar-fexam'>09</span> | <span class='calendar-fexamw'>10</span> | <span class='calendar-fexamw'>11</span> |    |    |    |
 |     |    | <span class='calendar-ssprint'>16</span> |    |    |    |    |    |
 |     |    | 23 |    |    |    | 27 |    |
 |     |    | 30 |    |    |    |    |    |
