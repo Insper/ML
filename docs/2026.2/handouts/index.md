@@ -73,6 +73,32 @@ both as a companion during class and as a reference afterwards.
     [:material-google: open in Colab](https://colab.research.google.com/drive/1ytcn6p5Jbk-0swDvGmLOV0qnP5oP0fa5?usp=sharing){:target="_blank"}
     · [:material-school-outline: class](../classes/dimensionality-reduction/index.md)
 
+-   :material-blur:{ .lg .middle } **Clustering**
+
+    ---
+
+    **Iris and synthetic data** — `make_blobs`, `make_moons` and a random baseline.
+
+    Why grouping is a choice rather than a discovery, the algorithm and the inertia it chases, and
+    silhouette point by point — both metrics worked by hand on eight points before any library.
+    Then choosing k with the two of them together, across five lab steps.
+
+    50 min class + 70 min lab · 12 questions · Colab with 3 exercises
+
+    [:material-file-document-outline: handout](https://htmlpreview.github.io/?https://raw.githubusercontent.com/hsandmann/biblio/refs/heads/main/material/handouts/handout-clustering-kmeans.html){:target="_blank"}
+    · [:material-google: Colab](https://colab.research.google.com/drive/1RhDCMPwv1cKCXBUUTblJx7dhLm0xP6fj?usp=sharing){:target="_blank"}
+    · [:material-school-outline: class](../classes/clustering/index.md)
+
+    ---
+
+    :material-trophy-outline: **Extra — challenge**
+
+    **178 wines**, self-guided with the answer key held back to the end: five scalings, four
+    indices plus a gap statistic written from scratch, stability, GMM with BIC, and clustering in
+    reduced space — then audit every decision against the key.
+
+    [:material-file-document-outline: open the challenge](https://htmlpreview.github.io/?https://raw.githubusercontent.com/hsandmann/biblio/refs/heads/main/material/handouts/lab-clustering-vinhos.html){:target="_blank"}
+
 </div>
 
 !!! tip "Classroom use"

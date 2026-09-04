@@ -69,6 +69,32 @@ São **complementares** ao conteúdo das aulas, não substitutos: aprofundam um 
     [:material-google: abrir no Colab](https://colab.research.google.com/drive/1ytcn6p5Jbk-0swDvGmLOV0qnP5oP0fa5?usp=sharing){:target="_blank"}
     · [:material-school-outline: aula](../classes/dimensionality-reduction/index.md)
 
+-   :material-blur:{ .lg .middle } **Clustering**
+
+    ---
+
+    **Iris e dados sintéticos** — `make_blobs`, `make_moons` e uma linha de base aleatória.
+
+    Por que agrupar é escolher, e não descobrir; o algoritmo e a inércia que ele persegue; e a
+    silhueta ponto a ponto — as duas métricas feitas à mão sobre oito pontos, antes de qualquer
+    biblioteca. Depois, escolher k com as duas juntas, em cinco etapas de laboratório.
+
+    50 min de aula + 70 min de lab · 12 perguntas · Colab com 3 exercícios
+
+    [:material-file-document-outline: roteiro](https://htmlpreview.github.io/?https://raw.githubusercontent.com/hsandmann/biblio/refs/heads/main/material/handouts/handout-clustering-kmeans.html){:target="_blank"}
+    · [:material-google: Colab](https://colab.research.google.com/drive/1RhDCMPwv1cKCXBUUTblJx7dhLm0xP6fj?usp=sharing){:target="_blank"}
+    · [:material-school-outline: aula](../classes/clustering/index.md)
+
+    ---
+
+    :material-trophy-outline: **Extra — desafio**
+
+    **178 vinhos**, autoguiado e com o gabarito retido até o fim: cinco escalas, quatro índices
+    mais a estatística gap implementada do zero, estabilidade, GMM com BIC e agrupamento no espaço
+    reduzido — e então auditar cada decisão contra o gabarito.
+
+    [:material-file-document-outline: abrir o desafio](https://htmlpreview.github.io/?https://raw.githubusercontent.com/hsandmann/biblio/refs/heads/main/material/handouts/lab-clustering-vinhos.html){:target="_blank"}
+
 </div>
 
 !!! tip "Uso em sala"
